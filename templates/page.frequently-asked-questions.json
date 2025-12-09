@@ -26,7 +26,7 @@
       ],
       "settings": {
         "text_heading": "FAQ",
-        "richtext_richtext": "<p>\n                  For any additional questions or to schedule an appointment call <a target=\"_blank\" href=\"tel:%28713%29%20977-7296\">(713) 977-7296</a> from 10 am to 4:30 pm Central, Monday to Friday.\n                </p>"
+        "richtext_richtext": "<p><br/>                  For any additional questions or to schedule an appointment call <a href=\"tel:%28713%29%20977-7296\" target=\"_blank\">(713) 977-7296</a> from 10 am to 4:30 pm Central, Monday to Friday.<br/>                </p>"
       }
     }
   },

@@ -24,12 +24,33 @@
     "qa": {
       "type": "qa",
       "blocks": {
+        "faq_item_a_8r9DYA": {
+          "type": "faq-item-a",
+          "settings": {
+            "text_heading": "Repair, Service and Customization",
+            "richtext_richtext": "<p><br/>                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                    </p>"
+          }
+        },
         "faq-item-a": {
           "type": "faq-item-a",
           "name": "FAQ Item a",
           "settings": {
-            "text_heading": "Heading",
-            "richtext_richtext": "<p>\n                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                    </p>"
+            "text_heading": "Band Adjustment and Additions",
+            "richtext_richtext": "<p><br/>                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                    </p>"
+          }
+        },
+        "faq_item_a_FPri89": {
+          "type": "faq-item-a",
+          "settings": {
+            "text_heading": "Battery Replacement",
+            "richtext_richtext": "<p><br/>                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                    </p>"
+          }
+        },
+        "faq_item_a_L9BhrA": {
+          "type": "faq-item-a",
+          "settings": {
+            "text_heading": "Restring pearls and beads",
+            "richtext_richtext": "<p><br/>                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                    </p>"
           }
         },
         "faq-item-b": {
@@ -37,12 +58,15 @@
           "name": "FAQ Item b",
           "settings": {
             "text_heading": "Heading",
-            "richtext_richtext": "<p>\n                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                    </p>"
+            "richtext_richtext": "<p><br/>                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                    </p>"
           }
         }
       },
       "block_order": [
+        "faq_item_a_8r9DYA",
         "faq-item-a",
+        "faq_item_a_FPri89",
+        "faq_item_a_L9BhrA",
         "faq-item-b"
       ],
       "settings": {}
