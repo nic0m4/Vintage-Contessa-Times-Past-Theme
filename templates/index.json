@@ -35,14 +35,14 @@
     "content_1": {
       "type": "content_1",
       "custom_css": [
-        ".content_component {height:auto;}"
+        ".content_image {height: auto;}"
       ],
       "settings": {
         "image_image": "shopify://shop_images/sell-trade-in.webp",
         "text_headline": "Give your luxury pieces a new chapter",
         "richtext_text": "<p>We provide refined and accurate valuations for estate jewelry, diamonds, watches and handbags, ensuring your legacy items move forward with purpose.</p>",
         "url_button_link": "",
-        "text_button_text": "Get Valuation",
+        "text_button_text": "Button",
         "image_position": "left"
       }
     },
@@ -62,8 +62,8 @@
         "richtext_paragraph": "<p>Based in Houston and recognized internationally, The Vintage Contessa & Times Past is a destination for those who value rarity and refinement. As a family-run showroom with deep expertise, we connect discerning collectors with pieces that transcend trends and continue their legacy.</p>",
         "url_button_url": "",
         "text_button_text": "Meet The Founders",
-        "video_url": "https://www.youtube.com/watch?v=WbFYvUJqDWg",
-        "video_title": "Video Title"
+        "video_url": "https://www.youtube.com/watch?v=WbFYvUJqDWgVideo Title",
+        "video_title": "About Vintage Contessa & Times Past"
       }
     },
     "testimonials": {

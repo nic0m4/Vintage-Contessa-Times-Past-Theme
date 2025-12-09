@@ -1,24 +1,56 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "announcement_bar": {
-            "type": "announcement_bar"
-        },
-        "image_with_text": {
-            "type": "image_with_text"
-        },
-        "content_1": {
-            "type": "content_1"
-        },
-        "founders": {
-            "type": "founders"
-        }
+  "sections": {
+    "image_with_text": {
+      "type": "image_with_text",
+      "settings": {
+        "image_image": "shopify://shop_images/about-us.webp",
+        "text_heading": "About Us",
+        "richtext_paragraph": "",
+        "url_button_link": "",
+        "text_button_text": "",
+        "url_button_link_2": "",
+        "text_button_text_2": ""
+      }
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "announcement_bar",
-        "image_with_text",
-        "content_1",
-        "founders"
-    ]
+    "content_1": {
+      "type": "content_1",
+      "custom_css": [
+        ".content_component {height: auto;}"
+      ],
+      "settings": {
+        "image_image": "shopify://shop_images/contessa-rob-showroom.webp",
+        "text_headline": "Vintage Contessa & Times Past Showroom",
+        "richtext_text": "<p>Our team travels the world to uncover rare and beautiful luxury pieces, selecting only those that meet the highest standards of authenticity and craft. Every item in our collection is fully authenticated with a promise of quality, making our showroom a trusted destination for both first-time luxury buyers and seasoned collectors.</p>",
+        "url_button_link": "",
+        "text_button_text": "Schedule an Appointment",
+        "image_position": "left"
+      }
+    },
+    "founders": {
+      "type": "founders",
+      "settings": {
+        "text_heading": "Meet The Founders",
+        "text_founder_1": "Contessa",
+        "richtext_bio_1": "<p>The Contessa is a published writer, award winning business woman, style setter and commencement speaker who was recently named one of Houston Business Journal’s 2018 Women Who Mean Business as an Outstanding Leader in Hospitality & Retail and The Society Diaries’ Texas Top 50 Women to Watch. As an active member of Crime Stoppers of Houston’s Board of Directors, she was named 2018 Crime Stoppers Safe School Award for her steadfast dedication to the safety of children in schools, with special emphasis on stopping sex trafficking.</p><p>With a passion for fashion and lover of all things vintage, her family and friends christened her as “The Vintage Contessa.” Fashion aside, The Contessa is a respected influencer and philanthropist in Houston and beyond, using her voice and national charitable commitments to change the world around her for the greater good. She is actively involved with Youth Power 365 of the Vail Valley Foundation and The Scarlett Fund at Memorial Sloan Kettering for pediatric cancer.</p><p>In her spare time, The Contessa enjoys traveling the world, staying active and snow skiing with her husband and their daughter (when school will allow). She received a Bachelors of Science in Journalism from Texas A&M University, with a minor in Marketing and serves as the president of her father’s nationally acclaimed marble and granite business prior to joining forces with her husband Rob. She is accredited as a United States Green Building Council LEED Professional and GIA Gemological Institute Diamond Essentials professional.</p>",
+        "text_founder_2": "Rob",
+        "richtext_bio_2": "<p>Rob Chramosta, founder and owner of Times Past, is a true collector – at a young age, he began curating his own collections, gaining industry knowledge and expanding his expertise of luxury watches and jewelry. At just five years old, Mr. Chramosta started his first coin collection, at 13 he accepted his first job with a coin dealer and by the age of 15, he began buying and selling watches.</p><p>Utilizing his detailed and expansive product knowledge when curating collections of luxury goods, Mr. Chramosta remembers coins’ dates and watches’ model numbers with ease and loves the art of making a deal. A fluent Spanish speaker and extensive world traveler, his ability to negotiate is unsurpassed. Some frequently traveled destinations include France, Italy, Japan, China, Brazil and Argentina to curate collections for himself and his customers.</p><p>Mr. Chramosta is a part of the Professional Numismatists Guild, The International Watch and Jewelry Guild, National Association of Watch and Clock Collectors and the American Numismatic Association. Apart from his affinity for luxury timepieces and opulent jewelry, he prides himself on being a philanthropic family man. He and his wife Donae have a passion for giving back to their community and he recently served as co-chair for the 2018 KnowAutism Gala. In his free time, Mr. Chramosta enjoys fishing annually in Alaska, skiing in Vail and traveling with Donae and their daughter, Bella. Mr Chramosta earned his Bachelor of Arts from the University of Colorado Boulder and is accredited as a GIA Gemological Institute Diamond Essentials professional.</p>"
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "image_with_text",
+    "content_1",
+    "founders"
+  ]
 }
