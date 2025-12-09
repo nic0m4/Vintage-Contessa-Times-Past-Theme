@@ -1,0 +1,80 @@
+<div class="padding-global padding-section-large">
+          <div class="container-large">
+            <div class="product_component">
+              <div class="product_heading-wrapper">
+                <div>
+                  <div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="16" fill="none">
+                      <path fill="#BDA66E" d="M24.08.25c-3.08 0-5.214 1.74-6.923 3.93l1.628 2.191c1.304-1.778 2.858-3.113 5.064-3.113 2.779 0 4.955 1.96 4.955 4.742 0 2.554-1.806 4.786-4.955 4.786-2.422 0-4.079-1.791-5.553-3.976l-.063-.093-.124-.188a22.475 22.475 0 0 0-1.266-1.69c-.463-.554-1.302-1.743-1.433-1.943C13.57 2.382 11.28.25 7.873.25 3.056.25 0 3.943 0 8c0 4.149 3.056 7.75 7.873 7.75 3.08 0 5.215-1.71 6.924-3.865l-1.636-2.247c-1.314 1.789-2.89 3.148-5.057 3.148-3.15 0-4.908-2.279-4.908-4.786 0-2.417 1.759-4.741 4.908-4.741 2.466 0 4.092 1.76 5.56 3.94v-.001l1.53 2.12c.166.228.46.635.732 1.013l.004-.006.28.399c.09.125.17.234.229.318 1.85 2.534 4.126 4.708 7.642 4.708C29.036 15.75 32 12.058 32 8 32 3.35 28.34.25 24.08.25Z"></path>
+                    </svg></div>
+                </div>
+                <div class="product_heading">
+                  <div class="max-width-large">
+                    <h3 class="heading-style-h3">
+{{ section.settings.text_heading }}
+</h3>
+                  </div>
+                </div>
+                <div class="text-weight-medium subtitle"> {{ section.settings.richtext_paragraph }} </div>
+              </div>
+              <div class="button-group">
+                <a href="{{ section.settings.url_button_url }}" class="button is-outline w-button"> {{ section.settings.text_button_text }} </a>
+              </div>
+              <div class="video_wrapper" style="aspect-ratio: {{ section.settings.video.aspect_ratio }}"><iframe src="{{ 'https://www.youtube.com/embed/VIDEO_ID' | replace: 'VIDEO_ID', section.settings.video.id }}" width="100%" height="100%" title="{{ section.settings.video_title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="no" class="video_video"></iframe></div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Video (Externally)",
+    "class": "section_video",
+    "settings": [
+        {
+            "id": "text_heading",
+            "type": "text",
+            "label": "Heading",
+            "default": "Our Story"
+        },
+        {
+            "id": "richtext_paragraph",
+            "type": "richtext",
+            "label": "Paragraph",
+            "default": "<p>Based in Houston and recognized internationally, The Vintage Contessa &amp; Times Past is a destination for those who value rarity and refinement. As a family-run showroom with deep expertise, we connect discerning collectors with pieces that transcend trends and continue their legacy.<\/p>"
+        },
+        {
+            "id": "url_button_url",
+            "type": "url",
+            "label": "Button-Url"
+        },
+        {
+            "id": "text_button_text",
+            "type": "text",
+            "label": "Button-Text",
+            "default": "Button Text"
+        },
+        {
+            "type": "header",
+            "content": "Video"
+        },
+        {
+            "type": "video_url",
+            "id": "video_url",
+            "label": "Video",
+            "accept": [
+                "youtube",
+                "vimeo"
+            ]
+        },
+        {
+            "type": "text",
+            "id": "video_title",
+            "label": "Video Title",
+            "default": "Video Title"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Video (Externally)",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}

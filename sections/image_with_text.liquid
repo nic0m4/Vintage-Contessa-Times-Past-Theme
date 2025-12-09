@@ -1,0 +1,85 @@
+<div class="header_background-image-wrapper">{% if section.settings.image_image %}
+{{ section.settings.image_image | image_url: width: 1000 | image_tag: loading: 'eager', class: 'header_background-image' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'header_background-image' }} 
+{% endif %}</div>
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="header_card text-color-white">
+              <div class="max-width-large">
+                <h1 class="heading-style-h1 text-color-white">
+{{ section.settings.text_heading }}
+</h1>
+                <div class="spacer-small"></div>
+                <div class="text-size-medium text-color-white"> {{ section.settings.richtext_paragraph }} </div>
+              </div>
+              <div class="spacer-medium"></div>
+              {% if section.settings.text_button_text != blank and section.settings.text_button_text_2 != blank %}    <div li-if="section.settings.text_button_text != blank and section.settings.text_button_text_2 != blank" class="button-group">
+    
+                {% if section.settings.text_button_text != blank %}    <div li-if="section.settings.text_button_text != blank" class="btn-wrap">
+    
+                  <a href="{{ section.settings.url_button_link }}" class="button is-large is-white w-button"> {{ section.settings.text_button_text }} </a>
+                    </div>
+{% endif %}
+                {% if section.settings.text_button_text_2 != blank %}    <div li-if="section.settings.text_button_text_2 != blank" class="btn-wrap">
+    
+                  <a href="{{ section.settings.url_button_link_2 }}" class="button is-secondary is-white w-button"> {{ section.settings.text_button_text_2 }} </a>
+                    </div>
+{% endif %}
+                  </div>
+{% endif %}
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "header",
+    "name": "Image with Text",
+    "class": "section_header-home",
+    "settings": [
+        {
+            "id": "image_image",
+            "type": "image_picker",
+            "label": "Image"
+        },
+        {
+            "id": "text_heading",
+            "type": "text",
+            "label": "Heading",
+            "default": "Timeless luxury for modern collectors"
+        },
+        {
+            "id": "richtext_paragraph",
+            "type": "richtext",
+            "label": "Paragraph",
+            "default": "<p>Discover rare and authenticated vintage designer pieces from the world's most prestigious brands.<\/p>"
+        },
+        {
+            "id": "url_button_link",
+            "type": "url",
+            "label": "Button Link"
+        },
+        {
+            "id": "text_button_text",
+            "type": "text",
+            "label": "Button Text",
+            "default": "Button"
+        },
+        {
+            "id": "url_button_link_2",
+            "type": "url",
+            "label": "Button Link 2"
+        },
+        {
+            "id": "text_button_text_2",
+            "type": "text",
+            "label": "Button Text 2",
+            "default": "Button 2"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Image with Text",
+            "category": "Content",
+            "blocks": []
+        }
+    ]
+} {% endschema %}

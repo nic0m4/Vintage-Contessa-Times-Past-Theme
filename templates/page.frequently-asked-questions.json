@@ -1,0 +1,25 @@
+{
+    "sections": {
+        "announcement_bar": {
+            "type": "announcement_bar"
+        },
+        "faq_1": {
+            "type": "faq_1",
+            "blocks": {
+                "faq-item": {
+                    "name": "FAQ Item",
+                    "type": "faq-item"
+                }
+            },
+            "block_order": [
+                "faq-item"
+            ]
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "announcement_bar",
+        "faq_1"
+    ]
+}

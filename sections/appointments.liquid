@@ -1,0 +1,85 @@
+<div class="padding-global padding-section-large">
+          <div class="container-large">
+            <div class="grid_3col">
+              <div id="w-node-_819d75c5-1cec-e7a1-45f1-6bbbd5786480-6421f465" class="appointment_card">
+                <div class="content_image-wrapper">{% if section.settings.image_image_1 %}
+{{ section.settings.image_image_1 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'content_image' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'image.svg' | asset_url }}" class="content_image">
+{% endif %}</div>
+                <div class="headline-wrapper">
+                  <h2 class="heading-style-h5">Sell or Trade</h2>
+                  <div>Discover the next chapter for your luxury pieces. Each item is evaluated with curiosity and expertise, uncovering its story to maximize value.</div>
+                </div>
+                <a li-object:href="url" href="{{ section.settings.url_url_1 }}" class="card_link w-inline-block"> <div class="text-size-regular text-style-link">Book Now</div> <div class="chevron w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"> <path fill="#BDA66E" stroke="#BDA66E" d="M9.387 6.673c.1 0 .178.03.256.108l4.944 4.945a.314.314 0 0 1 .114.249.314.314 0 0 1-.023.124.402.402 0 0 1-.091.125l-4.969 4.968c-.078.078-.145.1-.225.097a.366.366 0 0 1-.261-.121.335.335 0 0 1-.11-.256c0-.1.032-.178.11-.256l4.681-4.681-4.707-4.707c-.077-.078-.1-.144-.096-.225a.368.368 0 0 1 .122-.262.333.333 0 0 1 .255-.108Z"></path> </svg></div> </a>
+              </div>
+              <div id="w-node-_7676dd77-8a3c-b216-2a7d-469e9bd7dac3-6421f465" class="appointment_card">
+                <div class="content_image-wrapper">{% if section.settings.image_image_2 %}
+{{ section.settings.image_image_2 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'content_image' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'image.svg' | asset_url }}" class="content_image">
+{% endif %}</div>
+                <div class="headline-wrapper">
+                  <h2 class="heading-style-h5">Visit Our Showroom</h2>
+                  <div>Explore a constantly evolving selection of designer handbags, watches, diamonds and fine jewelry. Book your appointment to experience our collection in person.</div>
+                </div>
+                <a li-object:href="url" href="{{ section.settings.url_url_2 }}" class="card_link w-inline-block"> <div class="text-size-regular text-style-link">Book Now</div> <div class="chevron w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"> <path fill="#BDA66E" stroke="#BDA66E" d="M9.387 6.673c.1 0 .178.03.256.108l4.944 4.945a.314.314 0 0 1 .114.249.314.314 0 0 1-.023.124.402.402 0 0 1-.091.125l-4.969 4.968c-.078.078-.145.1-.225.097a.366.366 0 0 1-.261-.121.335.335 0 0 1-.11-.256c0-.1.032-.178.11-.256l4.681-4.681-4.707-4.707c-.077-.078-.1-.144-.096-.225a.368.368 0 0 1 .122-.262.333.333 0 0 1 .255-.108Z"></path> </svg></div> </a>
+              </div>
+              <div id="w-node-_6860c318-306c-bc4b-bce0-774c90cd926f-6421f465" class="appointment_card">
+                <div class="content_image-wrapper">{% if section.settings.image_image_3 %}
+{{ section.settings.image_image_3 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'content_image' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'image.svg' | asset_url }}" class="content_image">
+{% endif %}</div>
+                <div class="headline-wrapper">
+                  <h2 class="heading-style-h5">Specialty Services</h2>
+                  <div>Access special repair and customization through trusted partners dedicated to preservation, craftsmanship and creative excellence.</div>
+                </div>
+                <a li-object:href="url" href="{{ section.settings.url_url_3 }}" class="card_link w-inline-block"> <div class="text-size-regular text-style-link">Book Now</div> <div class="chevron w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"> <path fill="#BDA66E" stroke="#BDA66E" d="M9.387 6.673c.1 0 .178.03.256.108l4.944 4.945a.314.314 0 0 1 .114.249.314.314 0 0 1-.023.124.402.402 0 0 1-.091.125l-4.969 4.968c-.078.078-.145.1-.225.097a.366.366 0 0 1-.261-.121.335.335 0 0 1-.11-.256c0-.1.032-.178.11-.256l4.681-4.681-4.707-4.707c-.077-.078-.1-.144-.096-.225a.368.368 0 0 1 .122-.262.333.333 0 0 1 .255-.108Z"></path> </svg></div> </a>
+              </div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "Appointments",
+    "class": "section_appointments",
+    "settings": [
+        {
+            "id": "image_image_1",
+            "type": "image_picker",
+            "label": "Image 1"
+        },
+        {
+            "id": "url_url_1",
+            "type": "url",
+            "label": "url 1"
+        },
+        {
+            "id": "image_image_2",
+            "type": "image_picker",
+            "label": "Image 2"
+        },
+        {
+            "id": "url_url_2",
+            "type": "url",
+            "label": "url 2"
+        },
+        {
+            "id": "image_image_3",
+            "type": "image_picker",
+            "label": "Image 3"
+        },
+        {
+            "id": "url_url_3",
+            "type": "url",
+            "label": "url 3"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Appointments",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}

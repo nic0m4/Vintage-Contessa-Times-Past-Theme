@@ -1,0 +1,24 @@
+{
+    "sections": {
+        "announcement_bar": {
+            "type": "announcement_bar"
+        },
+        "article_hero": {
+            "type": "article_hero"
+        },
+        "article_content": {
+            "type": "article_content"
+        },
+        "related_articles": {
+            "type": "related_articles"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "announcement_bar",
+        "article_hero",
+        "article_content",
+        "related_articles"
+    ]
+}

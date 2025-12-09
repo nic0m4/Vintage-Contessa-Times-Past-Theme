@@ -1,0 +1,20 @@
+{
+    "sections": {
+        "announcement_bar": {
+            "type": "announcement_bar"
+        },
+        "small_hero_cta": {
+            "type": "small_hero_cta"
+        },
+        "appointments": {
+            "type": "appointments"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "announcement_bar",
+        "small_hero_cta",
+        "appointments"
+    ]
+}

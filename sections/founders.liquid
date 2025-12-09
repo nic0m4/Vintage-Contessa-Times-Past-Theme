@@ -1,0 +1,97 @@
+<div class="padding-global padding-section-medium">
+          <div class="container-large">
+            <div class="container-small">
+              <div class="heading_symbol">
+                <div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="16" fill="none">
+                    <path fill="#BDA66E" d="M24.08.25c-3.08 0-5.214 1.74-6.923 3.93l1.628 2.191c1.304-1.778 2.858-3.113 5.064-3.113 2.779 0 4.955 1.96 4.955 4.742 0 2.554-1.806 4.786-4.955 4.786-2.422 0-4.079-1.791-5.553-3.976l-.063-.093-.124-.188a22.475 22.475 0 0 0-1.266-1.69c-.463-.554-1.302-1.743-1.433-1.943C13.57 2.382 11.28.25 7.873.25 3.056.25 0 3.943 0 8c0 4.149 3.056 7.75 7.873 7.75 3.08 0 5.215-1.71 6.924-3.865l-1.636-2.247c-1.314 1.789-2.89 3.148-5.057 3.148-3.15 0-4.908-2.279-4.908-4.786 0-2.417 1.759-4.741 4.908-4.741 2.466 0 4.092 1.76 5.56 3.94v-.001l1.53 2.12c.166.228.46.635.732 1.013l.004-.006.28.399c.09.125.17.234.229.318 1.85 2.534 4.126 4.708 7.642 4.708C29.036 15.75 32 12.058 32 8 32 3.35 28.34.25 24.08.25Z"></path>
+                  </svg></div>
+              </div>
+              <div class="product_heading">
+                <div class="max-width-large">
+                  <h2 class="heading-style-h3">
+{{ section.settings.text_heading }}
+</h2>
+                </div>
+              </div>
+            </div>
+            <div class="spacer-xlarge"></div>
+            <div class="content_grid">
+              <div class="founder_card">{% if section.settings.image_founder_1 %}
+{{ section.settings.image_founder_1 | image_url: width: 1000 | image_tag: class: 'image_founders', sizes: '(max-width: 720px) 100vw, 720px', loading: 'lazy' }}
+{% else %}
+<img class="image_founders" src="{{ 'contessa.webp' | asset_url }}" alt="" sizes="(max-width: 720px) 100vw, 720px" loading="lazy" srcset="{{ 'contessa-p-500.webp' | asset_url }} 500w, {{ 'contessa.webp' | asset_url }} 720w">
+{% endif %}
+                <div class="spacer-large"></div>
+                <h3 class="heading-style-h3">
+{{ section.settings.text_founder_1 }}
+</h3>
+                <div class="spacer-medium"></div>
+                <div class="text-size-small"> {{ section.settings.richtext_bio_1 }} </div>
+              </div>
+              <div class="founder_card">{% if section.settings.image_founder_2 %}
+{{ section.settings.image_founder_2 | image_url: width: 1000 | image_tag: class: 'image_founders', sizes: '(max-width: 720px) 100vw, 720px', loading: 'lazy' }}
+{% else %}
+<img class="image_founders" src="{{ 'rob.webp' | asset_url }}" alt="" sizes="(max-width: 720px) 100vw, 720px" loading="lazy" srcset="{{ 'rob-p-500.webp' | asset_url }} 500w, {{ 'rob.webp' | asset_url }} 720w">
+{% endif %}
+                <div class="spacer-large"></div>
+                <h3 class="heading-style-h3">
+{{ section.settings.text_founder_2 }}
+</h3>
+                <div class="spacer-medium"></div>
+                <div class="text-size-small"> {{ section.settings.richtext_bio_2 }} </div>
+              </div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "founders",
+    "settings": [
+        {
+            "id": "text_heading",
+            "type": "text",
+            "label": "Heading",
+            "default": "Meet The Founders"
+        },
+        {
+            "id": "image_founder_1",
+            "type": "image_picker",
+            "label": "Founder 1"
+        },
+        {
+            "id": "text_founder_1",
+            "type": "text",
+            "label": "Founder 1",
+            "default": "Contessa"
+        },
+        {
+            "id": "richtext_bio_1",
+            "type": "richtext",
+            "label": "Bio 1",
+            "default": "<p>The Contessa is a published writer, award winning business woman, style setter and commencement speaker who was recently named one of Houston Business Journal\u2019s 2018 Women Who Mean Business as an Outstanding Leader in Hospitality &amp; Retail and The Society Diaries\u2019 Texas Top 50 Women to Watch. As an active member of Crime Stoppers of Houston\u2019s Board of Directors, she was named 2018 Crime Stoppers Safe School Award for her steadfast dedication to the safety of children<\/p>"
+        },
+        {
+            "id": "image_founder_2",
+            "type": "image_picker",
+            "label": "Founder 2"
+        },
+        {
+            "id": "text_founder_2",
+            "type": "text",
+            "label": "Founder 2",
+            "default": "Rob"
+        },
+        {
+            "id": "richtext_bio_2",
+            "type": "richtext",
+            "label": "Bio 2",
+            "default": "<p>Rob Chramosta, founder and owner of Times Past, is a true collector \u2013 at a young age, he began curating his own collections, gaining industry knowledge and expanding his expertise of luxury watches and jewelry. At just five years old, Mr. Chramosta started his first coin collection, at 13 he accepted his first job with a coin dealer and by the age of 15, he began buying and selling watches.<br\/><br\/>Utilizing his detailed and expansive product knowledge when curating collec<\/p>"
+        }
+    ],
+    "presets": [
+        {
+            "name": "founders",
+            "category": "About Us",
+            "blocks": []
+        }
+    ]
+} {% endschema %}

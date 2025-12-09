@@ -1,0 +1,24 @@
+{
+    "sections": {
+        "announcement_bar": {
+            "type": "announcement_bar"
+        },
+        "image_with_text": {
+            "type": "image_with_text"
+        },
+        "content_1": {
+            "type": "content_1"
+        },
+        "founders": {
+            "type": "founders"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "announcement_bar",
+        "image_with_text",
+        "content_1",
+        "founders"
+    ]
+}
