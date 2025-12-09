@@ -15,7 +15,7 @@
         "image_image": "shopify://shop_images/hero-section.webp",
         "text_heading": "Timeless luxury for modern collectors",
         "richtext_paragraph": "<p>Discover rare and authenticated vintage designer pieces from the world's most prestigious brands.</p>",
-        "url_button_link": "",
+        "url_button_link": "shopify://collections",
         "text_button_text": "Shop Curated Collection",
         "url_button_link_2": "",
         "text_button_text_2": "Our Story"
