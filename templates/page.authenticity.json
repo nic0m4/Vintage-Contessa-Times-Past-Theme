@@ -1,28 +1,55 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "announcement_bar": {
-            "type": "announcement_bar"
-        },
-        "small_hero": {
-            "type": "small_hero"
-        },
-        "steps_with_video": {
-            "type": "steps_with_video"
-        },
-        "content_2": {
-            "type": "content_2"
-        },
-        "authenticity_guides": {
-            "type": "authenticity_guides"
-        }
+  "sections": {
+    "small_hero": {
+      "type": "small_hero",
+      "settings": {
+        "text_headline": "Our Authentication Process",
+        "richtext_text": "<p>Each item undergoes a multistep inspection prior to being purchased and sold</p>"
+      }
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "announcement_bar",
-        "small_hero",
-        "steps_with_video",
-        "content_2",
-        "authenticity_guides"
-    ]
+    "steps_with_video": {
+      "type": "steps_with_video",
+      "settings": {
+        "video_url": "",
+        "video_title": "Video Title"
+      }
+    },
+    "content_2": {
+      "type": "content_2",
+      "custom_css": [
+        ".content_component {height: auto;}"
+      ],
+      "settings": {
+        "text_headline": "Give your luxury pieces a new chapter",
+        "richtext_text": "<p>We provide refined and accurate valuations for estate jewelry, diamonds, watches and handbags, ensuring your legacy items move forward with purpose.</p>",
+        "url_button_link": "",
+        "text_button_text": "Button",
+        "image_position": "left"
+      }
+    },
+    "authenticity_guides": {
+      "type": "authenticity_guides",
+      "settings": {
+        "url_button_link": "",
+        "text_button_text": "Read More Authenticity Guides"
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "small_hero",
+    "steps_with_video",
+    "content_2",
+    "authenticity_guides"
+  ]
 }
