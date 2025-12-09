@@ -1,25 +1,38 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "announcement_bar": {
-            "type": "announcement_bar"
-        },
-        "faq_1": {
-            "type": "faq_1",
-            "blocks": {
-                "faq-item": {
-                    "name": "FAQ Item",
-                    "type": "faq-item"
-                }
-            },
-            "block_order": [
-                "faq-item"
-            ]
+  "sections": {
+    "faq_1": {
+      "type": "faq_1",
+      "blocks": {
+        "faq-item": {
+          "type": "faq-item",
+          "name": "FAQ Item",
+          "settings": {
+            "text_heading": "Heading",
+            "richtext_richtext": "<p>\n                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                    </p>"
+          }
         }
-    },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "announcement_bar",
-        "faq_1"
-    ]
+      },
+      "block_order": [
+        "faq-item"
+      ],
+      "settings": {
+        "text_heading": "FAQ",
+        "richtext_richtext": "<p>\n                  For any additional questions or to schedule an appointment call <a target=\"_blank\" href=\"tel:%28713%29%20977-7296\">(713) 977-7296</a> from 10 am to 4:30 pm Central, Monday to Friday.\n                </p>"
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "faq_1"
+  ]
 }
