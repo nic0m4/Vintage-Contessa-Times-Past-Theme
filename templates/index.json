@@ -1,40 +1,97 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "announcement_bar": {
-            "type": "announcement_bar"
-        },
-        "image_with_text": {
-            "type": "image_with_text"
-        },
-        "featured_products": {
-            "type": "featured_products"
-        },
-        "content_1": {
-            "type": "content_1"
-        },
-        "image_fill": {
-            "type": "image_fill"
-        },
-        "video_externally": {
-            "type": "video_externally"
-        },
-        "testimonials": {
-            "type": "testimonials"
-        },
-        "instagram": {
-            "type": "instagram"
-        }
+  "sections": {
+    "image_with_text": {
+      "type": "image_with_text",
+      "settings": {
+        "image_image": "shopify://shop_images/hero-section.webp",
+        "text_heading": "Timeless luxury for modern collectors",
+        "richtext_paragraph": "<p>Discover rare and authenticated vintage designer pieces from the world's most prestigious brands.</p>",
+        "url_button_link": "",
+        "text_button_text": "Shop Curated Collection",
+        "url_button_link_2": "",
+        "text_button_text_2": "Our Story"
+      }
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "announcement_bar",
-        "image_with_text",
-        "featured_products",
-        "content_1",
-        "image_fill",
-        "video_externally",
-        "testimonials",
-        "instagram"
-    ]
+    "featured_products": {
+      "type": "featured_products",
+      "settings": {
+        "text_heading": "Short heading here",
+        "richtext_paragraph": "<p>This is some text inside of a div block.</p>",
+        "collection_collection": "automated-collection",
+        "collection_collection_limit": 6,
+        "url_button_url": "",
+        "text_button_text": "Shop Curated Offer"
+      }
+    },
+    "content_1": {
+      "type": "content_1",
+      "custom_css": [
+        ".content_component {height:auto;}"
+      ],
+      "settings": {
+        "image_image": "shopify://shop_images/sell-trade-in.webp",
+        "text_headline": "Give your luxury pieces a new chapter",
+        "richtext_text": "<p>We provide refined and accurate valuations for estate jewelry, diamonds, watches and handbags, ensuring your legacy items move forward with purpose.</p>",
+        "url_button_link": "",
+        "text_button_text": "Get Valuation",
+        "image_position": "left"
+      }
+    },
+    "image_fill": {
+      "type": "image_fill",
+      "settings": {
+        "text_headline": "Confidence in every legendary piece",
+        "richtext_text": "<p>True luxury endures. Each item we curate is meticulously authenticated to uphold the highest standards of craftsmanship and provenance. From GIA certified diamonds and iconic handbags to rare watches, coins and antiquities, only the extraordinary makes it into our collection.</p>",
+        "url_button_link": "",
+        "text_button_text": "Button"
+      }
+    },
+    "video_externally": {
+      "type": "video_externally",
+      "settings": {
+        "text_heading": "Our Story",
+        "richtext_paragraph": "<p>Based in Houston and recognized internationally, The Vintage Contessa & Times Past is a destination for those who value rarity and refinement. As a family-run showroom with deep expertise, we connect discerning collectors with pieces that transcend trends and continue their legacy.</p>",
+        "url_button_url": "",
+        "text_button_text": "Meet The Founders",
+        "video_url": "https://www.youtube.com/watch?v=WbFYvUJqDWg",
+        "video_title": "Video Title"
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": {
+        "text_heading": "Client experience",
+        "richtext_paragraph": "<p>Collectors trust us for our insight and unwavering commitment to exceptional luxury.</p>"
+      }
+    },
+    "instagram": {
+      "type": "instagram",
+      "settings": {
+        "text_heading": "Our moments",
+        "richtext_paragraph": "<p>Follow our travels, view extraordinary pieces and meet the collectors who inspire us.</p>",
+        "url_button_link": "",
+        "text_button_text": "Follow Us on Instagram"
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "image_with_text",
+    "featured_products",
+    "content_1",
+    "image_fill",
+    "video_externally",
+    "testimonials",
+    "instagram"
+  ]
 }
