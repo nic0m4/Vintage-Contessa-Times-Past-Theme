@@ -57,10 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Select elements
     const body = document.querySelector("body");
     const navbar = document.querySelector('.nav_component');
-    const menuButton = document.querySelector('.nav_menu-dropdown-fix'); 
     // Assign default attributes
     body.setAttribute("data-scrolled", 'false');
-    body.setAttribute("data-menu-open", 'false');
     // Scroll event listener (changes color on scroll)
     const handleScroll = function () {
         const scrollPosition = window.scrollY || window.pageYOffset;
@@ -73,19 +71,4 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     // Attach scroll event listener
     window.addEventListener('scroll', handleScroll);
-    // If menu is open, update attribute to trigger change.
-    const isMenuOpen = function() {
-        let menuOpen = false;
-        menuButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            menuOpen = !menuOpen;
-            if (menuOpen) {
-                body.setAttribute("data-menu-open", 'true');
-            } else {
-                body.setAttribute("data-menu-open", 'false');
-            }
-        });
-    };
-    isMenuOpen();
-});
 </script>

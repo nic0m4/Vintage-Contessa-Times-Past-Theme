@@ -40,9 +40,9 @@
                             <a href="{{ child_link.url }}" li-object="child_link.title" li-object:href="child_link.url" class="nav_dropdown-link w-dropdown-link">{{ child_link.title }}</a>
                             
                             
-                            {% if child_link.links.size > 0 %}    <div li-if="child_link.links.size > 0">
+                            {% if child_link.links.size > 0 %}    <div li-ignore="" li-if="child_link.links.size > 0">
     
-                              {% for grandchild_link in child_link.links %}    <div li-for="grandchild_link in child_link.links">
+                              {% for grandchild_link in child_link.links %}    <div li-ignore="" li-for="grandchild_link in child_link.links">
                                     
                                 
                             <a href="{{ grandchild_link.url }}" li-object="grandchild_link.title" li-object:href="grandchild_link.url" class="nav_dropdown-link_child w-dropdown-link">{{ grandchild_link.title }}</a>
