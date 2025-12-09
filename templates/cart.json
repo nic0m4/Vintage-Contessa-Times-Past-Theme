@@ -1,0 +1,16 @@
+{
+    "sections": {
+        "announcement_bar": {
+            "type": "announcement_bar"
+        },
+        "cart": {
+            "type": "cart"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "announcement_bar",
+        "cart"
+    ]
+}

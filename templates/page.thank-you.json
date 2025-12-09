@@ -1,0 +1,16 @@
+{
+    "sections": {
+        "announcement_bar": {
+            "type": "announcement_bar"
+        },
+        "text_cta": {
+            "type": "text_cta"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "announcement_bar",
+        "text_cta"
+    ]
+}

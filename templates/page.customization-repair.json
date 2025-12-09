@@ -1,0 +1,34 @@
+{
+    "sections": {
+        "announcement_bar": {
+            "type": "announcement_bar"
+        },
+        "image_with_text": {
+            "type": "image_with_text"
+        },
+        "qa": {
+            "type": "qa",
+            "blocks": {
+                "faq-item-a": {
+                    "name": "FAQ Item a",
+                    "type": "faq-item-a"
+                },
+                "faq-item-b": {
+                    "name": "FAQ Item b",
+                    "type": "faq-item-b"
+                }
+            },
+            "block_order": [
+                "faq-item-a",
+                "faq-item-b"
+            ]
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "announcement_bar",
+        "image_with_text",
+        "qa"
+    ]
+}

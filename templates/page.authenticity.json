@@ -1,0 +1,28 @@
+{
+    "sections": {
+        "announcement_bar": {
+            "type": "announcement_bar"
+        },
+        "small_hero": {
+            "type": "small_hero"
+        },
+        "steps_with_video": {
+            "type": "steps_with_video"
+        },
+        "content_2": {
+            "type": "content_2"
+        },
+        "authenticity_guides": {
+            "type": "authenticity_guides"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "announcement_bar",
+        "small_hero",
+        "steps_with_video",
+        "content_2",
+        "authenticity_guides"
+    ]
+}
