@@ -29,7 +29,7 @@
                   </div>
                             
                   
-                            {% if link.links.size > 0  %}    <nav li-ignore="" li-if="link.links.size > 0 " class="nav_dropdown-list-fix no-scrollbar w-dropdown-list">
+                            {% if link.links.size > 0  %}    <nav li-if="link.links.size > 0 " class="nav_dropdown-list-fix no-scrollbar w-dropdown-list">
     
                     <div class="padding-global max-width-full">
                       <div class="container-medium">
@@ -37,7 +37,7 @@
                           {% for child_link in link.links %}    <div li-for="child_link in link.links" id="w-node-_9cb10d1f-c3ec-07c7-22a5-202240e67105-d5a86df8">
                                     
                             
-                            <a href="{{ child_link.url }}" li-object="child_link.title" li-object:href="child_link.url" class="nav_dropdown-link w-dropdown-link">{{ child_link.title }}</a>
+                            <a href="{{ child_link.url }}" li-ignore="" li-object:href="child_link.url" li-object="child_link.title" class="nav_dropdown-link w-dropdown-link">{{ child_link.title }}</a>
                             
                             
                             {% if child_link.links.size > 0 %}    <div li-if="child_link.links.size > 0">
@@ -45,7 +45,7 @@
                               {% for grandchild_link in child_link.links %}    <div li-for="grandchild_link in child_link.links">
                                     
                                 
-                            <a href="{{ grandchild_link.url }}" li-object="grandchild_link.title" li-object:href="grandchild_link.url" class="nav_dropdown-link_child w-dropdown-link">{{ grandchild_link.title }}</a>
+                            <a href="{{ grandchild_link.url }}" li-ignore="" li-object:href="grandchild_link.url" li-object="grandchild_link.title" class="nav_dropdown-link_child w-dropdown-link">{{ grandchild_link.title }}</a>
                             
                               
                         </div>
