@@ -29,10 +29,11 @@
         ".content_component {height: auto;}"
       ],
       "settings": {
-        "text_headline": "Give your luxury pieces a new chapter",
-        "richtext_text": "<p>We provide refined and accurate valuations for estate jewelry, diamonds, watches and handbags, ensuring your legacy items move forward with purpose.</p>",
+        "text_headline": "Our Journey in Curating Genuine Luxury",
+        "richtext_text": "<p>Rob’s venture into this world began as a childhood fascination with coins and watches. At the tender age of five, Rob embarked on his first coin collection, laying the foundation for his future in luxury goods. By 13, he was already gaining practical experience working with a coin dealer. This early immersion in the industry fueled his passion and knowledge, enabling him to make a significant milestone at just 15 – purchasing his first Rolex watch. Rob Chramosta’s journey in luxury items is marked by over 10,000 hours of hands-on experience, a testament to a career spanning more than four decades.</p>",
         "url_button_link": "",
-        "text_button_text": "Button",
+        "text_button_text": "Get Valuation",
+        "image_image": "shopify://shop_images/rob-authenticity.webp",
         "image_position": "left"
       }
     },
