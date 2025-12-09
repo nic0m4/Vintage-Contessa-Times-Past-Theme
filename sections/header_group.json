@@ -19,9 +19,19 @@
         "collection_search_bestseller_limit": 6,
         "menu": "main-menu"
       }
+    },
+    "announcement_bar_L8bTb7": {
+      "type": "announcement_bar",
+      "name": "Announcement Bar",
+      "settings": {
+        "text_message": "Please contact us to book an appointment.",
+        "text_phone": "(713) 977-7296",
+        "text_email": "info@thevintagecontessa.com"
+      }
     }
   },
   "order": [
+    "announcement_bar_L8bTb7",
     "header"
   ]
 }
