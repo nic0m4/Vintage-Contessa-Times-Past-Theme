@@ -24,11 +24,12 @@
     "steps_with_image": {
       "type": "steps_with_image",
       "custom_css": [
-        ".content_image {height:auto;}"
+        ".content_image {height: auto;}"
       ],
       "settings": {
+        "image_image": "shopify://shop_images/sell-trade_02f4cf0a-fa2d-4724-b877-4bee72a8b640.webp",
         "url_button_link": "",
-        "text_button_text": "Button"
+        "text_button_text": "Get Valuation"
       }
     },
     "faq_1": {
