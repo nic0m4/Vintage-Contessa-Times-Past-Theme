@@ -1,33 +1,62 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "announcement_bar": {
-            "type": "announcement_bar"
-        },
-        "image_with_text": {
-            "type": "image_with_text"
-        },
-        "steps_with_image": {
-            "type": "steps_with_image"
-        },
-        "faq_1": {
-            "type": "faq_1",
-            "blocks": {
-                "faq-item": {
-                    "name": "FAQ Item",
-                    "type": "faq-item"
-                }
-            },
-            "block_order": [
-                "faq-item"
-            ]
-        }
+  "sections": {
+    "image_with_text": {
+      "type": "image_with_text",
+      "settings": {
+        "image_image": "shopify://shop_images/sel-trade-customize-repair-luxury-items-watches-handbags.webp",
+        "text_heading": "Sell or Trade InYour Luxury Items",
+        "richtext_paragraph": "<p>Receive exceptional value for your treasured pieces. Our experts specialize in evaluating luxury items including estate jewelry, loose diamonds, watches, and designer accessories.</p>",
+        "url_button_link": "",
+        "text_button_text": "",
+        "url_button_link_2": "",
+        "text_button_text_2": ""
+      }
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "announcement_bar",
-        "image_with_text",
-        "steps_with_image",
-        "faq_1"
-    ]
+    "steps_with_image": {
+      "type": "steps_with_image",
+      "custom_css": [
+        ".content_image {height:auto;}"
+      ],
+      "settings": {
+        "url_button_link": "",
+        "text_button_text": "Button"
+      }
+    },
+    "faq_1": {
+      "type": "faq_1",
+      "blocks": {
+        "faq-item": {
+          "type": "faq-item",
+          "name": "FAQ Item",
+          "settings": {
+            "text_heading": "Heading",
+            "richtext_richtext": "<p>\n                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                    </p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-item"
+      ],
+      "settings": {
+        "text_heading": "FAQ",
+        "richtext_richtext": "<p>\n                  For any additional questions or to schedule an appointment call <a target=\"_blank\" href=\"tel:%28713%29%20977-7296\">(713) 977-7296</a> from 10 am to 4:30 pm Central, Monday to Friday.\n                </p>"
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "image_with_text",
+    "steps_with_image",
+    "faq_1"
+  ]
 }
