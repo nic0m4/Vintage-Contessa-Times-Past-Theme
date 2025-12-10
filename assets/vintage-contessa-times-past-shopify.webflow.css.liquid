@@ -4624,12 +4624,14 @@ figcaption {
   flex-direction: column;
   flex: 0 auto;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: stretch;
   width: 100%;
   height: auto;
+  margin-bottom: 2rem;
   padding: 2rem;
   text-decoration: none;
   display: flex;
+  position: relative;
   overflow: hidden;
 }
 
@@ -4669,6 +4671,11 @@ figcaption {
   height: 48px;
   display: block;
   overflow: hidden;
+}
+
+.testimonials {
+  column-count: 3;
+  column-gap: 2rem;
 }
 
 @media screen and (max-width: 991px) {

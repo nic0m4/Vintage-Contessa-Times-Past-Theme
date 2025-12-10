@@ -1,7 +1,7 @@
 <div class="padding-global padding-section-large">
           <div class="container-large">
             <div class="content_grid">
-              <div class="video_wrapper" style="aspect-ratio: {{ section.settings.video.aspect_ratio }}"><iframe src="{{ 'https://www.youtube.com/embed/VIDEO_ID' | replace: 'VIDEO_ID', section.settings.video.id }}" width="100%" height="100%" title="{{ section.settings.video_title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="no" class="video_video"></iframe></div>
+              <div class="video_wrapper" style="aspect-ratio: {{ section.settings.video.aspect_ratio }}"><iframe src="{% if section.settings.video_url contains 'youtube' %}{{ 'https://www.youtube.com/embed/VIDEO_ID' | replace: 'VIDEO_ID', section.settings.video_url .id }}{% else %}{{ 'https://player.vimeo.com/video/VIDEO_ID' | replace: 'VIDEO_ID', section.settings.video_url .id }}{% endif %}" width="100%" height="100%" title="{{ section.settings.video_title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="no" class="video_video"></iframe></div>
               <div class="content_wrapper">
                 <div class="step_block">
                   <div class="step_number">
