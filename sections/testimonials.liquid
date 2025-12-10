@@ -13,7 +13,7 @@
               </div>
               <div class="text-weight-medium subtitle"> {{ section.settings.richtext_paragraph }} </div>
             </div>
-            <div li-content-for-blocks="" style="column-count: {{ section.settings.columns }}">
+            <div li-content-for-blocks="" class="testimonials">
 {% for block in section.blocks %}
 {% case block.type %}
 {% when '@app' %}
@@ -58,14 +58,7 @@
               <a href="{{ section.settings.url_button_link }}" class="button is-outline w-button"> {{ section.settings.text_button_text }} </a>
             </div>
           </div>
-        </div>
-        <div class="hide w-embed">{
-          "type": "number",
-          "id": "columns",
-          "label": "Columns",
-          "default": 4,
-          "info": "Only works on Desktop. Tablet and below are fixed columns."
-          }</div> {% schema %} {
+        </div> {% schema %} {
     "tag": "section",
     "name": "testimonials",
     "class": "section_secondary",
