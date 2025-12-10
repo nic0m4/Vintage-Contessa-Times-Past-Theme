@@ -52,23 +52,4 @@
     }
   }
   customElements.define('predictive-search', PredictiveSearch);
-// navbar
-document.addEventListener("DOMContentLoaded", () => {
-    // Select elements
-    const body = document.querySelector("body");
-    const navbar = document.querySelector('.nav_component');
-    // Assign default attributes
-    body.setAttribute("data-scrolled", 'false');
-    // Scroll event listener (changes color on scroll)
-    const handleScroll = function () {
-        const scrollPosition = window.scrollY || window.pageYOffset;
-        const scrollOffset = 10 * 16; // Adjust this to control scroll offset - 10rem = 10 * 16px
-        if (scrollPosition > scrollOffset) {
-            body.setAttribute("data-scrolled", 'true');
-        } else {
-            body.setAttribute("data-scrolled", 'false');
-        }
-    };
-    // Attach scroll event listener
-    window.addEventListener('scroll', handleScroll);
 </script>

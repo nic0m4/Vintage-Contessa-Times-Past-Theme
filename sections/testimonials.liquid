@@ -14,12 +14,165 @@
                 </div>
                 <div class="text-weight-medium subtitle"> {{ section.settings.richtext_paragraph }} </div>
               </div>
+              <div class="reviews-feed">
+                <div li-content-for-blocks="" class="reviews-column">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+                  {% when 'testimonial-card' %}
+            <div li-block="Testimonial Card" class="testimonial-card">
+                    
+                    
+                    <div class="rating"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"></div>
+                    
+                    
+                    <div class="testimonial-content">
+                      <div class="txt-base-regular"> {{ block.settings.richtext_review }} </div>
+                    </div>
+                    
+                    
+                    <div class="testimonial-user">{% if block.settings.image_customer_avatar %}
+{{ block.settings.image_customer_avatar | image_url: width: 1000 | image_tag: width: '48', height: '48', loading: 'lazy', class: 'image-2' }}
+{% else %}
+<img width="48" height="48" alt="" loading="lazy" src="{{ 'Image_1Image.png' | asset_url }}" class="image-2">
+{% endif %}
+                      <div class="testimonial-user-data">
+                        <div class="txt-base-medium">
+{{ block.settings.text_customer_name }}
+</div>
+                        <div class="txt-base-regular">
+{{ block.settings.text_date }}
+</div>
+                      </div>
+                    </div>
+                    
+                  
+                </div>
+                {% endcase %}
+{% endfor %}
+
+    </div>
+                <div li-content-for-blocks="" class="reviews-column">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+                  {% when 'testimonial-card' %}
+            <div li-block="Testimonial Card" class="testimonial-card">
+                    
+                    
+                    <div class="rating"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"></div>
+                    
+                    
+                    <div class="testimonial-content">
+                      <div class="txt-base-regular"> {{ block.settings.richtext_review }} </div>
+                    </div>
+                    
+                    
+                    <div class="testimonial-user">{% if block.settings.image_customer_avatar %}
+{{ block.settings.image_customer_avatar | image_url: width: 1000 | image_tag: width: '48', height: '48', loading: 'lazy', class: 'image-2' }}
+{% else %}
+<img width="48" height="48" alt="" loading="lazy" src="{{ 'Image_1Image.png' | asset_url }}" class="image-2">
+{% endif %}
+                      <div class="testimonial-user-data">
+                        <div class="txt-base-medium">
+{{ block.settings.text_customer_name }}
+</div>
+                        <div class="txt-base-regular">
+{{ block.settings.text_date }}
+</div>
+                      </div>
+                    </div>
+                    
+                  
+                </div>
+                {% endcase %}
+{% endfor %}
+
+    </div>
+                <div li-content-for-blocks="" class="reviews-column">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+                  {% when 'testimonial-card' %}
+            <div li-block="Testimonial Card" class="testimonial-card">
+                    
+                    
+                    <div class="rating"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"></div>
+                    
+                    
+                    <div class="testimonial-content">
+                      <div class="txt-base-regular"> {{ block.settings.richtext_review }} </div>
+                    </div>
+                    
+                    
+                    <div class="testimonial-user">{% if block.settings.image_customer_avatar %}
+{{ block.settings.image_customer_avatar | image_url: width: 1000 | image_tag: width: '48', height: '48', loading: 'lazy', class: 'image-2' }}
+{% else %}
+<img width="48" height="48" alt="" loading="lazy" src="{{ 'Image_1Image.png' | asset_url }}" class="image-2">
+{% endif %}
+                      <div class="testimonial-user-data">
+                        <div class="txt-base-medium">
+{{ block.settings.text_customer_name }}
+</div>
+                        <div class="txt-base-regular">
+{{ block.settings.text_date }}
+</div>
+                      </div>
+                    </div>
+                    
+                  
+                </div>
+                {% endcase %}
+{% endfor %}
+
+    </div>
+              </div>
             </div>
           </div>
         </div> {% schema %} {
     "tag": "section",
     "name": "testimonials",
     "class": "section_secondary",
+    "blocks": [
+        {
+            "name": "Testimonial Card",
+            "type": "testimonial-card",
+            "settings": [
+                {
+                    "id": "richtext_review",
+                    "type": "richtext",
+                    "label": "Review",
+                    "default": "<p>I loved the store and Ryan was absolutely great and answered all my questions. I never thought I was going to love \u2764\ufe0f this store so much. It was like finding a treasure in the heart of Houston. Ryan was super patient and helped me to choose an impeccable Louis Vuitton purse! I just want to report a very lazy employee, Grace Kelly, the dog. She was sleeping on the sofa all the time I was in the store. But you know, she's a princess and absolutely cute.<\/p>"
+                },
+                {
+                    "id": "image_customer_avatar",
+                    "type": "image_picker",
+                    "label": "Customer Avatar"
+                },
+                {
+                    "id": "text_customer_name",
+                    "type": "text",
+                    "label": "Customer Name",
+                    "default": "paulene camargo"
+                },
+                {
+                    "id": "text_date",
+                    "type": "text",
+                    "label": "Date",
+                    "default": "October 11, 2025"
+                }
+            ]
+        },
+        {
+            "type": "@app"
+        }
+    ],
     "settings": [
         {
             "id": "text_heading",
@@ -38,7 +191,11 @@
         {
             "name": "testimonials",
             "category": "Liquify",
-            "blocks": []
+            "blocks": [
+                {
+                    "type": "testimonial-card"
+                }
+            ]
         }
     ]
 } {% endschema %}
