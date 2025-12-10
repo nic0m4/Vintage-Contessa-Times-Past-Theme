@@ -4618,8 +4618,8 @@ figcaption {
 
 .testimonial-card {
   grid-row-gap: 1.5rem;
-  background-color: #fff;
-  border: 1px solid #f3f4f5;
+  border: 1px solid var(--border-color--border-secondary);
+  background-color: var(--base-color-neutral--white);
   border-radius: 1px;
   flex-direction: column;
   flex: 0 auto;
@@ -4655,9 +4655,20 @@ figcaption {
 
 .image-2 {
   border: 1px solid var(--border-color--border-primary);
-  border-radius: 999px;
   width: 48px;
   height: 48px;
+  overflow: clip;
+}
+
+.div-block-3 {
+  -webkit-text-fill-color: inherit;
+  background-clip: border-box;
+  border-radius: 1004px;
+  flex: none;
+  width: 48px;
+  height: 48px;
+  display: block;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 991px) {
