@@ -26,6 +26,7 @@
   --accessible-components-dark-grey\<deleted\|variable-c4d8099c\>: #9b9b9b;
   --text-color--text-error: var(--base-color-system--error-red-dark);
   --border-color--border-alternate: var(--base-color-neutral--neutral-darker);
+  --background-color--background-secondary: var(--base-color-brand--gold);
   --base-color-system--success-green-dark: #518071;
   --base-color-system--error-red-dark: #c1778d;
   --border-radius--medium: .5rem;
@@ -34,7 +35,6 @@
   --background-color--background-warning: var(--base-color-system--warning-yellow);
   --text-color--text-warning: var(--base-color-system--warning-yellow-dark);
   --background-color--background-primary: var(--base-color-neutral--black);
-  --background-color--background-secondary: var(--base-color-brand--gold);
   --background-color--background-alternate: var(--base-color-neutral--white);
   --background-color--background-success: var(--base-color-system--success-green);
   --text-color--text-success: var(--base-color-system--success-green-dark);
@@ -2559,8 +2559,7 @@ figcaption {
 }
 
 .product-header_radio-button.w--redirected-checked {
-  border-width: 1px;
-  border-color: var(--base-color-neutral--black);
+  border: 1px solid var(--background-color--background-secondary);
 }
 
 .product-header_shipping-wrapper {
@@ -5390,6 +5389,10 @@ figcaption {
   .reviews-feed {
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
+  }
+
+  .testimonials {
+    column-count: 1;
   }
 }
 
