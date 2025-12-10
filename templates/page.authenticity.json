@@ -19,8 +19,8 @@
     "steps_with_video": {
       "type": "steps_with_video",
       "settings": {
-        "video_url": "",
-        "video_title": "Video Title"
+        "video_url": "https://www.youtube.com/watch?v=R8zoru1Sr28",
+        "video_title": "Real or fake Rolex"
       }
     },
     "content_2": {
@@ -31,7 +31,7 @@
       "settings": {
         "text_headline": "Our Journey in Curating Genuine Luxury",
         "richtext_text": "<p>Rob’s venture into this world began as a childhood fascination with coins and watches. At the tender age of five, Rob embarked on his first coin collection, laying the foundation for his future in luxury goods. By 13, he was already gaining practical experience working with a coin dealer. This early immersion in the industry fueled his passion and knowledge, enabling him to make a significant milestone at just 15 – purchasing his first Rolex watch. Rob Chramosta’s journey in luxury items is marked by over 10,000 hours of hands-on experience, a testament to a career spanning more than four decades.</p>",
-        "url_button_link": "",
+        "url_button_link": "shopify://pages/sell-or-trade-in-your-luxury-items",
         "text_button_text": "Get Valuation",
         "image_image": "shopify://shop_images/rob-authenticity.webp",
         "image_position": "left"
