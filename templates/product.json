@@ -1,54 +1,77 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "announcement_bar": {
-            "type": "announcement_bar"
+  "sections": {
+    "product_hero": {
+      "type": "product_hero",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "name": "Vendor",
+          "settings": {},
+          "blocks": {}
         },
-        "product_hero": {
-            "type": "product_hero",
-            "blocks": {
-                "vendor": {
-                    "type": "vendor",
-                    "name": "Vendor"
-                },
-                "product-name": {
-                    "type": "product-name",
-                    "name": "Product Name"
-                },
-                "product-price": {
-                    "type": "product-price",
-                    "name": "Product Price"
-                },
-                "availability": {
-                    "type": "availability",
-                    "name": "Availability"
-                },
-                "add-to-cart": {
-                    "type": "add-to-cart",
-                    "name": "Add to Cart"
-                },
-                "description": {
-                    "type": "description",
-                    "name": "Description"
-                }
-            },
-            "block_order": [
-                "vendor",
-                "product-name",
-                "product-price",
-                "availability",
-                "add-to-cart",
-                "description"
-            ]
+        "product-name": {
+          "type": "product-name",
+          "name": "Product Name",
+          "settings": {},
+          "blocks": {}
         },
-        "recommended_products": {
-            "type": "recommended_products"
+        "product-price": {
+          "type": "product-price",
+          "name": "Product Price",
+          "settings": {},
+          "blocks": {}
+        },
+        "availability": {
+          "type": "availability",
+          "name": "Availability",
+          "settings": {},
+          "blocks": {}
+        },
+        "add-to-cart": {
+          "type": "add-to-cart",
+          "name": "Add to Cart",
+          "settings": {
+            "url_button_url": ""
+          },
+          "blocks": {}
+        },
+        "description": {
+          "type": "description",
+          "name": "Description",
+          "settings": {
+            "text_heading": "Description"
+          },
+          "blocks": {}
         }
+      },
+      "block_order": [
+        "vendor",
+        "product-name",
+        "product-price",
+        "availability",
+        "add-to-cart",
+        "description"
+      ],
+      "settings": {}
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "announcement_bar",
-        "product_hero",
-        "recommended_products"
-    ]
+    "recommended_products": {
+      "type": "recommended_products",
+      "settings": {}
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "product_hero",
+    "recommended_products"
+  ]
 }
