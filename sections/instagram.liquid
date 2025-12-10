@@ -16,6 +16,15 @@
                 </div>
                 <div class="text-weight-medium subtitle"> {{ section.settings.richtext_paragraph }} </div>
               </div>
+              <div li-content-for-blocks="">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+{% endcase %}
+{% endfor %}
+
+    </div>
               <div class="button-group">
                 <a href="{{ section.settings.url_button_link }}" class="button is-outline w-button"> {{ section.settings.text_button_text }} </a>
               </div>
@@ -24,6 +33,11 @@
         </div> {% schema %} {
     "tag": "div",
     "name": "instagram",
+    "blocks": [
+        {
+            "type": "@app"
+        }
+    ],
     "settings": [
         {
             "id": "text_heading",

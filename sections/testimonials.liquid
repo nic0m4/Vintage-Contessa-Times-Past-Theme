@@ -14,124 +14,54 @@
                 </div>
                 <div class="text-weight-medium subtitle"> {{ section.settings.richtext_paragraph }} </div>
               </div>
-              <div class="reviews-feed">
-                <div li-content-for-blocks="" class="reviews-column">
+              <div li-content-for-blocks="" style="column-count: {{ section.settings.columns }}">
 {% for block in section.blocks %}
 {% case block.type %}
 {% when '@app' %}
 {% render block %}
 
-                  {% when 'testimonial-card' %}
+                {% when 'testimonial-card' %}
             <div li-block="Testimonial Card" class="testimonial-card">
                     
-                    
+                  
                     <div class="rating"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"></div>
                     
-                    
+                  
                     <div class="testimonial-content">
-                      <div class="txt-base-regular"> {{ block.settings.richtext_review }} </div>
-                    </div>
+                    <div class="txt-base-regular"> {{ block.settings.richtext_review }} </div>
+                  </div>
                     
-                    
+                  
                     <div class="testimonial-user">{% if block.settings.image_customer_avatar %}
 {{ block.settings.image_customer_avatar | image_url: width: 1000 | image_tag: width: '48', height: '48', loading: 'lazy', class: 'image-2' }}
 {% else %}
 <img width="48" height="48" alt="" loading="lazy" src="{{ 'Image_1Image.png' | asset_url }}" class="image-2">
 {% endif %}
-                      <div class="testimonial-user-data">
-                        <div class="txt-base-medium">
+                    <div class="testimonial-user-data">
+                      <div class="txt-base-medium">
 {{ block.settings.text_customer_name }}
 </div>
-                        <div class="txt-base-regular">
+                      <div class="txt-base-regular">
 {{ block.settings.text_date }}
 </div>
-                      </div>
                     </div>
+                  </div>
                     
-                  
+                
                 </div>
-                {% endcase %}
+                <div class="hide w-embed">{
+                  "type": "number",
+                  "id": "columns",
+                  "label": "Columns",
+                  "default": 4,
+                  "info": "Only works on Desktop. Tablet and below are fixed columns."
+                  }</div>
+              {% endcase %}
 {% endfor %}
 
     </div>
-                <div li-content-for-blocks="" class="reviews-column">
-{% for block in section.blocks %}
-{% case block.type %}
-{% when '@app' %}
-{% render block %}
-
-                  {% when 'testimonial-card' %}
-            <div li-block="Testimonial Card" class="testimonial-card">
-                    
-                    
-                    <div class="rating"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"></div>
-                    
-                    
-                    <div class="testimonial-content">
-                      <div class="txt-base-regular"> {{ block.settings.richtext_review }} </div>
-                    </div>
-                    
-                    
-                    <div class="testimonial-user">{% if block.settings.image_customer_avatar %}
-{{ block.settings.image_customer_avatar | image_url: width: 1000 | image_tag: width: '48', height: '48', loading: 'lazy', class: 'image-2' }}
-{% else %}
-<img width="48" height="48" alt="" loading="lazy" src="{{ 'Image_1Image.png' | asset_url }}" class="image-2">
-{% endif %}
-                      <div class="testimonial-user-data">
-                        <div class="txt-base-medium">
-{{ block.settings.text_customer_name }}
-</div>
-                        <div class="txt-base-regular">
-{{ block.settings.text_date }}
-</div>
-                      </div>
-                    </div>
-                    
-                  
-                </div>
-                {% endcase %}
-{% endfor %}
-
-    </div>
-                <div li-content-for-blocks="" class="reviews-column">
-{% for block in section.blocks %}
-{% case block.type %}
-{% when '@app' %}
-{% render block %}
-
-                  {% when 'testimonial-card' %}
-            <div li-block="Testimonial Card" class="testimonial-card">
-                    
-                    
-                    <div class="rating"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"></div>
-                    
-                    
-                    <div class="testimonial-content">
-                      <div class="txt-base-regular"> {{ block.settings.richtext_review }} </div>
-                    </div>
-                    
-                    
-                    <div class="testimonial-user">{% if block.settings.image_customer_avatar %}
-{{ block.settings.image_customer_avatar | image_url: width: 1000 | image_tag: width: '48', height: '48', loading: 'lazy', class: 'image-2' }}
-{% else %}
-<img width="48" height="48" alt="" loading="lazy" src="{{ 'Image_1Image.png' | asset_url }}" class="image-2">
-{% endif %}
-                      <div class="testimonial-user-data">
-                        <div class="txt-base-medium">
-{{ block.settings.text_customer_name }}
-</div>
-                        <div class="txt-base-regular">
-{{ block.settings.text_date }}
-</div>
-                      </div>
-                    </div>
-                    
-                  
-                </div>
-                {% endcase %}
-{% endfor %}
-
-    </div>
+              <div class="button-group">
+                <a href="{{ section.settings.url_button_link }}" class="button is-outline w-button"> {{ section.settings.text_button_text }} </a>
               </div>
             </div>
           </div>
@@ -185,6 +115,17 @@
             "type": "richtext",
             "label": "Paragraph",
             "default": "<p>Collectors trust us for our insight and unwavering commitment to exceptional luxury.<\/p>"
+        },
+        {
+            "id": "url_button_link",
+            "type": "url",
+            "label": "Button Link"
+        },
+        {
+            "id": "text_button_text",
+            "type": "text",
+            "label": "Button Text",
+            "default": "Read More Reviews"
         }
     ],
     "presets": [
