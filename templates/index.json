@@ -28,7 +28,7 @@
         "richtext_paragraph": "<p>Handpicked items that define luxury and style</p>",
         "collection_collection": "luxurious-watches",
         "collection_collection_limit": 6,
-        "url_button_url": "shopify://collections",
+        "url_button_url": "shopify://collections/luxurious-watches",
         "text_button_text": "Shop Curated Offer"
       }
     },
