@@ -12,7 +12,7 @@
     "image_with_text": {
       "type": "image_with_text",
       "settings": {
-        "image_image": "shopify://shop_images/sel-trade-customize-repair-luxury-items-watches-handbags.webp",
+        "image_image": "shopify://shop_images/customize-sell-trade-luxury-watches.webp",
         "text_heading": "Sell or Trade In Your Luxury Items",
         "richtext_paragraph": "<p>Receive exceptional value for your treasured pieces. Our experts specialize in evaluating luxury items including estate jewelry, loose diamonds, watches, and designer accessories.</p>",
         "url_button_link": "",
@@ -27,8 +27,8 @@
         ".content_image {height: auto;}"
       ],
       "settings": {
-        "image_image": "shopify://shop_images/sell-trade_02f4cf0a-fa2d-4724-b877-4bee72a8b640.webp",
-        "url_button_link": "",
+        "image_image": "shopify://shop_images/sell-trade-luxury-items.webp",
+        "url_button_link": "shopify://pages/contact",
         "text_button_text": "Get Valuation"
       }
     },
