@@ -24,6 +24,12 @@
           "settings": {},
           "blocks": {}
         },
+        "description": {
+          "type": "description",
+          "name": "Description",
+          "settings": {},
+          "blocks": {}
+        },
         "product-price": {
           "type": "product-price",
           "name": "Product Price",
@@ -43,23 +49,15 @@
             "url_button_url": "shopify://pages/contact"
           },
           "blocks": {}
-        },
-        "description": {
-          "type": "description",
-          "name": "Description",
-          "settings": {
-            "text_heading": "Description"
-          },
-          "blocks": {}
         }
       },
       "block_order": [
         "vendor",
         "product-name",
+        "description",
         "product-price",
         "availability",
-        "add-to-cart",
-        "description"
+        "add-to-cart"
       ],
       "settings": {}
     },
