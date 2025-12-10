@@ -12,9 +12,9 @@
     "image_with_text": {
       "type": "image_with_text",
       "settings": {
-        "image_image": "shopify://shop_images/about-us.webp",
+        "image_image": "shopify://shop_images/about-vintage-contessa-times-past.webp",
         "text_heading": "About Us",
-        "richtext_paragraph": "",
+        "richtext_paragraph": "<p>Learn the story behind our passion for luxury.</p>",
         "url_button_link": "",
         "text_button_text": "",
         "url_button_link_2": "",
@@ -30,7 +30,7 @@
         "image_image": "shopify://shop_images/contessa-rob-showroom.webp",
         "text_headline": "Vintage Contessa & Times Past Showroom",
         "richtext_text": "<p>Our team travels the world to uncover rare and beautiful luxury pieces, selecting only those that meet the highest standards of authenticity and craft. Every item in our collection is fully authenticated with a promise of quality, making our showroom a trusted destination for both first-time luxury buyers and seasoned collectors.</p>",
-        "url_button_link": "",
+        "url_button_link": "shopify://pages/about-us",
         "text_button_text": "Schedule an Appointment",
         "image_position": "left"
       }

@@ -68,6 +68,90 @@
     },
     "testimonials": {
       "type": "testimonials",
+      "blocks": {
+        "testimonial_card_CmK4yk": {
+          "type": "testimonial-card",
+          "settings": {
+            "richtext_review": "<p>Rob and his staff took care of me in helping me check off a bucket list item. Pricing was fair but the customer service was even better.</p>",
+            "image_customer_avatar": "shopify://shop_images/j.png",
+            "text_customer_name": "Joseph Johnson",
+            "text_date": "April 8, 2025"
+          }
+        },
+        "testimonial_card_tnjax4": {
+          "type": "testimonial-card",
+          "settings": {
+            "richtext_review": "<p>My go to spot for all of the best handbags and jewelry finds!!! Rob and Donae are the best</p>",
+            "image_customer_avatar": "shopify://shop_images/michelle.png",
+            "text_customer_name": "Michelle Reyna",
+            "text_date": "January 6, 2024"
+          }
+        },
+        "testimonial_card_LGkVfF": {
+          "type": "testimonial-card",
+          "settings": {
+            "richtext_review": "<p>Always a great selection of unique designer purses and a large variety of collectible watches. I love that it's a local business so you can talk to the owners directly.</p>",
+            "image_customer_avatar": "shopify://shop_images/gabriela.png",
+            "text_customer_name": "Gabriela Gerhart",
+            "text_date": "January 10, 2024"
+          }
+        },
+        "testimonial_card_cdVX6Y": {
+          "type": "testimonial-card",
+          "settings": {
+            "richtext_review": "<p>I was so impressed with the customer service I received at The Vintage Contessa. The team was very friendly and helpful, and they went above and beyond to make sure I was satisfied. I highly recommend this company to anyone looking for a great buying or selling experience.</p>",
+            "image_customer_avatar": "shopify://shop_images/T-Avatar.png",
+            "text_customer_name": "Tanya Johnson",
+            "text_date": "August 2, 2024"
+          }
+        },
+        "testimonial_card_KaCzhG": {
+          "type": "testimonial-card",
+          "settings": {
+            "richtext_review": "<p>Well curated authentic selection, friendly and knowledgeable people and great values</p>",
+            "image_customer_avatar": "shopify://shop_images/sperkins.png",
+            "text_customer_name": "Stephanie Perkins",
+            "text_date": "October 2, 2025"
+          }
+        },
+        "testimonial_card_HXYniP": {
+          "type": "testimonial-card",
+          "settings": {
+            "richtext_review": "<p>I recently purchased two small designer handbags from Vintage Contessa. They were both in immaculate condition and just like new. Ashley, the salesperson who helped me, was extremely helpful and had the bags shipped promptly.</p>",
+            "image_customer_avatar": "shopify://shop_images/w.png",
+            "text_customer_name": "William Martin",
+            "text_date": "January 29, 2024"
+          }
+        },
+        "testimonial_card_QjJ4gX": {
+          "type": "testimonial-card",
+          "settings": {
+            "richtext_review": "<p>I recently purchased a watch from the Vintage Contessa and it was the easiest purchase I have ever made. Rob made it a fun shopping experience while in the store and treats everyone like family, if I could give 10 stars I would. Thank you Rob!</p>",
+            "image_customer_avatar": "shopify://shop_images/Image.png",
+            "text_customer_name": "Mason Gonzalez",
+            "text_date": "January 3, 2025"
+          }
+        },
+        "testimonial_card_peJaCz": {
+          "type": "testimonial-card",
+          "settings": {
+            "richtext_review": "<p>I loved the store and Ryan was absolutely great and answered all my questions. I never thought I was going to love ❤️ this store so much. It was like finding a treasure in the heart of Houston. Ryan was super patient and helped me to choose an impeccable Louis Vuitton purse! I just want to report a very lazy employee, Grace Kelly, the dog. She was sleeping on the sofa all the time I was in the store. But you know, she's a princess and absolutely cute.</p>",
+            "image_customer_avatar": "shopify://shop_images/Avatar.png",
+            "text_customer_name": "paulene camargo",
+            "text_date": "October 11, 2025"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_card_CmK4yk",
+        "testimonial_card_tnjax4",
+        "testimonial_card_LGkVfF",
+        "testimonial_card_cdVX6Y",
+        "testimonial_card_KaCzhG",
+        "testimonial_card_HXYniP",
+        "testimonial_card_QjJ4gX",
+        "testimonial_card_peJaCz"
+      ],
       "settings": {
         "text_heading": "Client experience",
         "richtext_paragraph": "<p>Collectors trust us for our insight and unwavering commitment to exceptional luxury.</p>",
