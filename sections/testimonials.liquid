@@ -49,6 +49,66 @@
                     
               
                 </div>
+              {% when 'testimonial-card' %}
+            <div li-block="Testimonial Card" class="testimonial-card">
+                    
+                
+                    <div class="rating"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"></div>
+                    
+                
+                    <div class="testimonial-content">
+                  <div class="text-size-regular"> {{ block.settings.richtext_review }} </div>
+                </div>
+                    
+                
+                    <div class="testimonial-user">
+                  <div class="div-block-3">{% if block.settings.image_customer_avatar %}
+{{ block.settings.image_customer_avatar | image_url: width: 1000 | image_tag: width: '48', height: '48', loading: 'lazy', class: 'image-2' }}
+{% else %}
+<img width="48" height="48" alt="" loading="lazy" src="{{ 'Image_1Image.png' | asset_url }}" class="image-2">
+{% endif %}</div>
+                  <div class="testimonial-user-data">
+                    <div class="text-size-regular text-weight-medium">
+{{ block.settings.text_customer_name }}
+</div>
+                    <div class="text-size-regular text-weight-light">
+{{ block.settings.text_date }}
+</div>
+                  </div>
+                </div>
+                    
+              
+                </div>
+              {% when 'testimonial-card' %}
+            <div li-block="Testimonial Card" class="testimonial-card">
+                    
+                
+                    <div class="rating"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"><img width="16" height="15" alt="" src="{{ 'Rating-Item.svg' | asset_url }}" loading="lazy" class="star"></div>
+                    
+                
+                    <div class="testimonial-content">
+                  <div class="text-size-regular"> {{ block.settings.richtext_review }} </div>
+                </div>
+                    
+                
+                    <div class="testimonial-user">
+                  <div class="div-block-3">{% if block.settings.image_customer_avatar %}
+{{ block.settings.image_customer_avatar | image_url: width: 1000 | image_tag: width: '48', height: '48', loading: 'lazy', class: 'image-2' }}
+{% else %}
+<img width="48" height="48" alt="" loading="lazy" src="{{ 'Image_1Image.png' | asset_url }}" class="image-2">
+{% endif %}</div>
+                  <div class="testimonial-user-data">
+                    <div class="text-size-regular text-weight-medium">
+{{ block.settings.text_customer_name }}
+</div>
+                    <div class="text-size-regular text-weight-light">
+{{ block.settings.text_date }}
+</div>
+                  </div>
+                </div>
+                    
+              
+                </div>
             {% endcase %}
 {% endfor %}
 
