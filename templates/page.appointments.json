@@ -14,7 +14,7 @@
       "settings": {
         "text_headline": "Make an Appointment",
         "richtext_text": "<p>Our Houston showroom welcomes clients on select days by appointment. Whether interested in buying or selling luxury items or seeking repair or customization services, schedule your visit.</p>",
-        "url_button_url": "",
+        "url_button_url": "shopify://pages/contact",
         "text_button_text": "Contact Us"
       }
     },
@@ -24,11 +24,11 @@
         ".content_image {height: auto;}"
       ],
       "settings": {
-        "image_image_1": "shopify://shop_images/sell-trade_02f4cf0a-fa2d-4724-b877-4bee72a8b640.webp",
-        "url_url_1": "",
-        "image_image_2": "shopify://shop_images/showroom_a88eb89d-6a19-4194-81a3-546e16909763.webp",
-        "url_url_2": "",
-        "image_image_3": "shopify://shop_images/services_60cc3ef5-a2e0-4a00-83fa-250f4c6ebd19.webp",
+        "image_image_1": "shopify://shop_images/sell-trade-luxury-items.webp",
+        "url_url_1": "shopify://pages/contact",
+        "image_image_2": "shopify://shop_images/showroom.webp",
+        "url_url_2": "shopify://pages/contact",
+        "image_image_3": "shopify://shop_images/services.webp",
         "url_url_3": ""
       }
     }
