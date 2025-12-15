@@ -12,40 +12,56 @@
     "blog_hero": {
       "type": "blog_hero",
       "blocks": {
-        "blog_YzeCQy": {
+        "blog_PBKyHK": {
           "type": "blog",
           "settings": {
-            "url_blog_url": "",
-            "text_blog": "Press &amp; Media"
+            "url_blog_url": "shopify://blogs/press-media",
+            "text_blog": "Press & Media"
           }
         },
-        "blog_LT4kpm": {
+        "blog_GdQc77": {
           "type": "blog",
           "settings": {
-            "url_blog_url": "shopify://blogs/luxury-pieces",
-            "text_blog": "Luxury Pieces"
+            "url_blog_url": "shopify://blogs/real-or-fake",
+            "text_blog": "Real or Fake"
           }
         },
-        "blog_zAtXHF": {
+        "blog_YPdrJF": {
           "type": "blog",
           "settings": {
             "url_blog_url": "shopify://blogs/luxury-travel",
             "text_blog": "Luxury Travel"
           }
         },
-        "blog_3WXfbd": {
+        "blog_QRjxR4": {
           "type": "blog",
           "settings": {
-            "url_blog_url": "shopify://blogs/press-media",
-            "text_blog": "Press & Media"
+            "url_blog_url": "shopify://blogs/luxury-pieces",
+            "text_blog": "Luxury Pieces"
+          }
+        },
+        "blog_BwxD6W": {
+          "type": "blog",
+          "settings": {
+            "url_blog_url": "shopify://blogs/stylish-events",
+            "text_blog": "Stylish Events"
+          }
+        },
+        "blog_WMgemk": {
+          "type": "blog",
+          "settings": {
+            "url_blog_url": "shopify://blogs/living-the-authentic-life-podcast",
+            "text_blog": "Living The Authentic Life"
           }
         }
       },
       "block_order": [
-        "blog_YzeCQy",
-        "blog_LT4kpm",
-        "blog_zAtXHF",
-        "blog_3WXfbd"
+        "blog_PBKyHK",
+        "blog_GdQc77",
+        "blog_YPdrJF",
+        "blog_QRjxR4",
+        "blog_BwxD6W",
+        "blog_WMgemk"
       ],
       "settings": {
         "text_headline": "Explore Vintage Contessa & Times Past"
