@@ -10,35 +10,10 @@
               </div>
             </div>
             <div class="spacer-xlarge"></div>
-            <div class="blog_list-wrapper w-dyn-list">
-              <div li-for:inside="article in blog.articles limit: 3" role="list" class="blog_list w-dyn-items">
-        {% for article in blog.articles limit: 3 %}                            
-                
-                            {% if article.title != currentArticle %}    <div li-if="article.title != currentArticle" role="listitem" class="blog_list-item w-dyn-item">
-    
-                  <a li-object:href="article.url" href="{{ article.url }}" class="blog_item-grid w-inline-block">
-                    <div id="w-node-c45bff24-6242-fee4-5061-f2f14b06a7be-4b06a7bd" class="blog_tags-wrapper"><img src="{{ article.image | image_url: width: 450 }}" loading="lazy" id="w-node-c45bff24-6242-fee4-5061-f2f14b06a7bf-4b06a7bd" li-object:src="article.image | image_url: width: 450" alt="{{ article.image.alt }}" li-object:alt="article.image.alt" class="blog_img"></div>
-                    <div id="w-node-_6b97875b-5fce-9f5a-43fd-5792b69faf23-4b06a7bd" class="spacer-tiny"></div>
-                    <div class="blog_tag-row">
-                      {% for tag in article.tags %}    <div li-for="tag in article.tags" class="blog_tag">
-                                    
-                        
-                            <div li-object="tag">{{ tag }}</div>
-                            
-                      
-                        </div>
-{% endfor %}
-                    </div>
-                    <div class="blog_info-wrapper">
-                      <h3 li-object="article.title" class="heading-style-h7">{{ article.title }}</h3>
-                    </div>
-                  </a>
-                    </div>
-{% endif %}
-                            
-              
-                    {% endfor %}    </div>
-              <div class="hide w-dyn-empty"></div>
+            <div class="div-block-4">
+              <a li-object:href="url" href="{{ section.settings.url_url1 }}" class="blog_item-grid w-inline-block"> <div id="w-node-ff7906f4-5ab2-8555-22d2-634e82de2142-1e531e72" class="blog_tags-wrapper"><img id="w-node-ff7906f4-5ab2-8555-22d2-634e82de2143-1e531e72" sizes="(max-width: 2048px) 100vw, 2048px" alt="" src="{{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }}" loading="lazy" srcset="{{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 500w, {{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 800w, {{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 1080w, {{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 1600w, {{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 2000w, {{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 2048w" class="blog_img"></div> <div id="w-node-ff7906f4-5ab2-8555-22d2-634e82de2144-1e531e72" class="spacer-tiny"></div> <div class="blog_tag-row"> <div class="blog_tag"> <div>Real or Fake</div> </div> </div> <div class="blog_info-wrapper"> <h3 class="heading-style-h7">How to Inspect An Audemars Piguet Watch</h3> </div> </a>
+              <a li-object:href="url" href="{{ section.settings.url_url2 }}" class="blog_item-grid w-inline-block"> <div id="w-node-_70adb6e9-6686-c9fa-4b2a-22e587c5a7d0-1e531e72" class="blog_tags-wrapper"><img id="w-node-_70adb6e9-6686-c9fa-4b2a-22e587c5a7d1-1e531e72" sizes="(max-width: 988px) 100vw, 988px" alt="" src="{{ 'Patek-Philippe.jpg' | asset_url }}" loading="lazy" srcset="{{ 'Patek-Philippe.jpg' | asset_url }} 500w, {{ 'Patek-Philippe.jpg' | asset_url }} 800w, {{ 'Patek-Philippe.jpg' | asset_url }} 988w" class="blog_img"></div> <div id="w-node-_70adb6e9-6686-c9fa-4b2a-22e587c5a7d2-1e531e72" class="spacer-tiny"></div> <div class="blog_tag-row"> <div class="blog_tag"> <div>Real or Fake</div> </div> </div> <div class="blog_info-wrapper"> <h3 class="heading-style-h7">How to Spot a Fake Patek Philippe Watch</h3> </div> </a>
+              <a li-object:href="url" href="{{ section.settings.url_url3 }}" class="blog_item-grid w-inline-block"> <div id="w-node-aba2f6ae-4b2d-90cf-a345-ca3f19278992-1e531e72" class="blog_tags-wrapper"><img id="w-node-aba2f6ae-4b2d-90cf-a345-ca3f19278993-1e531e72" sizes="(max-width: 3486px) 100vw, 3486px" alt="" src="{{ 'Screenshot-2025-12-15-at-16.58.36.jpg' | asset_url }}" loading="lazy" srcset="{{ 'Screenshot-2025-12-15-at-16.58.36.jpg' | asset_url }} 500w, {{ 'Screenshot-2025-12-15-at-16.58.36.jpg' | asset_url }} 800w, {{ 'Screenshot-2025-12-15-at-16.58.36.jpg' | asset_url }} 1080w, {{ 'Screenshot-2025-12-15-at-16.58.36.jpg' | asset_url }} 1600w, {{ 'Screenshot-2025-12-15-at-16.58.36.jpg' | asset_url }} 2000w, {{ 'Screenshot-2025-12-15-at-16.58.36.jpg' | asset_url }} 2600w, {{ 'Screenshot-2025-12-15-at-16.58.36.jpg' | asset_url }} 3200w, {{ 'Screenshot-2025-12-15-at-16.58.36.jpg' | asset_url }} 3486w" class="blog_img"></div> <div id="w-node-aba2f6ae-4b2d-90cf-a345-ca3f19278994-1e531e72" class="spacer-tiny"></div> <div class="blog_tag-row"> <div class="blog_tag"> <div>Real or Fake</div> </div> </div> <div class="blog_info-wrapper"> <h3 class="heading-style-h7">How to Inspect A Rolex Watch</h3> </div> </a>
             </div>
             <div class="spacer-xlarge"></div>
             <div class="button-group">
@@ -50,6 +25,21 @@
     "name": "Authenticity Guides",
     "class": "section_related-articles",
     "settings": [
+        {
+            "id": "url_url1",
+            "type": "url",
+            "label": "url1"
+        },
+        {
+            "id": "url_url2",
+            "type": "url",
+            "label": "url2"
+        },
+        {
+            "id": "url_url3",
+            "type": "url",
+            "label": "url3"
+        },
         {
             "id": "url_button_link",
             "type": "url",

@@ -14,10 +14,45 @@
             </div>
             <div class="text-weight-medium subtitle">Explore rare collectibles, elevated lifestyle moments and the expertise behind true luxury.</div>
           </div>
+          <div class="spacer-medium"></div>
+          <div li-content-for-blocks="" class="container-medium blogs_container">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+            {% when 'blog' %}
+            <a li-block="Blog" href="#" class="w-inline-block">
+                    
+              
+                    <div class="txt-base-medium text-style-link" href="{{ block.settings.url_blog_url }}"> <div class="txt-base-medium text-style-link" href="{{ block.settings.url_blog_url }}">This is some text inside of a div block.</div> </div>
+                    
+            
+                </a>
+          {% endcase %}
+{% endfor %}
+
+    </div>
         </div> {% schema %} {
     "tag": "header",
     "name": "Blog-Hero",
     "class": "section_small-hero",
+    "blocks": [
+        {
+            "name": "Blog",
+            "type": "blog",
+            "settings": [
+                {
+                    "id": "url_blog_url",
+                    "type": "url",
+                    "label": "Blog Url"
+                }
+            ]
+        },
+        {
+            "type": "@app"
+        }
+    ],
     "settings": [
         {
             "id": "text_headline",
@@ -30,7 +65,11 @@
         {
             "name": "Blog-Hero",
             "category": "Liquify",
-            "blocks": []
+            "blocks": [
+                {
+                    "type": "blog"
+                }
+            ]
         }
     ],
     "enabled_on": {
