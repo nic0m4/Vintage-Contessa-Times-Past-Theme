@@ -22,13 +22,13 @@
 {% render block %}
 
             {% when 'blog' %}
-            <a li-block="Blog" href="#" class="w-inline-block">
+            <div li-block="Blog" class="blog_block">
                     
               
-                    <div li-object:href="url" class="txt-base-medium text-style-link" href="{{ block.settings.url_blog_url }}"> {{ block.settings.text_blog }} </div>
+                    <a li-object:href="url" href="{{ block.settings.url_blog_url }}" class="w-inline-block"> <div class="txt-base-medium text-style-link">{{ block.settings.text_blog }}</div> </a>
                     
             
-                </a>
+                </div>
           {% endcase %}
 {% endfor %}
 
