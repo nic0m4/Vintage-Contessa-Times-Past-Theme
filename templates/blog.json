@@ -12,14 +12,39 @@
     "blog_hero": {
       "type": "blog_hero",
       "blocks": {
+        "blog_YzeCQy": {
+          "type": "blog",
+          "settings": {
+            "url_blog_url": "",
+            "text_blog": "Press &amp; Media"
+          }
+        },
+        "blog_LT4kpm": {
+          "type": "blog",
+          "settings": {
+            "url_blog_url": "shopify://blogs/luxury-pieces",
+            "text_blog": "Luxury Pieces"
+          }
+        },
+        "blog_zAtXHF": {
+          "type": "blog",
+          "settings": {
+            "url_blog_url": "shopify://blogs/luxury-travel",
+            "text_blog": "Luxury Travel"
+          }
+        },
         "blog_3WXfbd": {
           "type": "blog",
           "settings": {
-            "url_blog_url": "shopify://blogs/luxury-travel"
+            "url_blog_url": "shopify://blogs/press-media",
+            "text_blog": "Press & Media"
           }
         }
       },
       "block_order": [
+        "blog_YzeCQy",
+        "blog_LT4kpm",
+        "blog_zAtXHF",
         "blog_3WXfbd"
       ],
       "settings": {
