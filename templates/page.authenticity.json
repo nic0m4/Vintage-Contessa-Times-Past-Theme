@@ -39,8 +39,39 @@
     },
     "authenticity_guides": {
       "type": "authenticity_guides",
+      "blocks": {
+        "blog_fCCrrt": {
+          "type": "blog",
+          "settings": {
+            "url_url": "shopify://blogs/real-or-fake/how-to-inspect-a-rolex-watch",
+            "image_article_image": "shopify://shop_images/Screenshot_2025-12-15_at_16.58.36.jpg",
+            "text_article": "How to Inspect A Rolex Watch"
+          }
+        },
+        "blog_z9FteM": {
+          "type": "blog",
+          "settings": {
+            "url_url": "shopify://blogs/real-or-fake/how-to-spot-a-fake-patek-philippe-watch",
+            "image_article_image": "shopify://shop_images/Patek-Philippe.jpg",
+            "text_article": "How to Spot a Fake Patek Philippe Watch"
+          }
+        },
+        "blog_dXikyc": {
+          "type": "blog",
+          "settings": {
+            "url_url": "shopify://blogs/real-or-fake/how-to-inspect-an-audemars-piguet-watch",
+            "image_article_image": "shopify://shop_images/RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpg",
+            "text_article": "How to Inspect An Audemars Piguet Watch"
+          }
+        }
+      },
+      "block_order": [
+        "blog_fCCrrt",
+        "blog_z9FteM",
+        "blog_dXikyc"
+      ],
       "settings": {
-        "url_button_link": "",
+        "url_button_link": "shopify://blogs/real-or-fake",
         "text_button_text": "Read More Authenticity Guides"
       }
     }
