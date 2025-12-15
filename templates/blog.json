@@ -11,8 +11,19 @@
   "sections": {
     "blog_hero": {
       "type": "blog_hero",
+      "blocks": {
+        "blog_3WXfbd": {
+          "type": "blog",
+          "settings": {
+            "url_blog_url": "shopify://blogs/luxury-travel"
+          }
+        }
+      },
+      "block_order": [
+        "blog_3WXfbd"
+      ],
       "settings": {
-        "text_headline": "Explore Vintage Contessa &amp; Times Past"
+        "text_headline": "Explore Vintage Contessa & Times Past"
       }
     },
     "blog_articles": {
