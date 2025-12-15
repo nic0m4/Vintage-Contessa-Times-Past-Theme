@@ -16,7 +16,14 @@
 {% when '@app' %}
 {% render block %}
 
-              <a li-block="Blog" li-object:href="url" href="{{ section.settings.url_url }}" class="blog_item-grid w-inline-block"> <div id="w-node-ff7906f4-5ab2-8555-22d2-634e82de2142-1e531e72" class="blog_tags-wrapper">{% if section.settings.image_article_image %} {{ section.settings.image_article_image | image_url: width: 1000 | image_tag: class: 'blog_img', sizes: '(max-width: 2048px) 100vw, 2048px', id: 'w-node-ff7906f4-5ab2-8555-22d2-634e82de2143-1e531e72', loading: 'lazy' }} {% else %} <img class="blog_img" src="{{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }}" alt="" sizes="(max-width: 2048px) 100vw, 2048px" id="w-node-ff7906f4-5ab2-8555-22d2-634e82de2143-1e531e72" loading="lazy" srcset="{{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 500w, {{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 800w, {{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 1080w, {{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 1600w, {{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 2000w, {{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 2048w"> {% endif %}</div> <div id="w-node-ff7906f4-5ab2-8555-22d2-634e82de2144-1e531e72" class="spacer-tiny"></div> <div class="blog_tag-row"> <div class="blog_tag"> <div>Real or Fake</div> </div> </div> <div class="blog_info-wrapper"> <h3 class="heading-style-h7">{{ section.settings.text_article }}</h3> </div> </a>
+              {% when 'blog' %}
+            <div li-block="Blog" class="article_block">
+                    
+                
+                    <a li-object:href="url" href="{{ block.settings.url_url }}" class="blog_item-grid w-inline-block"> <div id="w-node-ff7906f4-5ab2-8555-22d2-634e82de2142-1e531e72" class="blog_tags-wrapper">{% if block.settings.image_article_image %} {{ block.settings.image_article_image | image_url: width: 1000 | image_tag: class: 'blog_img', sizes: '(max-width: 2048px) 100vw, 2048px', id: 'w-node-ff7906f4-5ab2-8555-22d2-634e82de2143-1e531e72', loading: 'lazy' }} {% else %} <img class="blog_img" src="{{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }}" alt="" sizes="(max-width: 2048px) 100vw, 2048px" id="w-node-ff7906f4-5ab2-8555-22d2-634e82de2143-1e531e72" loading="lazy" srcset="{{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 500w, {{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 800w, {{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 1080w, {{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 1600w, {{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 2000w, {{ 'RO_26591TI-OO-1252TI-03_closeup_GP14_JPEG.jpeg' | asset_url }} 2048w"> {% endif %}</div> <div id="w-node-ff7906f4-5ab2-8555-22d2-634e82de2144-1e531e72" class="spacer-tiny"></div> <div class="blog_tag-row"> <div class="blog_tag"> <div>Real or Fake</div> </div> </div> <div class="blog_info-wrapper"> <h3 class="heading-style-h7">{{ block.settings.text_article }}</h3> </div> </a>
+                    
+              
+                </div>
             {% endcase %}
 {% endfor %}
 
@@ -32,26 +39,32 @@
     "class": "section_related-articles",
     "blocks": [
         {
+            "name": "Blog",
+            "type": "blog",
+            "settings": [
+                {
+                    "id": "url_url",
+                    "type": "url",
+                    "label": "url"
+                },
+                {
+                    "id": "image_article_image",
+                    "type": "image_picker",
+                    "label": "Article Image"
+                },
+                {
+                    "id": "text_article",
+                    "type": "text",
+                    "label": "Article",
+                    "default": "How to Inspect An Audemars Piguet Watch"
+                }
+            ]
+        },
+        {
             "type": "@app"
         }
     ],
     "settings": [
-        {
-            "id": "url_url",
-            "type": "url",
-            "label": "url"
-        },
-        {
-            "id": "image_article_image",
-            "type": "image_picker",
-            "label": "Article Image"
-        },
-        {
-            "id": "text_article",
-            "type": "text",
-            "label": "Article",
-            "default": "How to Inspect An Audemars Piguet Watch"
-        },
         {
             "id": "url_button_link",
             "type": "url",
@@ -68,7 +81,11 @@
         {
             "name": "Authenticity Guides",
             "category": "Liquify",
-            "blocks": []
+            "blocks": [
+                {
+                    "type": "blog"
+                }
+            ]
         }
     ]
 } {% endschema %}
