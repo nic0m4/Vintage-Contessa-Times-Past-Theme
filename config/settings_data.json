@@ -30,9 +30,9 @@
         "type": "shopify://apps/wishlist-hero/blocks/customize-style-block/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
         "disabled": false,
         "settings": {
-          "Btn_color": "#ffdfaf",
-          "WishlistButtonTextColor": "",
-          "Ico_color": "",
+          "Btn_color": "#bda66e",
+          "WishlistButtonTextColor": "#ffffff",
+          "Ico_color": "#ffffff",
           "HeaderFontSize": 30,
           "HeaderColor": "",
           "ProductNameFontSize": 18,
