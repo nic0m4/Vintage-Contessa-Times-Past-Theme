@@ -31,7 +31,7 @@
                 <img src="{{ item.image | image_url: width: 100 }}" alt="{{ item.title }}" style="width: 70px; border-radius: 4px;">
                 <div>
                   <a href="{{ item.url }}" class="text-size-regular" style="text-decoration: none; color: inherit;">{{ item.title }}</a>
-                  <a href="{{ item.url_to_remove }}" style="display: block; font-size: 12px; color: #ff4d4d; margin-top: 5px;">{{ section.settings.text_remove }}</a>
+                  <a href="{{ item.url_to_remove }}" class="text-size-tiny text-color-grey text-style-link" style="display: block; margin-top: 5px;">{{ section.settings.text_remove }}</a>
                 </div>
               </div>
               <div>
