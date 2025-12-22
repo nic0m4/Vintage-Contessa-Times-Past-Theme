@@ -5,11 +5,11 @@
 {{ section.settings.text_heading }}
 </h2>
 <p class="text-size-regular" style="margin-top: 10px; color: #555;">
-    Please leave your name and contact details below. Our team will reach out to you shortly to finalize your order and arrange payment.
+    Please leave your name and contact details below. Our team will reach out to you shortly to finalize your order and arrange payment. 
+    <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="text-size-small text-style-link" style="margin-left: 5px;">
+      {{ section.settings.text_continue_shopping }}
+    </a>
   </p>
-              <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="text-size-small text-style-link hide-mobile-landscape"><span>
-{{ section.settings.text_continue_shopping }}
-</span></a>
             </div>
 {% if cart.item_count > 0 %}
 <div class="cart_form-block w-form">
