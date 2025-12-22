@@ -105,34 +105,39 @@
 {% endif %}
                       </div>
                       <div class="cart_action" style="flex-direction: column; gap: 15px;">
-  {% form 'contact' %}
-    {% if form.posted_successfully? %}
-      <p style="color: green; font-weight: bold;">Step 1 complete! We will call you to finish the order.</p>
-    {% else %}
-      {{ form.errors | default_errors }}
-      
-      <div class="form_field-wrapper">
-        <label for="ContactFormName">Full Name</label>
-        <input type="text" id="ContactFormName" name="contact[name]" class="form_input w-input" placeholder="Your Name" required>
-      </div>
+                          {% form 'contact' %}
+                            {% if form.posted_successfully? %}
+                              <p style="color: green; font-weight: bold;">Step 1 complete! We will call you shortly.</p>
+                            {% else %}
+                              {{ form.errors | default_errors }}
+                              
+                              <div class="form_field-wrapper">
+                                <label for="ContactFormName">Full Name</label>
+                                <input type="text" id="ContactFormName" name="contact[name]" class="form_input w-input" placeholder="Your Name" required>
+                              </div>
 
-      <div class="form_field-wrapper" style="margin-top: 10px;">
-        <label for="ContactFormPhone">Phone Number</label>
-        <input type="tel" id="ContactFormPhone" name="contact[phone]" class="form_input w-input" placeholder="e.g. +1 555 0000" required>
-      </div>
+                              <div class="form_field-wrapper" style="margin-top: 10px;">
+                                <label for="ContactFormEmail">Email Address</label>
+                                <input type="email" id="ContactFormEmail" name="contact[email]" class="form_input w-input" placeholder="email@example.com" required>
+                              </div>
 
-      <textarea name="contact[body]" style="display:none;">
-        ORDER DETAILS:
-        {% for item in cart.items %}
-          - {{ item.quantity }}x {{ item.product.title }} ({{ item.variant.title }})
-        {% endfor %}
-        Total Value: {{ cart.total_price | money }}
-      </textarea>
+                              <div class="form_field-wrapper" style="margin-top: 10px;">
+                                <label for="ContactFormPhone">Phone Number</label>
+                                <input type="tel" id="ContactFormPhone" name="contact[phone]" class="form_input w-input" placeholder="e.g. +1 555 0000" required>
+                              </div>
 
-      <input type="submit" class="button w-button" value="Request Callback to Buy" style="width: 100%; margin-top: 15px;">
-    {% endif %}
-  {% endform %}
-</div>
+                              <textarea name="contact[body]" style="display:none;">
+                                ORDER DETAILS:
+                                {% for item in cart.items %}
+                                  - {{ item.quantity }}x {{ item.product.title }} ({{ item.variant.title }})
+                                {% endfor %}
+                                Total Value: {{ cart.total_price | money }}
+                              </textarea>
+
+                              <input type="submit" class="button w-button" value="Request Callback to Buy" style="width: 100%; margin-top: 15px;">
+                            {% endif %}
+                          {% endform %}
+                     </div>
                     </div>
                   </div>
                   <div class="cart_table outline-solid-1">
