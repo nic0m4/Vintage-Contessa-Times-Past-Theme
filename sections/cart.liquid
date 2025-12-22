@@ -9,72 +9,155 @@
 </span></a>
             </div>
             {% if cart.item_count > 0 %}    <div li-if="cart.item_count > 0" class="cart_form-block w-form">
-{% if cart.item_count > 0 %}
-<div class="cart_form-block w-form">
-  
-  <div class="cart_grid-wrapper" style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px; align-items: start;">
     
-    <div class="cart_table outline-solid-1">
-      {% form 'cart', cart %}
-        <div class="cart_grid is-header w-hidden-tiny">
-          <div class="cart_table-header"><p class="text-size-regular">{{ section.settings.text_product }}</p></div>
-          <div class="cart_table-header"><p class="text-size-regular">{{ section.settings.text_quantity }}</p></div>
-          <div class="cart_table-header"><p class="text-size-regular">{{ section.settings.text_price }}</p></div>
-        </div>
-
-        {% for item in cart.items %}
-          {% endfor %}
-
-        <div style="padding: 20px; text-align: right; border-top: 1px solid #eee;">
-          <input type="submit" class="button is-outline w-button" value="Update Quantities" style="width: auto; min-width: 180px;">
-        </div>
-      {% endform %}
-    </div>
-
-    <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a655-f594a625" class="cart_wrapper-right">
-      <div class="cart_table outline-solid-1" style="padding: 20px;">
-        <div class="cart_table-header" style="margin-bottom: 15px;">
-          <p class="text-size-regular">{{ section.settings.text_summary }}</p>
-        </div>
-        
-        <div class="cart_details-price" style="margin-bottom: 20px;">
-          <div class="text-size-large">Total: {{ cart.total_price | money }}</div>
-        </div>
-
-        {% form 'contact' %}
-          {% if form.posted_successfully? %}
-            <p style="color: green;">We received your request and will call you soon!</p>
-          {% else %}
-            <div class="form_field-wrapper">
-              <label for="ContactFormName">Full Name</label>
-              <input type="text" name="contact[name]" class="form_input w-input" required>
-            </div>
-            <div class="form_field-wrapper" style="margin-top: 10px;">
-              <label for="ContactFormEmail">Email Address</label>
-              <input type="email" name="contact[email]" class="form_input w-input" required>
-            </div>
-            <div class="form_field-wrapper" style="margin-top: 10px;">
-              <label for="ContactFormPhone">Phone Number</label>
-              <input type="tel" name="contact[phone]" class="form_input w-input" required>
-            </div>
-            <div class="form_field-wrapper" style="margin-top: 10px;">
-              <label for="ContactFormNote">Comment</label>
-              <textarea name="contact[note]" class="form_input is-text-area w-input" style="height: 80px;"></textarea>
-            </div>
-
-            <textarea name="contact[body]" style="display:none;">
-              Items: {% for item in cart.items %}{{ item.quantity }}x {{ item.title }} | {% endfor %}
-            </textarea>
-
-            <input type="submit" class="button w-button" value="Request Callback" style="width: 100%; margin-top: 15px;">
-          {% endif %}
-        {% endform %}
-      </div>
-    </div>
-
-  </div> </div>
+              {% form 'cart', cart, class: 'cart_grid-wrapper' %}
+<div class="cart_table outline-solid-1">
+                  <div class="cart_grid is-header w-hidden-tiny">
+                    <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a632-f594a625" class="cart_table-header">
+                      <p class="text-size-regular">
+{{ section.settings.text_product }}
+</p>
+                    </div>
+                    <div class="cart_table-header">
+                      <p class="text-size-regular">
+{{ section.settings.text_quantity }}
+</p>
+                    </div>
+                    <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a638-f594a625" class="cart_table-header">
+                      <p class="text-size-regular">
+{{ section.settings.text_price }}
+</p>
+                    </div>
+                  </div>
+                  {% for item in cart.items %}    <div li-for="item in cart.items" class="cart_grid">
+                                    
+                    
+                            <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a63c-f594a625" class="display-inlineflex">
+                      <a href="{{ item.url }}" li-object:href="item.url" id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a63d-f594a625" class="w-inline-block"><img src="{{ item.image | image_url: width: 200 }}" li-object:src="item.image | image_url: width: 200" alt="" class="cart_image"></a>
+                      <div class="cart_info-order">
+                        <a href="{{ item.url }}" li-object:href="item.url" li-object="item.title" class="text-size-regular">{{ item.title }}</a>
+                        <div class="hide">
+                          <p item="price" class="cart_price">$13</p>
+                          <p item="original-price" class="cart_price away">$18</p>
+                        </div>
+                      </div>
+                    </div>
+                            
+                    
+                            <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a647-f594a625" class="cart_table-item anzahl">
+                      <div class="cart_quantity-wrapper">
+                        <div>Quantity</div><input class="cart_quantity w-input" maxlength="256" name="updates[]" data-name="updates[]" placeholder="1" type="number" id="updates[]" required="" value="{{ item.quantity }}">
+                      </div>
+                      <a href="{{ item.url_to_remove }}" li-object:href="item.url_to_remove" class="text-size-tiny text-style-link text-align-center w-inline-block">
+                        <div>
+{{ section.settings.text_remove }}
+</div>
+                      </a>
+                    </div>
+                            
+                    
+                            <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a64f-f594a625" class="cart_price-info">
+                      <div li-object="item.final_line_price | money" class="text-size-regular">{{ item.final_line_price | money }}</div>
+                      {% if item.original_line_price > item.final_line_price %}    <div li-if="item.original_line_price > item.final_line_price">
+    
+                        <div li-object="item.original_line_price | money" class="text-size-regular text-style-strikethrough">{{ item.original_line_price | money }}</div>
+                          </div>
 {% endif %}
+                    </div>
+                            
                   
+                        </div>
+{% endfor %}
+                </div>
+                <input type="submit" class="button is-outline w-button" value="Update Quantities" >
+{% endform %}
+                <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a655-f594a625" class="cart_wrapper-right">
+                  <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a656-f594a625" class="cart_table outline-solid-1">
+                    <div class="cart_grid is-header w-hidden-tiny">
+                      <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a658-f594a625" class="cart_table-header">
+                        <p class="text-size-regular">
+{{ section.settings.text_summary }}
+</p>
+                      </div>
+                    </div>
+                    <div class="cart_content">
+                      <div class="cart_wrapper">
+                        <div class="cart_details-wrapper">
+                          <div class="text-size-regular">
+{{ section.settings.text_sum_inkl_vat }}
+</div>
+                          <div class="cart_details-price">
+                            {% if cart.total_discounts > 0 %}    <div li-if="cart.total_discounts > 0">
+    
+                              <div li-object="cart.original_total_price | money" class="text-style-strikethrough">{{ cart.original_total_price | money }}</div>
+                                </div>
+{% endif %}
+                            <div li-object="cart.total_price | money" class="text-size-large">{{ cart.total_price | money }}</div>
+                          </div>
+                        </div>
+                        {% if cart.total_discounts > 0 %}    <div li-if="cart.total_discounts > 0" class="cart_details-wrapper">
+    
+                          <div class="text-size-regular">
+{{ section.settings.text_discount }}
+</div>
+                          <div li-object="cart.total_discount | money">{{ cart.total_discount | money }}</div>
+                            </div>
+{% endif %}
+                      </div>
+<div class="cart_action" style="flex-direction: column; gap: 15px;">
+  {% form 'contact' %}
+    {% if form.posted_successfully? %}
+      <p style="color: green; font-weight: bold;">Step 1 complete! We will call you shortly.</p>
+    {% else %}
+      {{ form.errors | default_errors }}
+      
+      <div class="form_field-wrapper">
+        <label for="ContactFormName">Full Name</label>
+        <input type="text" id="ContactFormName" name="contact[name]" class="form_input w-input" placeholder="Your Name" required>
+      </div>
+
+      <div class="form_field-wrapper" style="margin-top: 10px;">
+        <label for="ContactFormEmail">Email Address</label>
+        <input type="email" id="ContactFormEmail" name="contact[email]" class="form_input w-input" placeholder="email@example.com" required>
+      </div>
+
+      <div class="form_field-wrapper" style="margin-top: 10px;">
+        <label for="ContactFormPhone">Phone Number</label>
+        <input type="tel" id="ContactFormPhone" name="contact[phone]" class="form_input w-input" placeholder="e.g. +1 555 0000" required>
+      </div>
+
+      <div class="form_field-wrapper" style="margin-top: 10px;">
+        <label for="ContactFormNote">Comment / Special Instructions</label>
+        <textarea class="form_input is-text-area w-input" maxlength="5000" name="contact[note]" placeholder="Tell us anything else..." id="ContactFormNote" style="height: 80px;"></textarea>
+      </div>
+
+      <textarea name="contact[body]" style="display:none;">
+        ORDER DETAILS:
+        {% for item in cart.items %}
+          - {{ item.quantity }}x {{ item.product.title }} ({{ item.variant.title }})
+        {% endfor %}
+        Total Value: {{ cart.total_price | money }}
+      </textarea>
+
+      <input type="submit" class="button w-button" value="Request Callback to Buy" style="width: 100%; margin-top: 15px;">
+    {% endif %}
+  {% endform %}
+</div>
+                    </div>
+                  </div>
+                  <div class="cart_table outline-solid-1">
+                    <div class="cart_grid is-header w-hidden-tiny">
+                      <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a670-f594a625" class="cart_table-header">
+                        <p class="text-size-regular">
+{{ section.settings.text_comment }}
+</p>
+                      </div>
+                    </div>
+                    <div class="cart_content">
+                      <div class="form_field-wrapper"><textarea class="form_input is-text-area w-input" maxlength="5000" name="note" data-name="field" placeholder="Comment" id="CartNote"></textarea></div>
+                    </div>
+                  </div>
+                </div>
 
               <div class="w-form-done">
                 <div>Thank you! Your order has been received!</div>
