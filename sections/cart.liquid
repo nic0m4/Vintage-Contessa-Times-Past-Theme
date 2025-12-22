@@ -8,72 +8,96 @@
 {{ section.settings.text_continue_shopping }}
 </span></a>
             </div>
-            {% if cart.item_count > 0 %}    <div li-if="cart.item_count > 0" class="cart_form-block w-form">
-    
-
+{% if cart.item_count > 0 %}
 <div class="cart_form-block w-form">
-  
-  <div class="cart_grid-wrapper" style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px; align-items: start;">
+  <div class="cart_grid-wrapper" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
     
-    <div class="cart_table outline-solid-1">
+    <div style="flex: 2; min-width: 320px;">
       {% form 'cart', cart %}
-        <div class="cart_grid is-header w-hidden-tiny">
-          <div class="cart_table-header"><p class="text-size-regular">{{ section.settings.text_product }}</p></div>
-          <div class="cart_table-header"><p class="text-size-regular">{{ section.settings.text_quantity }}</p></div>
-          <div class="cart_table-header"><p class="text-size-regular">{{ section.settings.text_price }}</p></div>
-        </div>
+        <div class="cart_table outline-solid-1">
+          <div class="cart_grid is-header w-hidden-tiny" style="display: grid; grid-template-columns: 3fr 1fr 1fr; padding: 10px; border-bottom: 1px solid #ddd;">
+            <div class="cart_table-header"><p class="text-size-regular">{{ section.settings.text_product }}</p></div>
+            <div class="cart_table-header"><p class="text-size-regular">{{ section.settings.text_quantity }}</p></div>
+            <div class="cart_table-header"><p class="text-size-regular">{{ section.settings.text_price }}</p></div>
+          </div>
 
-        {% for item in cart.items %}
+          {% for item in cart.items %}
+            <div class="cart_grid" style="display: grid; grid-template-columns: 3fr 1fr 1fr; padding: 20px; border-bottom: 1px solid #eee; align-items: center;">
+              <div style="display: flex; align-items: center; gap: 15px;">
+                <img src="{{ item.image | image_url: width: 100 }}" alt="{{ item.title }}" style="width: 70px; border-radius: 4px;">
+                <div>
+                  <a href="{{ item.url }}" class="text-size-regular" style="text-decoration: none; color: inherit;">{{ item.title }}</a>
+                  <a href="{{ item.url_to_remove }}" style="display: block; font-size: 12px; color: #ff4d4d; margin-top: 5px;">{{ section.settings.text_remove }}</a>
+                </div>
+              </div>
+              <div>
+                <input type="number" name="updates[]" value="{{ item.quantity }}" min="0" style="width: 50px; padding: 5px; border: 1px solid #ddd;">
+              </div>
+              <div class="text-size-regular">{{ item.final_line_price | money }}</div>
+            </div>
           {% endfor %}
 
-        <div style="padding: 20px; text-align: right; border-top: 1px solid #eee;">
-          <input type="submit" class="button is-outline w-button" value="Update Quantities" style="width: auto; min-width: 180px;">
+          <div style="padding: 20px; display: flex; justify-content: flex-end; background: #f9f9f9;">
+            <input type="submit" class="button is-outline w-button" value="Update Quantities" style="width: auto; padding: 10px 25px;">
+          </div>
         </div>
       {% endform %}
     </div>
 
-    <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a655-f594a625" class="cart_wrapper-right">
-      <div class="cart_table outline-solid-1" style="padding: 20px;">
-        <div class="cart_table-header" style="margin-bottom: 15px;">
-          <p class="text-size-regular">{{ section.settings.text_summary }}</p>
-        </div>
-        
-        <div class="cart_details-price" style="margin-bottom: 20px;">
-          <div class="text-size-large">Total: {{ cart.total_price | money }}</div>
-        </div>
-
-        {% form 'contact' %}
-          {% if form.posted_successfully? %}
-            <p style="color: green;">We received your request and will call you soon!</p>
-          {% else %}
-            <div class="form_field-wrapper">
-              <label for="ContactFormName">Full Name</label>
-              <input type="text" name="contact[name]" class="form_input w-input" required>
-            </div>
-            <div class="form_field-wrapper" style="margin-top: 10px;">
-              <label for="ContactFormEmail">Email Address</label>
-              <input type="email" name="contact[email]" class="form_input w-input" required>
-            </div>
-            <div class="form_field-wrapper" style="margin-top: 10px;">
-              <label for="ContactFormPhone">Phone Number</label>
-              <input type="tel" name="contact[phone]" class="form_input w-input" required>
-            </div>
-            <div class="form_field-wrapper" style="margin-top: 10px;">
-              <label for="ContactFormNote">Comment</label>
-              <textarea name="contact[note]" class="form_input is-text-area w-input" style="height: 80px;"></textarea>
-            </div>
-
-            <textarea name="contact[body]" style="display:none;">
-              Items: {% for item in cart.items %}{{ item.quantity }}x {{ item.title }} | {% endfor %}
-            </textarea>
-
-            <input type="submit" class="button w-button" value="Request Callback" style="width: 100%; margin-top: 15px;">
-          {% endif %}
-        {% endform %}
+    <div class="cart_table outline-solid-1" style="flex: 1; min-width: 300px; padding: 25px; position: sticky; top: 20px;">
+      <h3 style="margin-top: 0; font-size: 1.2rem; border-bottom: 1px solid #eee; padding-bottom: 15px;">{{ section.settings.text_summary }}</h3>
+      
+      <div style="margin: 20px 0; font-size: 1.1rem; font-weight: bold;">
+        Total: {{ cart.total_price | money }}
       </div>
+
+      {% form 'contact' %}
+        {{ form.errors | default_errors }}
+        
+        <div class="form_field-wrapper" style="margin-bottom: 15px;">
+          <label class="text-size-small" style="display: block; margin-bottom: 5px;">Full Name</label>
+          <input type="text" name="contact[name]" class="form_input w-input" style="width: 100%;" required placeholder="Your Name">
+        </div>
+
+        <div class="form_field-wrapper" style="margin-bottom: 15px;">
+          <label class="text-size-small" style="display: block; margin-bottom: 5px;">Email Address</label>
+          <input type="email" name="contact[email]" class="form_input w-input" style="width: 100%;" required placeholder="email@example.com">
+        </div>
+
+        <div class="form_field-wrapper" style="margin-bottom: 15px;">
+          <label class="text-size-small" style="display: block; margin-bottom: 5px;">Phone Number</label>
+          <input type="tel" name="contact[phone]" class="form_input w-input" style="width: 100%;" required placeholder="e.g. +1 555 0000">
+        </div>
+
+        <div class="form_field-wrapper" style="margin-bottom: 15px;">
+          <label class="text-size-small" style="display: block; margin-bottom: 5px;">Comment</label>
+          <textarea name="contact[note]" class="form_input is-text-area w-input" style="width: 100%; height: 80px;" placeholder="Special instructions..."></textarea>
+        </div>
+
+        <textarea name="contact[body]" style="display:none;">
+          ORDER REQUEST:
+          {% for item in cart.items %}- {{ item.quantity }}x {{ item.title }}{% endfor %}
+          Total Value: {{ cart.total_price | money }}
+        </textarea>
+
+        <input type="submit" class="button w-button" value="Request Callback" style="width: 100%; background-color: #c0ab7f; color: white; border: none; padding: 15px; cursor: pointer; font-weight: bold;">
+
+        {% if form.posted_successfully? %}
+          <p style="color: green; margin-top: 15px; font-weight: bold;">Successfully sent! We will call you soon.</p>
+        {% endif %}
+      {% endform %}
     </div>
 
-  </div> </div>                  
+  </div>
+</div>
+
+<style>
+  /* Responsive stacking for mobile */
+  @media screen and (max-width: 991px) {
+    .cart_grid-wrapper { flex-direction: column !important; }
+    .cart_table { width: 100% !important; }
+  }
+</style>
 
               <div class="w-form-done">
                 <div>Thank you! Your order has been received!</div>
