@@ -28,6 +28,9 @@
    * This prevents abandoned cart emails after a callback request.
    */
   (function() {
+        // 1. Force the browser to the top of the page immediately
+    window.scrollTo(0, 0);
+
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get('submitted') === 'true') {
       fetch(window.Shopify.routes.root + 'cart/clear.js', {
