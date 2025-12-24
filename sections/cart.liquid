@@ -59,12 +59,12 @@
         {{ form.errors | default_errors }}
         
 <div class="form_field-wrapper" style="margin-bottom: 15px;">
-  <label class="text-size-small" style="display: block; margin-bottom: 5px; border: 1px solid #bdc6e0; ">Full Name</label>
+  <label class="text-size-small" style="display: block; margin-bottom: 5px;">Full Name</label>
   <input 
     type="text" 
     name="contact[name]" 
     class="form_input w-input" 
-    style="width: 100%;" 
+    style="width: 100%; border: 1px solid #bdc6e0;" 
     required 
     minlength="3"
     maxlength="50"
@@ -75,18 +75,18 @@
 </div>
         <input type="hidden" name="return_to" value="/pages/thank-you?submitted=true" />
         <div class="form_field-wrapper" style="margin-bottom: 15px;">
-          <label class="text-size-small" style="display: block; margin-bottom: 5px; border: 1px solid #bdc6e0;">Email Address</label>
-          <input type="email" name="contact[email]" class="form_input w-input" style="width: 100%;" required placeholder="email@example.com" title="Please enter a valid email address">
+          <label class="text-size-small" style="display: block; margin-bottom: 5px;">Email Address</label>
+          <input type="email" name="contact[email]" class="form_input w-input" style="width: 100%; border: 1px solid #bdc6e0;" required placeholder="email@example.com" title="Please enter a valid email address">
         </div>
 
 <div class="form_field-wrapper" style="margin-bottom: 15px;">
-  <label class="text-size-small" style="display: block; margin-bottom: 5px; border: 1px solid #bdc6e0;">Phone Number (US Only)</label>
+  <label class="text-size-small" style="display: block; margin-bottom: 5px;">Phone Number (US Only)</label>
   <div style="display: flex; gap: 8px; align-items: center;">
     <input 
       type="tel" 
       name="contact[phone]" 
       class="form_input w-input" 
-      style="width: 100%;" 
+      style="width: 100%; border: 1px solid #bdc6e0;" 
       required 
       placeholder="(555) 555-5555"
       pattern="^(\(?\d{3}\)?[\s.-]?)?\d{3}[\s.-]?\d{4}$"
@@ -96,8 +96,8 @@
 </div>
 
         <div class="form_field-wrapper" style="margin-bottom: 15px;">
-          <label class="text-size-small" style="display: block; margin-bottom: 5px; border: 1px solid #bdc6e0;">Comment</label>
-          <textarea name="contact[note]" class="form_input is-text-area w-input" style="width: 100%; height: 80px;" placeholder="Special instructions..."></textarea>
+          <label class="text-size-small" style="display: block; margin-bottom: 5px;">Comment</label>
+          <textarea name="contact[note]" class="form_input is-text-area w-input" style="width: 100%; height: 80px; border: 1px solid #bdc6e0;" placeholder="Special instructions..."></textarea>
         </div>
 
         <textarea name="contact[body]" style="display:none;">
