@@ -20,7 +20,34 @@
               </div>
             </div>
           </div>
-        </div> {% schema %} {
+        </div> 
+
+        <script>
+  /**
+   * Clears the cart only if the URL contains '?submitted=true'
+   * This prevents abandoned cart emails after a callback request.
+   */
+  (function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('submitted') === 'true') {
+      fetch(window.Shopify.routes.root + 'cart/clear.js', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }
+      })
+      .then(response => {
+        // Notifies your header/minicart to update the item count to 0
+        window.dispatchEvent(new CustomEvent('cartupdated'));
+        
+        // Clean the URL so refreshing the page doesn't try to clear the cart again
+        const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+        window.history.replaceState({path:newUrl}, '', newUrl);
+      })
+      .catch(error => console.error('Error clearing cart:', error));
+    }
+  })();
+</script>
+
+{% schema %} {
     "tag": "header",
     "name": "Text-CTA",
     "class": "section_header",
@@ -51,4 +78,5 @@
             "blocks": []
         }
     ]
-} {% endschema %}
+}
+{% endschema %}

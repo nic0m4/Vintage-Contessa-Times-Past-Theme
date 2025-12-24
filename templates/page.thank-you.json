@@ -12,9 +12,9 @@
     "text_cta": {
       "type": "text_cta",
       "settings": {
-        "text_heading": "Thank You for Reaching Out",
-        "text_paragraph": "For any additional questions or to schedule an appointment call (713) 977-7296  from 10 am to 4:30 pm Central, Monday to Friday.",
-        "text_button_text": "Back to Home"
+        "text_heading": "We’ve Received Your Request",
+        "text_paragraph": "Thank you for choosing us. One of our specialists is reviewing your selection and will personally call you at the number provided to finalize your purchase.",
+        "text_button_text": "Continue Browsing"
       }
     }
   },
