@@ -19,7 +19,7 @@
     <div style="flex: 2; min-width: 320px;">
       {% form 'cart', cart %}
         <div class="cart_table outline-solid-1">
-          <div class="cart_grid is-header w-hidden-tiny" style="display: grid; grid-template-columns: 3fr 1fr 1fr; padding: 10px; border-bottom: 1px solid #ddd;">
+          <div class="cart_grid is-header w-hidden-tiny" style="display: grid; grid-template-columns: 3fr 1fr 1fr; padding: 10px; border-bottom: 1px solid #bdc6e0;">
             <div class="cart_table-header"><p class="text-size-regular">{{ section.settings.text_product }}</p></div>
             <div class="cart_table-header"><p class="text-size-regular">{{ section.settings.text_quantity }}</p></div>
             <div class="cart_table-header"><p class="text-size-regular">{{ section.settings.text_price }}</p></div>
@@ -35,7 +35,7 @@
                 </div>
               </div>
               <div>
-                <input type="number" name="updates[]" value="{{ item.quantity }}" min="0" style="width: 50px; padding: 5px; border: 1px solid #ddd;">
+                <input type="number" name="updates[]" value="{{ item.quantity }}" min="0" style="width: 50px; padding: 5px; border: 1px solid #bdc6e0;">
               </div>
               <div class="text-size-regular">{{ item.final_line_price | money }}</div>
             </div>
@@ -59,7 +59,7 @@
         {{ form.errors | default_errors }}
         
 <div class="form_field-wrapper" style="margin-bottom: 15px;">
-  <label class="text-size-small" style="display: block; margin-bottom: 5px;">Full Name</label>
+  <label class="text-size-small" style="display: block; margin-bottom: 5px; border: 1px solid #bdc6e0; ">Full Name</label>
   <input 
     type="text" 
     name="contact[name]" 
@@ -75,12 +75,12 @@
 </div>
         <input type="hidden" name="return_to" value="/pages/thank-you?submitted=true" />
         <div class="form_field-wrapper" style="margin-bottom: 15px;">
-          <label class="text-size-small" style="display: block; margin-bottom: 5px;">Email Address</label>
+          <label class="text-size-small" style="display: block; margin-bottom: 5px; border: 1px solid #bdc6e0;">Email Address</label>
           <input type="email" name="contact[email]" class="form_input w-input" style="width: 100%;" required placeholder="email@example.com" title="Please enter a valid email address">
         </div>
 
 <div class="form_field-wrapper" style="margin-bottom: 15px;">
-  <label class="text-size-small" style="display: block; margin-bottom: 5px;">Phone Number (US Only)</label>
+  <label class="text-size-small" style="display: block; margin-bottom: 5px; border: 1px solid #bdc6e0;">Phone Number (US Only)</label>
   <div style="display: flex; gap: 8px; align-items: center;">
     <input 
       type="tel" 
@@ -96,7 +96,7 @@
 </div>
 
         <div class="form_field-wrapper" style="margin-bottom: 15px;">
-          <label class="text-size-small" style="display: block; margin-bottom: 5px;">Comment</label>
+          <label class="text-size-small" style="display: block; margin-bottom: 5px; border: 1px solid #bdc6e0;">Comment</label>
           <textarea name="contact[note]" class="form_input is-text-area w-input" style="width: 100%; height: 80px;" placeholder="Special instructions..."></textarea>
         </div>
 
