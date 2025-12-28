@@ -1,9 +1,20 @@
 <div class="padding-global padding-section-medium">
           <div class="container-large">
             <div class="content_grid">
-              <div class="text-size-medium">
+              <div class="content_wrapper">
+                <div class="text-size-regular">
 {{ section.settings.text_paragraph }}
 </div>
+                {% if section.settings.text_button_text != blank and section.settings.text_button_text_2 != blank %}    <div li-if="section.settings.text_button_text != blank and section.settings.text_button_text_2 != blank" class="button-group">
+    
+                  {% if section.settings.text_button_text != blank %}    <div li-if="section.settings.text_button_text != blank" class="btn-wrap">
+    
+                    <a href="{{ section.settings.url_button_link }}" class="button is-large w-button"> {{ section.settings.text_button_text }} </a>
+                      </div>
+{% endif %}
+                    </div>
+{% endif %}
+              </div>
               <div class="content_image-wrapper">{% if section.settings.image_image %}
 {{ section.settings.image_image | image_url: width: 1000 | image_tag: sizes: '(max-width: 1920px) 100vw, 1920px', loading: 'lazy' }}
 {% else %}
@@ -21,6 +32,17 @@
             "type": "text",
             "label": "Paragraph",
             "default": "Originally built in 1984 and stewarded by our family for over two decades, the estate has been thoughtfully transformed into a couture-inspired home. Herm\u00e8s scarves double as artwork, Louis Vuitton trunks become furniture, and textiles from Missoni, Dolce &amp; Gabbana, Schumacher, and Brunschwig &amp; Fils mingle with curated art and custom furnishings. Every detail reflects our belief that luxury is not about excess but about intention, craftsmanship, and stories that endure."
+        },
+        {
+            "id": "url_button_link",
+            "type": "url",
+            "label": "Button Link"
+        },
+        {
+            "id": "text_button_text",
+            "type": "text",
+            "label": "Button Text",
+            "default": "The Spirit of Challet Contessa"
         },
         {
             "id": "image_image",
