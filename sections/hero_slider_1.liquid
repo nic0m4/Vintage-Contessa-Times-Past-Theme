@@ -95,31 +95,62 @@
             </div>
           </div>
           <div class="hide w-embed w-script">
-            <style>
-  /* 1. Reset the Controls Positioning */
+<style>
+  /* 1. The main wrapper acts as the anchor for the corners */
   .home-hero_controls {
     position: absolute !important;
-    inset: 0% 0% 0% 0% !important; /* Spans the whole slider area */
+    inset: 0% 0% 0% 0% !important;
     z-index: 100 !important;
-    pointer-events: none !important; /* Clicks pass through the container */
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-end !important; /* Aligns pagination/nav to bottom */
+    pointer-events: none !important; /* Allows clicking items behind the container */
   }
-  /* 2. Re-enable clicks only for the actual buttons */
-  .home-hero_navigation, 
-  .swiper_pagination,
+
+  /* 2. Move Arrows to the Lower Left */
+  .home-hero_navigation {
+    position: absolute !important;
+    bottom: 4rem !important; /* Distance from bottom */
+    left: 4% !important;    /* Distance from left */
+    display: flex !important;
+    gap: 12px !important;
+    pointer-events: auto !important; /* Enables clicking the arrows */
+  }
+
+  /* 3. Keep Pagination in the Lower Right */
+  .swiper_pagination {
+    position: absolute !important;
+    bottom: 4rem !important; /* Match the height of the arrows */
+    right: 4% !important;   /* Distance from right */
+    display: flex !important;
+    gap: 8px !important;
+    width: auto !important;
+    pointer-events: auto !important; /* Enables clicking the bullets */
+  }
+
+  /* 4. Arrow Styling (Square outlines per your reference) */
   .swiper_button {
-    pointer-events: auto !important;
-  }
-  /* 3. Ensure the Swiper layout is correct */
-  .swiper-wrapper.is-home-hero {
+    cursor: pointer !important;
+    width: 48px !important;
+    height: 48px !important;
+    border: 1px solid white !important;
+    background: transparent !important;
     display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: background 0.2s ease;
   }
-  .swiper-slide.is-home-hero {
-    flex-shrink: 0 !important;
-    width: 100% !important;
+
+  .swiper_button:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
   }
+
+  /* Ensure the SVG inside the button scales correctly */
+  .swiper_button-icon {
+    width: 24px !important;
+    height: auto !important;
+  }
+
+  /* Standard Swiper Engine Fixes */
+  .swiper-wrapper { display: flex !important; }
+  .swiper-slide { flex-shrink: 0 !important; width: 100% !important; }
 </style>
             <script>
 function initSwiper() {
