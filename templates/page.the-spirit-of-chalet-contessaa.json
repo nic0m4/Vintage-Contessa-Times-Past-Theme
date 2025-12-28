@@ -19,17 +19,6 @@
     "hero_slider_1_VQPTBb": {
       "type": "hero_slider_1",
       "blocks": {
-        "slide_AWE4Qg": {
-          "type": "slide",
-          "settings": {
-            "textarea_heading": "Heading",
-            "text_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-            "url_button_1_link": "",
-            "text_button_1_text": "",
-            "url_button_2_link": "",
-            "text_button_2_text": ""
-          }
-        },
         "slide_qjwh39": {
           "type": "slide",
           "settings": {
@@ -41,11 +30,22 @@
             "text_button_2_text": "",
             "image_image_desktop": "shopify://shop_images/glass-pergola.webp"
           }
+        },
+        "slide_AWE4Qg": {
+          "type": "slide",
+          "settings": {
+            "textarea_heading": "Heading",
+            "text_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+            "url_button_1_link": "",
+            "text_button_1_text": "",
+            "url_button_2_link": "",
+            "text_button_2_text": ""
+          }
         }
       },
       "block_order": [
-        "slide_AWE4Qg",
-        "slide_qjwh39"
+        "slide_qjwh39",
+        "slide_AWE4Qg"
       ],
       "name": "Hero Slider 1",
       "settings": {}
