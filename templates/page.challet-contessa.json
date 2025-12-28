@@ -1,28 +1,42 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "image_with_text": {
-            "type": "image_with_text"
-        },
-        "large_image": {
-            "type": "large_image"
-        },
-        "offset_image": {
-            "type": "offset_image"
-        },
-        "simple": {
-            "type": "simple"
-        },
-        "large_image_2": {
-            "type": "large_image_2"
-        }
+  "sections": {
+    "image_with_text": {
+      "type": "image_with_text",
+      "settings": {}
     },
-    "layout": "theme",
-    "wrapper": "div.main-wrapper",
-    "order": [
-        "image_with_text",
-        "large_image",
-        "offset_image",
-        "simple",
-        "large_image_2"
-    ]
+    "large_image": {
+      "type": "large_image",
+      "settings": {}
+    },
+    "offset_image": {
+      "type": "offset_image",
+      "settings": {}
+    },
+    "simple": {
+      "type": "simple",
+      "settings": {}
+    },
+    "large_image_2": {
+      "type": "large_image_2",
+      "settings": {}
+    }
+  },
+  "layout": "theme",
+  "wrapper": "div.main-wrapper",
+  "order": [
+    "image_with_text",
+    "large_image",
+    "offset_image",
+    "simple",
+    "large_image_2"
+  ]
 }

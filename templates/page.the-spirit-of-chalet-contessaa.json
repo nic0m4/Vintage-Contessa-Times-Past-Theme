@@ -1,20 +1,47 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "announcement_bar": {
-            "type": "announcement_bar"
-        },
-        "small_hero": {
-            "type": "small_hero"
-        },
-        "content_2": {
-            "type": "content_2"
-        }
+  "sections": {
+    "small_hero": {
+      "type": "small_hero",
+      "settings": {
+        "text_headline": "The spirit of Chalet Contessa is where timeless alpine glamour meets modern mountain living.",
+        "richtext_text": "<p>Inspired by the iconic photography and art, the design blends classic European luxury with the adventurous spirit of the Rockies—delivering a curated, comfortable elegance that feels both storied and striking now.</p>"
+      }
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "announcement_bar",
-        "small_hero",
-        "content_2"
-    ]
+    "hero_slider_1_VQPTBb": {
+      "type": "hero_slider_1",
+      "blocks": {
+        "slide_qjwh39": {
+          "type": "slide",
+          "settings": {
+            "textarea_heading": "Heading",
+            "text_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+            "url_button_1_link": "",
+            "text_button_1_text": "Button Text",
+            "url_button_2_link": "",
+            "text_button_2_text": "Button Text"
+          }
+        }
+      },
+      "block_order": [
+        "slide_qjwh39"
+      ],
+      "name": "Hero Slider 1",
+      "settings": {}
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "small_hero",
+    "hero_slider_1_VQPTBb"
+  ]
 }
