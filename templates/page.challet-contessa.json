@@ -25,7 +25,9 @@
       "type": "large_image",
       "settings": {
         "text_headline": "A private sanctuary for life, legacy, and the art of living beautifully.",
-        "text_paragraph": "Nestled along the banks of the Eagle River between Avon and Edwards in Colorado’s renowned Vail Valley, Chalet Contessa is more than a destination—it is an immersive experience. With panoramic views of the river, Arrowhead Golf Course, and Beaver Creek Mountain, this luxurious retreat blends the grandeur of the Rockies with the elegance of European refinement.<br><br>Born from the legacy of The Vintage Contessa & Times Past—internationally recognized for curating rare, authentic luxury—Chalet Contessa represents the next evolution of our brand: a place where meaningful connection, exceptional beauty, and timeless elegance come together. Designed for those who seek soulful luxury, it offers an atmosphere that feels both couture and comfortably lived-in, intimate yet unforgettable."
+        "text_paragraph": "Nestled along the banks of the Eagle River between Avon and Edwards in Colorado’s renowned Vail Valley, Chalet Contessa is more than a destination—it is an immersive experience. With panoramic views of the river, Arrowhead Golf Course, and Beaver Creek Mountain, this luxurious retreat blends the grandeur of the Rockies with the elegance of European refinement.Born from the legacy of The Vintage Contessa & Times Past—internationally recognized for curating rare, authentic luxury—Chalet Contessa represents the next evolution of our brand: a place where meaningful connection, exceptional beauty, and timeless elegance come together. Designed for those who seek soulful luxury, it offers an atmosphere that feels both couture and comfortably lived-in, intimate yet unforgettable.",
+        "url_button_link": "shopify://pages/challet-contessa",
+        "text_button_text": "Getting to Chalet Contessa"
       }
     },
     "offset_image": {
@@ -37,7 +39,9 @@
     "simple": {
       "type": "simple",
       "settings": {
-        "text_paragraph": "Originally built in 1984 and stewarded by our family for over two decades, the estate has been thoughtfully transformed into a couture-inspired home. Hermès scarves double as artwork, Louis Vuitton trunks become furniture, and textiles from Missoni, Dolce &amp; Gabbana, Schumacher, and Brunschwig &amp; Fils mingle with curated art and custom furnishings. Every detail reflects our belief that luxury is not about excess but about intention, craftsmanship, and stories that endure."
+        "text_paragraph": "Originally built in 1984 and stewarded by our family for over two decades, the estate has been thoughtfully transformed into a couture-inspired home. Hermès scarves double as artwork, Louis Vuitton trunks become furniture, and textiles from Missoni, Dolce & Gabbana, Schumacher, and Brunschwig & Fils mingle with curated art and custom furnishings. Every detail reflects our belief that luxury is not about excess but about intention, craftsmanship, and stories that endure.",
+        "url_button_link": "shopify://pages/the-spirit-of-challet-contessa",
+        "text_button_text": "The Spirit of Challet Contessa"
       }
     },
     "large_image_2": {
@@ -46,7 +50,11 @@
         "text_paragraph_1": "Whether hosting a milestone celebration, an intimate retreat, a bespoke wedding, or a luxury brand gathering, Chalet Contessa offers an exclusive environment with limited availability—ensuring privacy, prestige, and a sense of mystique reminiscent of Alpine chalets, Italian villas, and French châteaux.",
         "text_paragraph_2": "From its heritage roots to its couture details, Chalet Contessa is curated for connection: a boutique-style escape where the river sets the pace, the mountains frame the moment, and design elevates every experience.",
         "text_headline": "A private sanctuary for life, legacy, and the art of living beautifully.",
-        "text_paragraph_3": "Chalet Contessa is not just a property. It is a living legacy—a home for heartfelt gatherings, extraordinary stories, and life’s most meaningful moments."
+        "text_paragraph_3": "Chalet Contessa is not just a property. It is a living legacy—a home for heartfelt gatherings, extraordinary stories, and life’s most meaningful moments.",
+        "url_button_link": "",
+        "text_button_text": "Neighbouring Treasures",
+        "url_button_link_2": "",
+        "text_button_text_2": "Valley Through the Seasons"
       }
     }
   },
