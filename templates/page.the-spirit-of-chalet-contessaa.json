@@ -19,6 +19,19 @@
     "hero_slider_1_VQPTBb": {
       "type": "hero_slider_1",
       "blocks": {
+        "slide_RmyAnj": {
+          "type": "slide",
+          "settings": {
+            "textarea_heading": "Indoor & Outdoor Lounge & Fire Features",
+            "text_text": "Cozy gathering spaces designed for long conversations, nightcaps, and stargazing.",
+            "url_button_1_link": "",
+            "text_button_1_text": "",
+            "url_button_2_link": "",
+            "text_button_2_text": "",
+            "image_image_desktop": "shopify://shop_images/fireplace.webp",
+            "image_image_mobile": "shopify://shop_images/fireplace-mobile.webp"
+          }
+        },
         "slide_6xGYLi": {
           "type": "slide",
           "settings": {
@@ -86,6 +99,7 @@
         }
       },
       "block_order": [
+        "slide_RmyAnj",
         "slide_6xGYLi",
         "slide_jykwMt",
         "slide_UPkcdG",
