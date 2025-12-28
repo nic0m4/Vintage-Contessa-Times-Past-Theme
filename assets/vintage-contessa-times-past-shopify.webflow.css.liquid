@@ -748,6 +748,13 @@ figcaption {
   margin-right: auto;
 }
 
+.container-large.in-slider {
+  z-index: 2;
+  max-width: none;
+  display: flex;
+  position: relative;
+}
+
 .form_message-error {
   margin-top: .75rem;
   padding: .75rem;
@@ -2152,9 +2159,19 @@ figcaption {
   color: #1f1f1f;
 }
 
+.swiper_button.swiper-prev {
+  background-color: #0000;
+  border-radius: 0;
+}
+
 .swiper_button.swiper-prev.pointer-events-on {
   border-radius: 0;
   left: -1.5rem;
+}
+
+.swiper_button.swiper-next {
+  background-color: #0000;
+  border-radius: 0;
 }
 
 .swiper_button.swiper-next.pointer-events-on {
@@ -4947,12 +4964,14 @@ figcaption {
 }
 
 .swiper_pagination {
+  z-index: 10;
   grid-column-gap: .5rem;
   grid-row-gap: .5rem;
   justify-content: center;
   align-items: center;
   height: 1.25rem;
   display: flex;
+  position: relative;
   width: auto !important;
 }
 
@@ -4985,7 +5004,7 @@ figcaption {
 }
 
 .home-hero_controls {
-  z-index: 1;
+  z-index: 999;
   pointer-events: none;
   flex-flow: row;
   justify-content: space-between;
@@ -4997,11 +5016,13 @@ figcaption {
 }
 
 .home-hero_navigation {
+  z-index: 10;
   grid-column-gap: .75rem;
   grid-row-gap: .75rem;
   justify-content: center;
   align-items: center;
   display: flex;
+  position: relative;
 }
 
 .text-size-regular-2 {
@@ -5044,9 +5065,10 @@ figcaption {
 }
 
 .gradient_fade {
+  z-index: 1;
   opacity: .8;
   mix-blend-mode: multiply;
-  background-image: linear-gradient(0deg, #000000e6, #fff0 90%);
+  background-image: linear-gradient(0deg, #000000e6, #fff0 66%);
   position: absolute;
   inset: 0%;
 }
@@ -5082,6 +5104,10 @@ figcaption {
 
 .swiper_bullet-2.is-active {
   background-color: #110d1a;
+}
+
+.div-block-5 {
+  position: absolute;
 }
 
 @media screen and (max-width: 991px) {
