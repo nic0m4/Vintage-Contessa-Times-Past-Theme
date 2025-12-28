@@ -1,31 +1,14 @@
-{%- comment %}<locksmith:4b77>{% endcomment -%}
-  {%- include 'locksmith' -%}
-{%- comment %}</locksmith:4b77>{% endcomment -%}
-
 <!doctype html>
-<html data-wf-page="6935563a2bdd45447f7f37cc" data-wf-site="693556392bdd45447f7f36e5" lang="{{ request.locale.iso_code }}">
+<html data-wf-page="6935563a2bdd45447f7f37b7" data-wf-site="693556392bdd45447f7f36e5" lang="{{ request.locale.iso_code }}">
 <head>
-  {{ locksmith_initializations }}
   <meta charset="utf-8">
   <title>{{ page_title }}</title>
-  {%- comment %}<locksmith:aa90>{% endcomment -%}
-    {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta content="{{ page_description }}" name="description">{% endif -%}
-    {%- comment %}original: <meta content="{{ page_description }}" name="description">{%- endcomment %}
-  {%- comment %}</locksmith:aa90>{% endcomment -%}
-  {%- comment %}<locksmith:5013>{% endcomment -%}
-    {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta content="{{ page_title }}" property="og:title">{% endif -%}
-    {%- comment %}original: <meta content="{{ page_title }}" property="og:title">{%- endcomment %}
-  {%- comment %}</locksmith:5013>{% endcomment -%}
-  {%- comment %}<locksmith:f432>{% endcomment -%}
-    {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta content="{{ page_description }}" property="og:description">{% endif -%}
-    {%- comment %}original: <meta content="{{ page_description }}" property="og:description">{%- endcomment %}
-  {%- comment %}</locksmith:f432>{% endcomment -%}
+  <meta content="{{ page_description }}" name="description">
+  <meta content="{{ page_title }}" property="og:title">
+  <meta content="{{ page_description }}" property="og:description">
   <meta content="{{ page_title }}" property="twitter:title">
   <meta content="{{ page_description }}" property="twitter:description">
-  {%- comment %}<locksmith:ca43>{% endcomment -%}
-    {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta property="og:type" content="website">{% endif -%}
-    {%- comment %}original: <meta property="og:type" content="website">{%- endcomment %}
-  {%- comment %}</locksmith:ca43>{% endcomment -%}
+  <meta property="og:type" content="website">
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
@@ -58,14 +41,8 @@
   <script defer="" auto="" min="" src="https://cdn.jsdelivr.net/gh/liquify-pro/core@latest/script.js"></script>
   <link href="{{ canonical_url }}" rel="canonical">
   {% if page_image %}
-  {%- comment %}<locksmith:bbef>{% endcomment -%}
-    {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta property="og:image" content="http:{{ page_image | image_url }}">{% endif -%}
-    {%- comment %}original: <meta property="og:image" content="http:{{ page_image | image_url }}">{%- endcomment %}
-  {%- comment %}</locksmith:bbef>{% endcomment -%}
-  {%- comment %}<locksmith:46cd>{% endcomment -%}
-    {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta property="og:image:secure_url" content="https:{{ page_image | image_url }}">{% endif -%}
-    {%- comment %}original: <meta property="og:image:secure_url" content="https:{{ page_image | image_url }}">{%- endcomment %}
-  {%- comment %}</locksmith:46cd>{% endcomment -%}
+  <meta property="og:image" content="http:{{ page_image | image_url }}">
+  <meta property="og:image:secure_url" content="https:{{ page_image | image_url }}">
   <meta property="og:image:width" content="{{ page_image.width }}">
   <meta property="og:image:height" content="{{ page_image.height }}">
 {% endif %}
@@ -149,7 +126,7 @@ This will create a separate layout file for this page, allowing you to apply cus
 Learn more: https://www.liquify.pro/docu/getting-started#template-structure
  -->
 <script src="{{ 'li_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
-<body li-page="addresses" li-layout="account">
+<body li-page="account">
   <div class="page-wrapper">
     {% render 'global_styles' %}
     {% sections 'header_group' %}

@@ -1,4 +1,4 @@
-<div li-block="Vendor">
+<div li-block="Vendor" {{ block.shopify_attributes }}>
                     
                     
                     <div li-object="product.type" class="text-size-regular">{{ product.type }}</div>
@@ -9,7 +9,9 @@
     "settings": [],
     "presets": [
         {
-            "name": "Vendor"
+            "name": "Vendor",
+            "blocks": []
         }
-    ]
+    ],
+    "tag": null
 } {% endschema %}

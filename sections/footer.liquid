@@ -80,20 +80,6 @@
               
                     {% endfor %}    </div>
               <div class="footer_icon-grid">
-                {% if enabled_payment_types.length > 0 %}    <div li-if="enabled_payment_types.length > 0" id="w-node-_5eccf730-c887-5204-0e0c-693f99a732bf-99a7328f" class="footer_icon-block">
-    
-                  <ul role="list" class="footer_payment-list w-list-unstyled">
-                    {% for type in shop.enabled_payment_types %}    <li li-for="type in shop.enabled_payment_types" class="footer_payment-item">
-                                    
-                      
-                            <div li-object="type | payment_type_svg_tag: class: 'footer_payment-img icon--full-color'" class="footer_payment-svg">{{ type | payment_type_svg_tag: class: 'footer_payment-img icon--full-color' }}</div>
-                            
-                    
-                        </li>
-{% endfor %}
-                  </ul>
-                    </div>
-{% endif %}
                 <div class="footer_icon-block">
                   <div class="footer_icon-row">
                     {% for block in section.blocks %}

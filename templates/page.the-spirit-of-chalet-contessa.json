@@ -1,0 +1,52 @@
+{
+    "sections": {
+        "announcement_bar": {
+            "type": "announcement_bar"
+        },
+        "small_hero": {
+            "type": "small_hero"
+        },
+        "tabs": {
+            "type": "tabs",
+            "blocks": {
+                "tab": {
+                    "name": "Tab",
+                    "type": "tab"
+                },
+                "text": {
+                    "name": "Text",
+                    "type": "text"
+                },
+                "image": {
+                    "name": "Image",
+                    "type": "image"
+                }
+            },
+            "block_order": [
+                "tab",
+                "text",
+                "image"
+            ]
+        },
+        "slider": {
+            "type": "slider",
+            "blocks": {
+                "slide": {
+                    "name": "Slide",
+                    "type": "slide"
+                }
+            },
+            "block_order": [
+                "slide"
+            ]
+        }
+    },
+    "layout": "theme",
+    "wrapper": "div.main-wrapper",
+    "order": [
+        "announcement_bar",
+        "small_hero",
+        "tabs",
+        "slider"
+    ]
+}
