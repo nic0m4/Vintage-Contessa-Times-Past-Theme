@@ -35,6 +35,21 @@
 </p>
               </div>
             </div>
+            <div class="spacer-large"></div>
+            {% if section.settings.text_button_text != blank and section.settings.text_button_text_2 != blank %}    <div li-if="section.settings.text_button_text != blank and section.settings.text_button_text_2 != blank" class="button-group">
+    
+              {% if section.settings.text_button_text != blank %}    <div li-if="section.settings.text_button_text != blank" class="btn-wrap">
+    
+                <a href="{{ section.settings.url_button_link }}" class="button is-large w-button"> {{ section.settings.text_button_text }} </a>
+                  </div>
+{% endif %}
+              {% if section.settings.text_button_text_2 != blank %}    <div li-if="section.settings.text_button_text_2 != blank" class="btn-wrap">
+    
+                <a href="{{ section.settings.url_button_link_2 }}" class="button is-outline w-button"> {{ section.settings.text_button_text_2 }} </a>
+                  </div>
+{% endif %}
+                </div>
+{% endif %}
           </div>
         </div> {% schema %} {
     "tag": "div",
@@ -69,6 +84,28 @@
             "type": "text",
             "label": "Paragraph 3",
             "default": "Chalet Contessa is not just a property. It is a living legacy\u2014a home for heartfelt gatherings, extraordinary stories, and life\u2019s most meaningful moments."
+        },
+        {
+            "id": "url_button_link",
+            "type": "url",
+            "label": "Button Link"
+        },
+        {
+            "id": "text_button_text",
+            "type": "text",
+            "label": "Button Text",
+            "default": "Neighbouring Treasures"
+        },
+        {
+            "id": "url_button_link_2",
+            "type": "url",
+            "label": "Button Link 2"
+        },
+        {
+            "id": "text_button_text_2",
+            "type": "text",
+            "label": "Button Text 2",
+            "default": "Valley Through the Seasons"
         }
     ],
     "presets": [
