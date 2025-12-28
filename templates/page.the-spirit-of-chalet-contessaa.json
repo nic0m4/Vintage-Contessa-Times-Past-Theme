@@ -19,19 +19,32 @@
     "hero_slider_1_VQPTBb": {
       "type": "hero_slider_1",
       "blocks": {
-        "slide_qjwh39": {
+        "slide_AWE4Qg": {
           "type": "slide",
           "settings": {
             "textarea_heading": "Heading",
             "text_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
             "url_button_1_link": "",
-            "text_button_1_text": "Button Text",
+            "text_button_1_text": "",
             "url_button_2_link": "",
-            "text_button_2_text": "Button Text"
+            "text_button_2_text": ""
+          }
+        },
+        "slide_qjwh39": {
+          "type": "slide",
+          "settings": {
+            "textarea_heading": "Year-Round Glass Pergola",
+            "text_text": "A heated, glass-enclosed outdoor living space ideal for alfresco dining, après gatherings, and lingering beside the river in every season.",
+            "url_button_1_link": "",
+            "text_button_1_text": "",
+            "url_button_2_link": "",
+            "text_button_2_text": "",
+            "image_image_desktop": "shopify://shop_images/glass-pergola.webp"
           }
         }
       },
       "block_order": [
+        "slide_AWE4Qg",
         "slide_qjwh39"
       ],
       "name": "Hero Slider 1",
