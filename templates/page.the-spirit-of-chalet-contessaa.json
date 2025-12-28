@@ -28,18 +28,21 @@
             "text_button_1_text": "",
             "url_button_2_link": "",
             "text_button_2_text": "",
-            "image_image_desktop": "shopify://shop_images/glass-pergola.webp"
+            "image_image_desktop": "shopify://shop_images/glass-pergola.webp",
+            "image_image_mobile": "shopify://shop_images/glass-pergola-mobile.webp"
           }
         },
         "slide_AWE4Qg": {
           "type": "slide",
           "settings": {
-            "textarea_heading": "Heading",
-            "text_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+            "textarea_heading": "50\" Illuminated Blue Spruce",
+            "text_text": "A glowing blue spruce that adds year-round ambience and becomes a signature backdrop for photos, celebrations, and peaceful evenings outdoors.",
             "url_button_1_link": "",
             "text_button_1_text": "",
             "url_button_2_link": "",
-            "text_button_2_text": ""
+            "text_button_2_text": "",
+            "image_image_desktop": "shopify://shop_images/Illuminated-Blue-Spruce.webp",
+            "image_image_mobile": "shopify://shop_images/Illuminated-Blue-Spruce-mobile.webp"
           }
         }
       },
