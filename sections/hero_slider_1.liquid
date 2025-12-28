@@ -96,6 +96,22 @@
           </div>
           <div class="hide w-embed w-script">
 <style>
+  /* Apply fixed aspect ratio to the slider container */
+  .swiper.is-home-hero {
+    width: 100% !important;
+    aspect-ratio: 3 / 2 !important; /* Width / Height */
+    height: auto !important; /* Override any fixed heights from Webflow */
+    position: relative !important;
+  }
+
+  /* Ensure background images and videos cover the 3:2 area perfectly */
+  .image-hero_bg, 
+  .image-hero_bg-image, 
+  .image-hero_video-wrapper video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
   /* 1. The main wrapper acts as the anchor for the corners */
   .home-hero_controls {
     position: absolute !important;
