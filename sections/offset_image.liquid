@@ -1,9 +1,9 @@
 <div class="padding-global padding-section-large">
           <div class="container-large">
             <div class="container_content-offset">{% if section.settings.image_image %}
-{{ section.settings.image_image | image_url: width: 1000 | image_tag: loading: 'lazy', width: 'Auto', height: 'Auto', class: 'image_content-offset' }}
+{{ section.settings.image_image | image_url: width: 1000 | image_tag: class: 'image_content-offset', width: 'Auto', height: 'Auto', sizes: '(max-width: 872px) 100vw, 872px', loading: 'lazy' }}
 {% else %}
-<img src="{{ 'Aspect-Ratio-Frame.png' | asset_url }}" loading="lazy" width="Auto" height="Auto" alt="" class="image_content-offset">
+<img class="image_content-offset" src="{{ 'Aspect-Ratio-Frame.png' | asset_url }}" width="Auto" height="Auto" alt="" sizes="(max-width: 872px) 100vw, 872px" loading="lazy" srcset="{{ 'Aspect-Ratio-Frame.png' | asset_url }} 500w, {{ 'Aspect-Ratio-Frame.png' | asset_url }} 800w, {{ 'Aspect-Ratio-Frame.png' | asset_url }} 872w">
 {% endif %}
               <div class="text_box-offset">
                 <div class="text-size-regular">
