@@ -1,5 +1,5 @@
-<div class="padding-global padding-section-large">
-          <div class="home-hero_wrapper">
+<div class="padding-global padding-section-large slider-align">
+          <div class="home-hero_wrapper max-width-xxlarge">
             <div class="swiper_component is-home-hero">
               <div class="swiper is-home-hero">
                 <div role="list" class="swiper-wrapper is-home-hero">
@@ -95,7 +95,7 @@
             </div>
           </div>
           <div class="hide w-embed w-script">
-<style>
+            <style>
   /* 1. The main wrapper acts as the anchor for the corners */
   .home-hero_controls {
     position: absolute !important;
@@ -103,24 +103,19 @@
     z-index: 100 !important;
     pointer-events: none !important; /* Allows clicking items behind the container */
   }
-
   /* 2. Move Arrows to the Lower Left */
   .home-hero_navigation {
-
     display: flex !important;
     gap: 12px !important;
     pointer-events: auto !important; /* Enables clicking the arrows */
   }
-
   /* 3. Keep Pagination in the Lower Right */
   .swiper_pagination {
-
     display: flex !important;
     gap: 8px !important;
     width: auto !important;
     pointer-events: auto !important; /* Enables clicking the bullets */
   }
-
   /* 4. Arrow Styling (Square outlines per your reference) */
   .swiper_button {
     cursor: pointer !important;
@@ -133,17 +128,14 @@
     justify-content: center !important;
     transition: background 0.2s ease;
   }
-
   .swiper_button:hover {
     background: rgba(255, 255, 255, 0.1) !important;
   }
-
   /* Ensure the SVG inside the button scales correctly */
   .swiper_button-icon {
     width: 24px !important;
     height: auto !important;
   }
-
   /* Standard Swiper Engine Fixes */
   .swiper-wrapper { display: flex !important; }
   .swiper-slide { flex-shrink: 0 !important; width: 100% !important; }
