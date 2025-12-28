@@ -91,6 +91,63 @@
               </div>
             </div>
           </div>
+          <div class="hide w-embed w-script">
+            <script>
+function initSwiper() {
+  const swiperComponents = document.querySelectorAll(".swiper_component");
+  swiperComponents.forEach((component) => {
+    const swiperEl = component.querySelector(".swiper");
+    // Prevent double initialization
+    if (swiperEl && !swiperEl.classList.contains('swiper-initialized')) {
+      new Swiper(swiperEl, {
+        speed: 800,
+        loop: true,
+        followFinger: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        rewind: true,
+        keyboard: { enabled: true, onlyInViewport: true },
+        pagination: {
+          el: component.querySelector(".swiper_pagination"),
+          bulletActiveClass: "is-active",
+          bulletClass: "swiper_bullet",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: component.querySelector(".swiper-next"),
+          prevEl: component.querySelector(".swiper-prev"),
+        },
+      });
+    }
+  });
+}
+// Run on load
+if (document.readyState === "complete" || document.readyState === "interactive") {
+  initSwiper();
+} else {
+  document.addEventListener("DOMContentLoaded", initSwiper);
+}
+// Shopify Theme Editor support
+document.addEventListener('shopify:section:load', initSwiper);
+</script>
+            <style>
+  /* CRITICAL: Swiper needs these specific display settings to calculate positions */
+  .swiper-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .swiper-slide {
+    flex-shrink: 0 !important;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  /* Fix for the pagination bullets if they aren't showing */
+  .swiper_bullet {
+    cursor: pointer;
+  }
+</style>
+          </div>
         </div> {% schema %} {
     "tag": "section",
     "name": "Hero Slider 1",
