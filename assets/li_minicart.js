@@ -71,6 +71,7 @@ document.addEventListener('alpine:init', () => {
                     this.cart.original_total_price = data.original_total_price;
 
                     this.$dispatch('carttotalitems', data.item_count);
+                    this.$dispatch('currentcartitems', this.cart.items);
                 })
                 .catch((error) => {
                     console.error('Error:', error);
@@ -120,7 +121,7 @@ document.addEventListener('alpine:init', () => {
                     this.resetAbortController();
                     console.log('updateCartItemQuantity(): ', data);
 
-                    this.$dispatch('cartupdated');
+                    this.$dispatch('cartupdated', this.cart.items);
                     this.$dispatch('showcartmessage', { status: data.status, message: data.message, description: data.description });
                 })
                 .catch((error) => {
@@ -145,7 +146,6 @@ document.addEventListener('alpine:init', () => {
          * @param event
          */
         showCartMessage(event) {
-            //console.log("dispatched showCartMessage", event)
             if(event?.detail?.status) {
                 this.cart.response.result = event.detail ?? {}
                 this.cart.response.show = true

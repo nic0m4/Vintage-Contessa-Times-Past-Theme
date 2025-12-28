@@ -1,4 +1,4 @@
-<div li-block="Add to Cart">
+<div li-block="Add to Cart" {{ block.shopify_attributes }}>
                     
                     
                     <div class="product-header_form-block w-form">
@@ -51,7 +51,9 @@
     ],
     "presets": [
         {
-            "name": "Add to Cart"
+            "name": "Add to Cart",
+            "blocks": []
         }
-    ]
+    ],
+    "tag": null
 } {% endschema %}

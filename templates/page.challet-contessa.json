@@ -1,0 +1,28 @@
+{
+    "sections": {
+        "image_with_text": {
+            "type": "image_with_text"
+        },
+        "large_image": {
+            "type": "large_image"
+        },
+        "offset_image": {
+            "type": "offset_image"
+        },
+        "simple": {
+            "type": "simple"
+        },
+        "large_image_2": {
+            "type": "large_image_2"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "div.main-wrapper",
+    "order": [
+        "image_with_text",
+        "large_image",
+        "offset_image",
+        "simple",
+        "large_image_2"
+    ]
+}

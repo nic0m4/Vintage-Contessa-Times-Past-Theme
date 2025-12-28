@@ -1,4 +1,4 @@
-<div li-block="Product Price">
+<div li-block="Product Price" {{ block.shopify_attributes }}>
                     
                     
                     <div class="product-header_price-wrapper">
@@ -30,7 +30,9 @@
     "settings": [],
     "presets": [
         {
-            "name": "Product Price"
+            "name": "Product Price",
+            "blocks": []
         }
-    ]
+    ],
+    "tag": null
 } {% endschema %}

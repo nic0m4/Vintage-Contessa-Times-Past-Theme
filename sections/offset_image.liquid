@@ -1,0 +1,39 @@
+<div class="padding-global padding-section-large">
+          <div class="container-large">
+            <div class="container_content-offset">{% if section.settings.image_image %}
+{{ section.settings.image_image | image_url: width: 1000 | image_tag: loading: 'lazy', width: 'Auto', height: 'Auto', class: 'image_content-offset' }}
+{% else %}
+<img src="{{ 'Aspect-Ratio-Frame.png' | asset_url }}" loading="lazy" width="Auto" height="Auto" alt="" class="image_content-offset">
+{% endif %}
+              <div class="text_box-offset">
+                <div class="text-size-regular">
+{{ section.settings.text_paragraph }}
+</div>
+              </div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "Offset Image",
+    "class": "section_content",
+    "settings": [
+        {
+            "id": "image_image",
+            "type": "image_picker",
+            "label": "Image"
+        },
+        {
+            "id": "text_paragraph",
+            "type": "text",
+            "label": "Paragraph",
+            "default": "Set on more than an acre of riverfront land, the chalet features seamless indoor\u2013outdoor living with private patios and beautifully expanded entertaining spaces. A heated glass pergola, riverside hot tub, illuminated 50\" blue spruce, and sculptural fire pit create intimate gathering moments in every season. Beyond the patios, more than 2,500 sq ft of level turf transforms the grounds into a stunning venue for celebrations\u2014extending the entertaining footprint by over 5,000 sq ft and making Chalet Contessa as unforgettable outdoors as it is within."
+        }
+    ],
+    "presets": [
+        {
+            "name": "Offset Image",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}
