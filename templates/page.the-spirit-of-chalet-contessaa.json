@@ -19,6 +19,42 @@
     "tabs_RPNEeB": {
       "type": "tabs",
       "blocks": {
+        "tab_KxdXPg": {
+          "type": "tab",
+          "settings": {
+            "text_text": "Tab Text",
+            "url_button_link": "",
+            "text_button_text": "Button Text",
+            "text_tab_label": "This is some text inside of a div block."
+          }
+        },
+        "tab_fJ7nN8": {
+          "type": "tab",
+          "settings": {
+            "text_text": "Tab Text",
+            "url_button_link": "",
+            "text_button_text": "Button Text",
+            "text_tab_label": "This is some text inside of a div block."
+          }
+        },
+        "tab_cLaCqB": {
+          "type": "tab",
+          "settings": {
+            "text_text": "Tab Text",
+            "url_button_link": "",
+            "text_button_text": "Button Text",
+            "text_tab_label": "This is some text inside of a div block."
+          }
+        },
+        "tab_WVXMye": {
+          "type": "tab",
+          "settings": {
+            "text_text": "Tab Text",
+            "url_button_link": "",
+            "text_button_text": "Button Text",
+            "text_tab_label": "This is some text inside of a div block."
+          }
+        },
         "tab_AikP7E": {
           "type": "tab",
           "settings": {
@@ -41,6 +77,10 @@
         }
       },
       "block_order": [
+        "tab_KxdXPg",
+        "tab_fJ7nN8",
+        "tab_cLaCqB",
+        "tab_WVXMye",
         "tab_AikP7E",
         "tab_ertgiB"
       ],
