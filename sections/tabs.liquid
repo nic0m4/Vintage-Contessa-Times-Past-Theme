@@ -1,76 +1,181 @@
 <style>
-  /* The Main Container */
-  .tabs_wrapper_flex {
-    display: flex !important;
-    /* align-items: flex-start is REQUIRED for sticky to work. 
-       If it is 'stretch', the sidebar height will match the content and have nowhere to slide. */
-    align-items: flex-start !important; 
-    width: 100%;
-  }
+/* The Main Container */
+.tabs_wrapper_flex {
+  display: flex !important;
+  align-items: flex-start !important; 
+  width: 100%;
+}
 
 /* 1. THE LAYOUT PARENT */
+.tabs_element {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: 2.5rem !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+/* 2. THE STICKY MENU */
+.tabs_menu {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 100px !important;
+  max-width: 27.5rem !important;
+  z-index: 10 !important;
+  height: auto !important; 
+}
+
+/* 3. The Sidebar Tab Links */
+.details_item {
+  padding: 1rem 0 !important;
+  text-align: left !important;
+  background: transparent !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+  width: 100% !important;
+}
+
+.details_item.is-active {
+  opacity: 1 !important;
+}
+
+/* 4. The Content Area (Right Side) */
+.tabs_body {
+  flex-grow: 1 !important;
+}
+
+.tabs_panel-content {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 2.5rem !important; 
+  max-width: 960px;
+}
+
+/* 5. The Image Layout */
+.tab-images-container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 1.5rem !important;
+  margin-top: 1rem !important;
+}
+
+.tab-img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* Tablet and below (991px) */
+@media screen and (max-width: 991px) {
+  /* Stack tabs above content */
   .tabs_element {
-    display: flex !important;
-    flex-direction: row !important; /* Keep them side-by-side */
-    align-items: flex-start !important; /* PREVENTS the sidebar from being as tall as the content */
-    gap: 2.5rem !important;
-    width: 100% !important;
-    position: relative !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
   }
 
-  /* 2. THE STICKY MENU */
+  /* Make tabs horizontal scrollable */
   .tabs_menu {
-    position: -webkit-sticky !important;
-    position: sticky !important;
-    top: 100px !important; /* Must be less than the viewport height */
-    max-width: 27,5rem !important;
-    z-index: 10 !important;
-    /* Ensure the menu itself doesn't have a height of 100% */
-    height: auto !important; 
+    position: relative !important;
+    top: auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 0 !important;
+    /* Hide scrollbar but keep functionality */
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+    /* Add padding for better touch targets */
+    padding: 0.5rem 0 !important;
   }
 
-  /* 3. The Sidebar Tab Links */
+  /* Style individual tab buttons for horizontal layout */
   .details_item {
-    padding: 1rem 0 !important;
-    text-align: left !important;
-    background: transparent !important;
-    cursor: pointer !important;
-    transition: all 0.3s ease;
-    opacity: 0.5; /* Dim inactive tabs like your reference */
+    flex-shrink: 0 !important;
+    padding: 0.75rem 1.5rem !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+    border-bottom: 2px solid transparent !important;
+    transition: all 0.3s ease !important;
   }
 
   .details_item.is-active {
-    opacity: 1 !important;
+    border-bottom-color: currentColor !important;
   }
 
-  /* 4. The Content Area (Right Side) */
+  /* Full width content */
   .tabs_body {
-    flex-grow: 1 !important;
+    width: 100% !important;
   }
 
   .tabs_panel-content {
-    display: flex !important;
-    flex-direction: column !important;
-    /* This creates the vertical "Gaps" between heading, paragraph, and images */
-    gap: 2.5rem !important; 
-    max-width: 960px; /* Limits line length for better readability */
+    max-width: 100% !important;
   }
+}
 
-  /* 5. The Image Layout */
-  /* This grid handles 1, 2, or 3 images automatically */
-  .tab-images-container {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+/* Mobile (767px and below) */
+@media screen and (max-width: 767px) {
+  .tabs_element {
     gap: 1.5rem !important;
-    margin-top: 1rem !important;
   }
 
-  .tab-img {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: cover !important;
+  .tabs_menu {
+    /* Add scroll indicators/shadows */
+    background: 
+      linear-gradient(to right, white 30%, transparent),
+      linear-gradient(to left, white 30%, transparent),
+      linear-gradient(to right, rgba(0,0,0,.15), transparent),
+      linear-gradient(to left, rgba(0,0,0,.15), transparent);
+    background-repeat: no-repeat;
+    background-position: left center, right center, left center, right center;
+    background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
+    background-attachment: local, local, scroll, scroll;
   }
 
+  .details_item {
+    padding: 0.625rem 1.25rem !important;
+    font-size: 0.875rem !important;
+  }
+
+  .tabs_panel-content {
+    gap: 1.5rem !important;
+  }
+
+  /* Adjust image grid for mobile */
+  .tab-images-container {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+}
+
+/* Optional: Custom scrollbar styling for webkit browsers */
+@media screen and (max-width: 991px) {
+  .tabs_menu::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .tabs_menu::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+  }
+
+  .tabs_menu::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+  }
+
+  .tabs_menu::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
 </style>
 
         <div class="padding-global padding-section-large">
