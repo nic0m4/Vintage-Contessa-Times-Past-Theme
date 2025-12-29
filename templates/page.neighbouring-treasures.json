@@ -22,13 +22,32 @@
         "tab_NJRPxi": {
           "type": "tab",
           "settings": {
-            "text_tab_label": "Tab Label",
-            "text_text": "Tab Text"
+            "text_tab_label": "Vail Village",
+            "text_text": "European-inspired promenades filled with boutiques, cafés, and art galleries with the iconic Vail Covered Bridge and clocktower.",
+            "image_image": "shopify://shop_images/vail-village-tab.webp"
+          }
+        },
+        "tab_JnJARp": {
+          "type": "tab",
+          "settings": {
+            "text_tab_label": "Designer & Luxury Shopping",
+            "text_text": "Couture houses, fine jewelry, and curated mountain style.",
+            "image_image": "shopify://shop_images/luxury_shopping.webp"
+          }
+        },
+        "tab_C4aVbB": {
+          "type": "tab",
+          "settings": {
+            "text_tab_label": "World-Class Skiing",
+            "text_text": "Legendary back bowls, sweeping groomers, and iconic alpine terrain.",
+            "image_image": "shopify://shop_images/world-class-skiing.webp"
           }
         }
       },
       "block_order": [
-        "tab_NJRPxi"
+        "tab_NJRPxi",
+        "tab_JnJARp",
+        "tab_C4aVbB"
       ],
       "name": "Tabs",
       "settings": {}
