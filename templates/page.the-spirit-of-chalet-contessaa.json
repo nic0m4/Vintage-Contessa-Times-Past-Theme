@@ -16,6 +16,25 @@
         "richtext_text": "<p>Inspired by the iconic photography and art, the design blends classic European luxury with the adventurous spirit of the Rockies—delivering a curated, comfortable elegance that feels both storied and striking now.</p>"
       }
     },
+    "tabs_RPNEeB": {
+      "type": "tabs",
+      "blocks": {
+        "tab_ertgiB": {
+          "type": "tab",
+          "settings": {
+            "text_text": "Tab Text",
+            "url_button_link": "",
+            "text_button_text": "Button Text",
+            "text_tab_label": "This is some text inside of a div block."
+          }
+        }
+      },
+      "block_order": [
+        "tab_ertgiB"
+      ],
+      "name": "Tabs",
+      "settings": {}
+    },
     "hero_slider_1_VQPTBb": {
       "type": "hero_slider_1",
       "blocks": {
@@ -107,13 +126,17 @@
         "slide_RmyAnj"
       ],
       "name": "Hero Slider 1",
-      "settings": {}
+      "settings": {
+        "text_title": "Indulgences at Chalet Contessa",
+        "text_subtitle": "Curated comforts and mountain moments designed for rest, connection, and la dolce vita in the Vail Valley."
+      }
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "small_hero",
+    "tabs_RPNEeB",
     "hero_slider_1_VQPTBb"
   ]
 }
