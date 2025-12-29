@@ -147,6 +147,15 @@
             "text_button_text": "Button Text",
             "text_tab_label": "The Laundry"
           }
+        },
+        "tab_CgHFBT": {
+          "type": "tab",
+          "settings": {
+            "text_text": "Clever, elegant, and quietly inviting, The Trailhead Room nods to all the gear, gossip, and glamour that pass through, without ever being on-the-nose. A tribute to the trails, tales, and transitions of mountain life, it sets a tone of calm intention with organized cubbies, layered textures, and soft natural light.",
+            "url_button_link": "",
+            "text_button_text": "",
+            "text_tab_label": "Trailhead"
+          }
         }
       },
       "block_order": [
@@ -161,7 +170,8 @@
         "tab_47whxc",
         "tab_HXciQn",
         "tab_3jBPbC",
-        "tab_PHrUbD"
+        "tab_PHrUbD",
+        "tab_CgHFBT"
       ],
       "name": "Tabs",
       "settings": {}
