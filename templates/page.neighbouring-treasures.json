@@ -92,18 +92,74 @@
     "icons_3": {
       "type": "icons_3",
       "blocks": {
-        "icon_item_hyiNh7": {
+        "icon_item_qFc7PQ": {
           "type": "icon-item",
           "settings": {
             "column_selection": "3",
+            "image_icon": "shopify://shop_images/gondola_lift.svg",
             "text_icon_heading": "Gateway to Beaver Creek",
             "text_icon_description": "Quick access to lifts, gondolas, and mountain adventures."
+          }
+        },
+        "icon_item_R9LKhg": {
+          "type": "icon-item",
+          "settings": {
+            "column_selection": "3",
+            "image_icon": "shopify://shop_images/kayaking.svg",
+            "text_icon_heading": "Lake Nottingham",
+            "text_icon_description": "Paddleboarding, picnics, concerts, and fireworks."
+          }
+        },
+        "icon_item_xwAref": {
+          "type": "icon-item",
+          "settings": {
+            "column_selection": "3",
+            "image_icon": "shopify://shop_images/bakery_dining.svg",
+            "text_icon_heading": "Dining & Markets",
+            "text_icon_description": "Breweries, markets, and family-friendly eateries."
+          }
+        },
+        "icon_item_LLjMNm": {
+          "type": "icon-item",
+          "settings": {
+            "column_selection": "2",
+            "image_icon": "shopify://shop_images/water.svg",
+            "text_icon_heading": "Riverwalk",
+            "text_icon_description": "Boutiques, bookstores, cafés, and wine bars with true local charm."
+          }
+        },
+        "icon_item_CXM77F": {
+          "type": "icon-item",
+          "settings": {
+            "column_selection": "2",
+            "image_icon": "shopify://shop_images/brunch_dining.svg",
+            "text_icon_heading": "Dining Scene",
+            "text_icon_description": "Sushi, steakhouses, wood-fired favorites, and chic brunch spots"
+          }
+        },
+        "icon_item_npYgbB": {
+          "type": "icon-item",
+          "settings": {
+            "column_selection": "2",
+            "image_icon": "shopify://shop_images/nest_eco_leaf.svg",
+            "text_icon_heading": "Farmers Markets",
+            "text_icon_description": "Seasonal markets celebrating Colorado artisans and flavors."
+          }
+        },
+        "icon_item_TR9dfR": {
+          "type": "icon-item",
+          "settings": {
+            "column_selection": "2",
+            "image_icon": "shopify://shop_images/spa.svg",
+            "text_icon_heading": "Wellness Culture",
+            "text_icon_description": "Yoga, Pilates, spas, and holistic wellness offerings."
           }
         },
         "icon_item_HjdBFg": {
           "type": "icon-item",
           "settings": {
             "column_selection": "1",
+            "image_icon": "shopify://shop_images/downhill_skiing.svg",
             "text_icon_heading": "Ski Access",
             "text_icon_description": "A serene, uncrowded gateway to Beaver Creek Mountain"
           }
@@ -111,16 +167,43 @@
         "icon_item_9itDf3": {
           "type": "icon-item",
           "settings": {
-            "column_selection": "2",
-            "text_icon_heading": "Riverwalk",
-            "text_icon_description": "Boutiques, bookstores, cafés, and wine bars with true local charm."
+            "column_selection": "1",
+            "image_icon": "shopify://shop_images/golf_course.svg",
+            "text_icon_heading": "Country Club of the Rockies",
+            "text_icon_description": "A Jack Nicklaus Signature Golf Course across the river."
+          }
+        },
+        "icon_item_hyiNh7": {
+          "type": "icon-item",
+          "settings": {
+            "column_selection": "1",
+            "image_icon": "shopify://shop_images/follow_the_signs.svg",
+            "text_icon_heading": "Village Pathways",
+            "text_icon_description": "Peaceful walks with river and mountain views."
+          }
+        },
+        "icon_item_MGAz9T": {
+          "type": "icon-item",
+          "settings": {
+            "column_selection": "1",
+            "image_icon": "shopify://shop_images/family_restroom.svg",
+            "text_icon_heading": "Understated Elegance",
+            "text_icon_description": "A refined enclave for those who prefer calm over crowds."
           }
         }
       },
       "block_order": [
-        "icon_item_hyiNh7",
+        "icon_item_qFc7PQ",
+        "icon_item_R9LKhg",
+        "icon_item_xwAref",
+        "icon_item_LLjMNm",
+        "icon_item_CXM77F",
+        "icon_item_npYgbB",
+        "icon_item_TR9dfR",
         "icon_item_HjdBFg",
-        "icon_item_9itDf3"
+        "icon_item_9itDf3",
+        "icon_item_hyiNh7",
+        "icon_item_MGAz9T"
       ],
       "settings": {
         "text_icons_title_1": "Arrowhead",
