@@ -32,9 +32,8 @@
     "quick_guide": {
       "type": "quick_guide",
       "blocks": {
-        "icon-item": {
+        "icon_item_rigwN9": {
           "type": "icon-item",
-          "name": "Icon item",
           "settings": {
             "text_icon_heading": "Ski Access",
             "text_icon_description": "A serene, uncrowded gateway to Beaver Creek Mountain"
@@ -42,7 +41,7 @@
         }
       },
       "block_order": [
-        "icon-item"
+        "icon_item_rigwN9"
       ],
       "settings": {
         "text_headline": "Quick Guide: What Each Month Feels Like"

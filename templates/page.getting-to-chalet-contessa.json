@@ -9,23 +9,28 @@
  */
 {
   "sections": {
-    "announcement_bar": {
-      "type": "announcement_bar",
-      "settings": {}
-    },
     "small_hero": {
       "type": "small_hero",
-      "settings": {}
+      "settings": {
+        "text_headline": "The spirit of Chalet Contessa is where timeless alpine glamour meets modern mountain living.",
+        "richtext_text": "<p>Inspired by the iconic photography and art, the design blends classic European luxury with the adventurous spirit of the Rockies—delivering a curated, comfortable elegance that feels both storied and striking now.</p>"
+      }
     },
     "travel": {
       "type": "travel",
-      "settings": {}
+      "settings": {
+        "text_travel_option_1": "Fly Into Eagle County Regional Airport (EGE)",
+        "richtext_travel_details_1": "<p>\n                      <strong>Distance:</strong> ~30 minutes from Chalet Contessa\n                      ‍\n                      For the quickest and most comfortable mountain arrival, Eagle (EGE) is the ideal airport.\n                      ‍\n                      \n                        <strong>Winter direct flights</strong> are commonly available from <strong>Houston (United), Dallas (American), New York, Miami, Chicago, Atlanta,</strong> and more. \n                 </p>",
+        "text_travel_option_2": "Fly Into Denver International Airport (DEN)",
+        "richtext_travel_details_2": "<p>\n                  \n                    <strong>Distance:</strong> ~2 to 2.5 hours (weather dependent)a\n                    ‍\n                    Many guests choose Denver for its numerous flight options and then enjoy:\n                    ‍\n                    \n                      <strong>a relaxing Epic Mountain Shuttle </strong>ride directly to Avon, Vail, or Beaver Creek<strong> — with discounts for Epic Pass holders, </strong>or\n                      a relaxing <</p>",
+        "text_travel_option_3": "Ground Transportation",
+        "richtext_travel_details_3": "<p>\n                    <strong>Epic Mountain Shuttle</strong>\n                    Professional, door-to-door service from both Denver and Eagle, accustomed to winter mountain conditions.\n                    ‍\n                    <strong>Uber / Ride Services</strong>\n                    Easily accessible from Eagle Airport for a smooth, no-planning-required arrival.\n                    ‍\n                    <strong>Rental Cars</strong>\n                    Readily available a</p>"
+      }
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "announcement_bar",
     "small_hero",
     "travel"
   ]
