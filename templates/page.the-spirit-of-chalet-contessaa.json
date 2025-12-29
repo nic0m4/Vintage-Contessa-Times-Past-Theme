@@ -138,6 +138,15 @@
             "text_button_text": "Button Text",
             "text_tab_label": "Legacy Bath"
           }
+        },
+        "tab_PHrUbD": {
+          "type": "tab",
+          "settings": {
+            "text_text": "Function meets finesse in this thoughtfully designed space, where clean lines and coordinated wicker baskets add structure and quiet elegance. Light-filled and airy, it transforms everyday tasks into moments of calm. Positioned just off the mud room, it continues the home’s cohesive design story—simple, sophisticated, and grounded in understated luxury.",
+            "url_button_link": "",
+            "text_button_text": "Button Text",
+            "text_tab_label": "The Laundry"
+          }
         }
       },
       "block_order": [
@@ -151,7 +160,8 @@
         "tab_7xnqKz",
         "tab_47whxc",
         "tab_HXciQn",
-        "tab_3jBPbC"
+        "tab_3jBPbC",
+        "tab_PHrUbD"
       ],
       "name": "Tabs",
       "settings": {}
