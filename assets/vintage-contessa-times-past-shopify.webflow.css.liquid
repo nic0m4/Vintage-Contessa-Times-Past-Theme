@@ -5158,6 +5158,40 @@ figcaption {
   display: flex;
 }
 
+.tabs_element_og, .tabs {
+  display: flex;
+}
+
+.tabs.max-width-full {
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.5rem;
+  flex: 0 auto;
+}
+
+.tabs_menu_wf {
+  flex-flow: column;
+  flex: 0 auto;
+  width: 40%;
+  max-width: 27.5rem;
+  padding-top: 4rem;
+  display: flex;
+  position: sticky;
+}
+
+.tabs_content {
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.5rem;
+  flex-flow: column;
+  flex: 1;
+  display: flex;
+}
+
+.tab_link, .tab_link.w--current {
+  border-bottom: 1px solid var(--base-color-brand--gold-dark);
+  background-color: #0000;
+  padding: 1rem;
+}
+
 @media screen and (max-width: 991px) {
   .padding-medium {
     padding: 1.5rem;
