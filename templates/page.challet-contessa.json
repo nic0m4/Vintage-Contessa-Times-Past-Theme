@@ -17,7 +17,7 @@
         "richtext_paragraph": "",
         "url_button_link": "shopify://pages/the-spirit-of-challet-contessa",
         "text_button_text": "The Spirit of Challet Contessa",
-        "url_button_link_2": "shopify://pages/the-spirit-of-challet-contessa",
+        "url_button_link_2": "shopify://pages/neighbouring-treasures",
         "text_button_text_2": "Neighboring Treasures"
       }
     },
@@ -26,7 +26,7 @@
       "settings": {
         "text_headline": "A private sanctuary for life, legacy, and the art of living beautifully.",
         "text_paragraph": "Nestled along the banks of the Eagle River between Avon and Edwards in Colorado’s renowned Vail Valley, Chalet Contessa is more than a destination—it is an immersive experience. With panoramic views of the river, Arrowhead Golf Course, and Beaver Creek Mountain, this luxurious retreat blends the grandeur of the Rockies with the elegance of European refinement.Born from the legacy of The Vintage Contessa & Times Past—internationally recognized for curating rare, authentic luxury—Chalet Contessa represents the next evolution of our brand: a place where meaningful connection, exceptional beauty, and timeless elegance come together. Designed for those who seek soulful luxury, it offers an atmosphere that feels both couture and comfortably lived-in, intimate yet unforgettable.",
-        "url_button_link": "shopify://pages/challet-contessa",
+        "url_button_link": "shopify://pages/getting-to-chalet-contessa",
         "text_button_text": "Getting to Chalet Contessa"
       }
     },
@@ -51,9 +51,9 @@
         "text_paragraph_2": "From its heritage roots to its couture details, Chalet Contessa is curated for connection: a boutique-style escape where the river sets the pace, the mountains frame the moment, and design elevates every experience.",
         "text_headline": "A private sanctuary for life, legacy, and the art of living beautifully.",
         "text_paragraph_3": "Chalet Contessa is not just a property. It is a living legacy—a home for heartfelt gatherings, extraordinary stories, and life’s most meaningful moments.",
-        "url_button_link": "",
+        "url_button_link": "shopify://pages/neighbouring-treasures",
         "text_button_text": "Neighbouring Treasures",
-        "url_button_link_2": "",
+        "url_button_link_2": "shopify://pages/the-vail-valley-through-the-seasons",
         "text_button_text_2": "Valley Through the Seasons"
       }
     }
