@@ -16,13 +16,37 @@
           "type": "faq-item-b",
           "name": "FAQ Item b",
           "settings": {
-            "text_heading": "Heading",
-            "richtext_richtext": "<p>\n                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                    </p>"
+            "text_heading": "Winter: December to February",
+            "richtext_richtext": "<p><strong>Snow-dusted charm, world-class skiing, and alpine wonder. </strong><br/><br/>Winter is when the valley sparkles. Powder days, holiday lights, and cozy après moments define the season. The villages glow with European charm, and the mountains feel alive.<br/><br/><strong>Signature Highlights:</strong><br/></p><ul><li>World-class skiing at Vail & Beaver Creek</li><li>Birds of Prey Men’s World Cup Races (Beaver Creek – early December)</li><li>Vilar Performing Arts Center winter performances</li><li>Ice skating under village lights</li></ul><p>Candlelit dinners, festive markets & holiday celebrations</p>"
+          }
+        },
+        "faq_item_b_RMwwPQ": {
+          "type": "faq-item-b",
+          "settings": {
+            "text_heading": "Spring: March to May",
+            "richtext_richtext": "<p><br/>                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                    </p>"
+          }
+        },
+        "faq_item_b_PqXWRg": {
+          "type": "faq-item-b",
+          "settings": {
+            "text_heading": "Summer: June to August",
+            "richtext_richtext": "<p><br/>                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                    </p>"
+          }
+        },
+        "faq_item_b_kQiCFm": {
+          "type": "faq-item-b",
+          "settings": {
+            "text_heading": "Fall: September to November",
+            "richtext_richtext": "<p><br/>                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                    </p>"
           }
         }
       },
       "block_order": [
-        "faq-item-b"
+        "faq-item-b",
+        "faq_item_b_RMwwPQ",
+        "faq_item_b_PqXWRg",
+        "faq_item_b_kQiCFm"
       ],
       "settings": {
         "text_headline": "The Vail Valley Through the Seasons",
@@ -35,13 +59,103 @@
         "icon_item_rigwN9": {
           "type": "icon-item",
           "settings": {
-            "text_icon_heading": "Ski Access",
-            "text_icon_description": "A serene, uncrowded gateway to Beaver Creek Mountain"
+            "image_icon": "shopify://shop_images/forest.svg",
+            "text_icon_heading": "December",
+            "text_icon_description": "Holiday magic, skiing opens fully, festive lights everywhere."
+          }
+        },
+        "icon_item_yzLqrN": {
+          "type": "icon-item",
+          "settings": {
+            "text_icon_heading": "January–February",
+            "text_icon_description": "Peak winter: powder days, après ski, performances at the Vilar."
+          }
+        },
+        "icon_item_k4jJ8V": {
+          "type": "icon-item",
+          "settings": {
+            "image_icon": "shopify://shop_images/sunny_snowing.svg",
+            "text_icon_heading": "March",
+            "text_icon_description": "Spring skiing begins: sunshine, soft snow, vibrant village patios."
+          }
+        },
+        "icon_item_e8HBEK": {
+          "type": "icon-item",
+          "settings": {
+            "image_icon": "shopify://shop_images/grass.svg",
+            "text_icon_heading": "April",
+            "text_icon_description": "Late skiing + peaceful shoulder season, emerging trails."
+          }
+        },
+        "icon_item_fXYM8a": {
+          "type": "icon-item",
+          "settings": {
+            "image_icon": "shopify://shop_images/psychiatry.svg",
+            "text_icon_heading": "May",
+            "text_icon_description": "Quiet, restorative, early wildflowers — ideal for relaxation."
+          }
+        },
+        "icon_item_4NdVda": {
+          "type": "icon-item",
+          "settings": {
+            "image_icon": "shopify://shop_images/hiking.svg",
+            "text_icon_heading": "June",
+            "text_icon_description": "Early summer: perfect hiking & patio season, art shows begin."
+          }
+        },
+        "icon_item_ER7diU": {
+          "type": "icon-item",
+          "settings": {
+            "image_icon": "shopify://shop_images/wb_sunny.svg",
+            "text_icon_heading": "July",
+            "text_icon_description": "Peak summer: Bravo! Vail, Vail Dance, fireworks, river days."
+          }
+        },
+        "icon_item_cUb9Mt": {
+          "type": "icon-item",
+          "settings": {
+            "image_icon": "shopify://shop_images/celebration.svg",
+            "text_icon_heading": "August",
+            "text_icon_description": "Warmest month: concerts, festivals, sunshine-filled adventures."
+          }
+        },
+        "icon_item_zEaG7X": {
+          "type": "icon-item",
+          "settings": {
+            "image_icon": "shopify://shop_images/nest_eco_leaf_c15960ae-a14e-434b-958f-3d90a8d23ecb.svg",
+            "text_icon_heading": "September",
+            "text_icon_description": "Aspen gold, crisp air — the most iconic fall month."
+          }
+        },
+        "icon_item_cRhCnQ": {
+          "type": "icon-item",
+          "settings": {
+            "image_icon": "shopify://shop_images/emoji_food_beverage.svg",
+            "text_icon_heading": "October",
+            "text_icon_description": "Quiet, romantic, cozy — a hidden gem time to visit."
+          }
+        },
+        "icon_item_aCrxGP": {
+          "type": "icon-item",
+          "settings": {
+            "image_icon": "shopify://shop_images/ac_unit.svg",
+            "text_icon_heading": "November",
+            "text_icon_description": "Winter awakens: early skiing, holiday lights return."
           }
         }
       },
       "block_order": [
-        "icon_item_rigwN9"
+        "icon_item_rigwN9",
+        "icon_item_yzLqrN",
+        "icon_item_k4jJ8V",
+        "icon_item_e8HBEK",
+        "icon_item_fXYM8a",
+        "icon_item_4NdVda",
+        "icon_item_ER7diU",
+        "icon_item_cUb9Mt",
+        "icon_item_zEaG7X",
+        "icon_item_cRhCnQ",
+        "icon_item_aCrxGP"
       ],
       "settings": {
         "text_headline": "Quick Guide: What Each Month Feels Like"
