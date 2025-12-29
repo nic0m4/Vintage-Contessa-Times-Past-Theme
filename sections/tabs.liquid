@@ -127,8 +127,141 @@
   .tabs_menu {
     /* Add scroll indicators/shadows */
     background: 
-      linear-gradient(to right, white 30%, transparent),
-      linear-gradient(to left, white 30%, transparent),
+/* The Main Container */
+.tabs_wrapper_flex {
+  display: flex !important;
+  align-items: flex-start !important; 
+  width: 100%;
+}
+
+/* 1. THE LAYOUT PARENT */
+.tabs_element {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: 2.5rem !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+/* 2. THE STICKY MENU */
+.tabs_menu {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 100px !important;
+  max-width: 27.5rem !important;
+  z-index: 10 !important;
+  height: auto !important; 
+}
+
+/* 3. The Sidebar Tab Links */
+.details_item {
+  padding: 1rem 0 !important;
+  text-align: left !important;
+  background: transparent !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+  border: none !important;
+  width: 100% !important;
+}
+
+.details_item.is-active {
+  opacity: 1 !important;
+}
+
+/* 4. The Content Area (Right Side) */
+.tabs_body {
+  flex-grow: 1 !important;
+}
+
+.tabs_panel-content {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 2.5rem !important; 
+  max-width: 960px;
+}
+
+/* 5. The Image Layout */
+.tab-images-container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 1.5rem !important;
+  margin-top: 1rem !important;
+}
+
+.tab-img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* Tablet and below (991px) */
+@media screen and (max-width: 991px) {
+  /* Stack tabs above content */
+  .tabs_element {
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+
+  /* Make tabs horizontal scrollable */
+  .tabs_menu {
+    position: relative !important;
+    top: auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 0 !important;
+    /* Hide scrollbar but keep functionality */
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+    /* Add padding for better touch targets */
+    padding: 0.5rem 0 !important;
+  }
+
+  /* Style individual tab buttons for horizontal layout */
+  .details_item {
+    flex-shrink: 0 !important;
+    padding: 0.75rem 1.5rem !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+    border-bottom: 2px solid transparent !important;
+    transition: all 0.3s ease !important;
+    width: auto !important;
+  }
+
+  .details_item.is-active {
+    border-bottom-color: currentColor !important;
+  }
+
+  /* Full width content */
+  .tabs_body {
+    width: 100% !important;
+  }
+
+  .tabs_panel-content {
+    max-width: 100% !important;
+  }
+}
+
+/* Mobile (767px and below) */
+@media screen and (max-width: 767px) {
+  .tabs_element {
+    gap: 1.5rem !important;
+  }
+
+  .tabs_menu {
+    /* Add scroll indicators/shadows */
+    background: 
+      linear-gradient(to right, #FCF8EF 30%, transparent),
+      linear-gradient(to left, #FCF8EF 30%, transparent),
       linear-gradient(to right, rgba(0,0,0,.15), transparent),
       linear-gradient(to left, rgba(0,0,0,.15), transparent);
     background-repeat: no-repeat;
