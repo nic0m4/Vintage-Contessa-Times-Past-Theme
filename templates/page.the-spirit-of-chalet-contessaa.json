@@ -67,28 +67,76 @@
         "tab_cLaCqB": {
           "type": "tab",
           "settings": {
-            "text_text": "Tab Text",
+            "text_text": "The La Perla Bath is a serene, couture-inspired escape wrapped in deep blue faux-lacquer wallpaper. Heated white marble floors with soft blue veining add comfort and calm elegance, while a burl wood vanity with a marble countertop brings warmth and sophistication. Chic, polished, and quietly indulgent, this bath offers a refined retreat within the chalet.",
+            "image_image": "shopify://shop_images/la-perla-bath.webp",
             "url_button_link": "",
-            "text_button_text": "Button Text",
-            "text_tab_label": "This is some text inside of a div block."
+            "text_button_text": "",
+            "text_tab_label": "La Perla Powder & Full Bath"
           }
         },
         "tab_WVXMye": {
           "type": "tab",
           "settings": {
-            "text_text": "Tab Text",
+            "text_text": "Soft, warm, and quietly dramatic, The Terra Room balances earthy tones with elegant detail. Named for its grounding palette and personal ties, it carries a whisper of the American South, a nod to Gone with the Wind, and a sense of legacy passed through generations. Orange drapes cast a glow over the serene taupe bed, while a framed Hermès scarf and layered textures bring worldly warmth and calm.",
+            "image_image": "shopify://shop_images/terra-close.webp",
+            "image_2": "shopify://shop_images/terra-dor.webp",
             "url_button_link": "",
-            "text_button_text": "Button Text",
-            "text_tab_label": "This is some text inside of a div block."
+            "text_button_text": "",
+            "text_tab_label": "Terra"
           }
         },
         "tab_AikP7E": {
           "type": "tab",
           "settings": {
-            "text_text": "Tab Text",
+            "text_text": "French and Italian for “the beautiful life,” The Bella Vie Room is a serene retreat in soft blues, warm whites, and hints of blush. A framed Hermès scarf featuring girls on horseback brings quiet strength, while Schumacher wallpaper, a plush settee, and Hermès accents add movement and gentle charm. Marble details and mirrored doors reflect the light, creating a space that feels timeless, hopeful, and softly uplifting.",
+            "image_image": "shopify://shop_images/bella-vie-full.webp",
+            "image_2": "shopify://shop_images/bella-vie-corner-view.webp",
+            "url_button_link": "",
+            "text_button_text": "",
+            "text_tab_label": "Bella Vie"
+          }
+        },
+        "tab_7xnqKz": {
+          "type": "tab",
+          "settings": {
+            "text_text": "A playful retreat wrapped in Missoni’s iconic zigzag wallpaper, this room blends the turquoise hues of the Italian isle of Capri with the fresh greens of alpine forests. A whimsical daybed—convertible into a queen—creates a versatile space for rest or relaxation. Youthful touches shine through a shadow box of vintage skis, while views toward the Louis Vuitton trunks",
+            "image_image": "shopify://shop_images/missoni-in.webp",
+            "image_2": "shopify://shop_images/missoni-out.webp",
+            "url_button_link": "",
+            "text_button_text": "",
+            "text_tab_label": "Missoni"
+          }
+        },
+        "tab_47whxc": {
+          "type": "tab",
+          "settings": {
+            "text_text": "Inspired by the owners’ travels to Capri, the Dolce & Gabbana Bath brings la dolce vita to the mountains. Bold Italian tile pairs beautifully with the Contessa family’s legacy in marble, granite, and tile, creating a jewel-box space that feels both couture and deeply personal. A playful burst of color and craftsmanship, it’s an unexpected touch of Capri in the heart of the Rockies.",
+            "image_image": "shopify://shop_images/dolce-gabbana-shower.webp",
+            "image_2": "shopify://shop_images/dolce-gabbana-vanity.webp",
             "url_button_link": "",
             "text_button_text": "Button Text",
-            "text_tab_label": "This is some text inside of a div block."
+            "text_tab_label": "Dolce & Gabbana Power & Full Bath"
+          }
+        },
+        "tab_HXciQn": {
+          "type": "tab",
+          "settings": {
+            "text_text": "Built with Vision. Lived with Intention.The Legacy Room is the cornerstone of Chalet Contessa—a tribute to the family who preserved this iconic home and to Vito, the beloved patriarch whose vision made it possible. Layered with textures inspired by the Wild West, African lands, and European elegance, it tells a story of achievement, heritage, and timeless style. With panoramic river views and quiet, curated luxury, it’s a place to reflect, reset, and savor la dolce vita—the sweet life, lived fully and with heart.",
+            "image_image": "shopify://shop_images/legacy-viewout.webp",
+            "image_2": "shopify://shop_images/legacy-couch.webp",
+            "image_3": "shopify://shop_images/legacy-bed.webp",
+            "url_button_link": "",
+            "text_button_text": "",
+            "text_tab_label": "Legacy"
+          }
+        },
+        "tab_3jBPbC": {
+          "type": "tab",
+          "settings": {
+            "text_text": "The Legacy Bath carries the Ralph Lauren–inspired elegance of the master suite into a spa-like sanctuary. Houndstooth wallpaper sets a refined tone, while a jacuzzi tub, walk-in shower, and separate toilet room offer luxurious comfort. A well-lit double vanity and a spacious walk-in closet with built-in drawers and ample hanging space make this retreat as functional as it is beautiful.",
+            "url_button_link": "",
+            "text_button_text": "Button Text",
+            "text_tab_label": "Legacy Bath"
           }
         }
       },
@@ -99,7 +147,11 @@
         "tab_fJ7nN8",
         "tab_cLaCqB",
         "tab_WVXMye",
-        "tab_AikP7E"
+        "tab_AikP7E",
+        "tab_7xnqKz",
+        "tab_47whxc",
+        "tab_HXciQn",
+        "tab_3jBPbC"
       ],
       "name": "Tabs",
       "settings": {}
