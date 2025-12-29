@@ -55,49 +55,35 @@
     "icons_3": {
       "type": "icons_3",
       "blocks": {
+        "icon_item_hyiNh7": {
+          "type": "icon-item",
+          "settings": {
+            "column_selection": "3",
+            "text_icon_heading": "Gateway to Beaver Creek",
+            "text_icon_description": "Quick access to lifts, gondolas, and mountain adventures."
+          }
+        },
+        "icon_item_HjdBFg": {
+          "type": "icon-item",
+          "settings": {
+            "column_selection": "1",
+            "text_icon_heading": "Ski Access",
+            "text_icon_description": "A serene, uncrowded gateway to Beaver Creek Mountain"
+          }
+        },
         "icon_item_9itDf3": {
           "type": "icon-item",
           "settings": {
-            "text_icon_heading": "Ski Access",
-            "text_icon_description": "A serene, uncrowded gateway to Beaver Creek Mountain"
-          }
-        },
-        "icon_item_jtfetr": {
-          "type": "icon-item",
-          "settings": {
-            "text_icon_heading": "Ski Access",
-            "text_icon_description": "A serene, uncrowded gateway to Beaver Creek Mountain"
-          }
-        },
-        "icon_item_nibder": {
-          "type": "icon-item",
-          "settings": {
-            "text_icon_heading": "Ski Access",
-            "text_icon_description": "A serene, uncrowded gateway to Beaver Creek Mountain"
-          }
-        },
-        "icon_item_rCDayN": {
-          "type": "icon-item",
-          "settings": {
-            "text_icon_heading": "Ski Access",
-            "text_icon_description": "A serene, uncrowded gateway to Beaver Creek Mountain"
-          }
-        },
-        "icon-item": {
-          "type": "icon-item",
-          "name": "Icon item",
-          "settings": {
-            "text_icon_heading": "Ski Access",
-            "text_icon_description": "A serene, uncrowded gateway to Beaver Creek Mountain"
+            "column_selection": "2",
+            "text_icon_heading": "Riverwalk",
+            "text_icon_description": "Boutiques, bookstores, cafés, and wine bars with true local charm."
           }
         }
       },
       "block_order": [
-        "icon_item_9itDf3",
-        "icon_item_jtfetr",
-        "icon_item_nibder",
-        "icon_item_rCDayN",
-        "icon-item"
+        "icon_item_hyiNh7",
+        "icon_item_HjdBFg",
+        "icon_item_9itDf3"
       ],
       "settings": {
         "text_icons_title_1": "Arrowhead",
