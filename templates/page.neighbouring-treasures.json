@@ -42,12 +42,30 @@
             "text_text": "Legendary back bowls, sweeping groomers, and iconic alpine terrain.",
             "image_image": "shopify://shop_images/world-class-skiing.webp"
           }
+        },
+        "tab_yi77er": {
+          "type": "tab",
+          "settings": {
+            "text_tab_label": "Apres ski",
+            "text_text": "Champagne terraces, lively lounges, and fireside gatherings.",
+            "image_image": "shopify://shop_images/apres-ski.webp"
+          }
+        },
+        "tab_AEx9QD": {
+          "type": "tab",
+          "settings": {
+            "text_tab_label": "Fine Dining",
+            "text_text": "Elevated cuisine from intimate bistros to nationally acclaimed restaurants.",
+            "image_image": "shopify://shop_images/pepis.webp"
+          }
         }
       },
       "block_order": [
         "tab_NJRPxi",
         "tab_JnJARp",
-        "tab_C4aVbB"
+        "tab_C4aVbB",
+        "tab_yi77er",
+        "tab_AEx9QD"
       ],
       "name": "Tabs",
       "settings": {}
