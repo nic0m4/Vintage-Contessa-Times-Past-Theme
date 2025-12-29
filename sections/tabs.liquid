@@ -2,82 +2,83 @@
     
   .button.is-tab-button {&nbsp;&nbsp;opacity: 60%;}.button.is-tab-button.is-active {&nbsp;&nbsp;opacity: 100%;}
 
-  /* 1. The Main Container */
-  .tabs_wrapper_flex {
-    display: flex !important;
-    /* align-items: flex-start is REQUIRED for sticky to work. 
-       If it is 'stretch', the sidebar height will match the content and have nowhere to slide. */
-    align-items: flex-start !important; 
-    gap: 80px !important; /* Large gap between sidebar and content */
-    width: 100%;
-  }
-
+/* 1. The Container Fix */
+  /* This is the parent of your Menu and Body */
   .tabs_element {
-  display: flex !important;
-  align-items: flex-start !important; /* THIS IS THE KEY */
-  gap: 80px !important;
-}
+    display: flex !important;
+    align-items: flex-start !important; 
+    gap: 80px !important;
+    width: 100% !important;
+    position: relative !important;
+  }
 
   /* 2. The Sticky Sidebar */
   .tabs_menu {
     position: -webkit-sticky !important;
     position: sticky !important;
-    top: 100px !important; /* Adjust this value to clear your site header */
-    width: 440px !important; /* Fixed width for the menu */
+    top: 100px !important; 
+    width: 300px !important; /* Slightly smaller to prevent crowding */
     flex-shrink: 0 !important;
     display: flex !important;
     flex-direction: column !important;
+    z-index: 10 !important;
   }
 
-  /* 3. The Sidebar Tab Links */
-  .details_item {
-    padding: 1.25rem 0 !important;
-    text-align: left !important;
-    background: transparent !important;
-    cursor: pointer !important;
-    transition: all 0.3s ease;
-    opacity: 0.5; /* Dim inactive tabs like your reference */
-  }
-
-  .details_item.is-active {
-    opacity: 1 !important;
-  }
-
-  /* 4. The Content Area (Right Side) */
+  /* 3. The Content Area */
   .tabs_body {
-    flex-grow: 1 !important;
+    flex: 1 !important; /* Takes up all remaining space */
+    min-width: 0 !important; /* Prevents flex items from overflowing */
+  }
+
+  /* 4. THE OVERLAP FIX */
+  /* We must force the panels to be relative so they push the page down 
+     and sit NEXT to the menu, not on top of it. */
+  .tabs_panel {
+    position: relative !important; 
+    display: block !important; 
+    width: 100% !important;
   }
 
   .tabs_panel-content {
     display: flex !important;
     flex-direction: column !important;
-    /* This creates the vertical "Gaps" between heading, paragraph, and images */
-    gap: 2.5rem !important; 
-    max-width: 960px; /* Limits line length for better readability */
+    gap: 2rem !important; /* Space between Title, Text, and Images */
+    padding-bottom: 5rem !important; /* Space before the next section */
   }
 
-  /* 5. The Image Layout */
-  /* This grid handles 1, 2, or 3 images automatically */
+  /* 5. Image Grid Gaps */
   .tab-images-container {
     display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
     gap: 1.5rem !important;
-    margin-top: 1rem !important;
   }
 
   .tab-img {
     width: 100% !important;
     height: auto !important;
     object-fit: cover !important;
-    /* Optional: Aspect ratio to keep images uniform */
-    aspect-ratio: 3/2; 
+    aspect-ratio: 3/2;
   }
 
-  /* Mobile Adjustments */
-  @media screen and (max-width: 767px) {
-    .tabs_wrapper_flex {
+  /* Sidebar Links Styling */
+  .details_item {
+    padding: 1rem 0 !important;
+    text-align: left !important;
+    background: transparent !important;
+    cursor: pointer !important;
+    transition: opacity 0.3s ease;
+    opacity: 0.4;
+  }
+
+  .details_item.is-active {
+    opacity: 1 !important;
+  }
+
+  /* Mobile: Stack them */
+  @media screen and (max-width: 991px) {
+    .tabs_element {
       flex-direction: column !important;
-      gap: 40px !important;
+      gap: 30px !important;
     }
     .tabs_menu {
       position: relative !important;
@@ -85,7 +86,6 @@
       width: 100% !important;
     }
   }
-
 
 </style>
         <div class="padding-global padding-section-large">
