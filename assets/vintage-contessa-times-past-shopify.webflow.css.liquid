@@ -884,6 +884,14 @@ figcaption {
   border: 2px solid #0000;
 }
 
+.button.is-tab {
+  border-top-style: none;
+  border-bottom-style: solid;
+  border-bottom-color: var(--base-color-brand--gold-dark);
+  color: var(--text-color--text-primary);
+  background-color: #0000;
+}
+
 .li-styleguide_classes {
   grid-column-gap: 1px;
   grid-row-gap: 1px;
@@ -5120,6 +5128,36 @@ figcaption {
   position: absolute;
 }
 
+.padding-global-3 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.heading-style-h2-3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.tabs_flex {
+  grid-column-gap: 3.125rem;
+  grid-row-gap: 3.125rem;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.tabs_element-2 {
+  grid-column-gap: 3.125rem;
+  grid-row-gap: 3.125rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-self: stretch;
+  align-items: stretch;
+  display: flex;
+}
+
 @media screen and (max-width: 991px) {
   .padding-medium {
     padding: 1.5rem;
@@ -5889,6 +5927,11 @@ figcaption {
     padding-left: 3rem;
     padding-right: 3rem;
   }
+
+  .padding-global-3 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -6552,6 +6595,20 @@ figcaption {
     width: .8125rem;
     height: .8125rem;
   }
+
+  .padding-global-3 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .heading-style-h2-3 {
+    font-size: 2rem;
+  }
+
+  .tabs_flex, .tabs_element-2 {
+    grid-column-gap: 1.75rem;
+    grid-row-gap: 1.75rem;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -7072,6 +7129,10 @@ figcaption {
     flex-flow: wrap;
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+  }
+
+  .heading-style-h2-3 {
+    font-size: 1.8rem;
   }
 }
 
