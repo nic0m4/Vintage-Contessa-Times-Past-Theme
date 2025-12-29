@@ -55,6 +55,10 @@
           "type": "tab",
           "settings": {
             "text_text": "With sweeping river views and a table set for connection, The Hearth is the Soul of Chalet Contessa where food, family, and stories come together. High ceilings meet an intimate mood, creating a space designed for conversation, celebration, and slowing down. Elegant textures, candlelight, and an indoor–outdoor rhythm invite guests to linger and savor the beautiful life unfolding here.",
+            "image_image": "shopify://shop_images/hearth-golf-course.webp",
+            "image_2": "shopify://shop_images/hearth-river-view.webp",
+            "image_3": "shopify://shop_images/hearth-tree-view.webp",
+            "image_4": "shopify://shop_images/hearth-table.webp",
             "url_button_link": "",
             "text_button_text": "",
             "text_tab_label": "Hearth"
