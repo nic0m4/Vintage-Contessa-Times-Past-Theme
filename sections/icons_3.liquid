@@ -1,122 +1,108 @@
 <div class="padding-global padding-section-medium">
           <div class="container-large">
-<div class="grid_3col">
-  
-  {% comment %} COLUMN 1 {% endcomment %}
-  <div>
-    <div class="heading-style-h5">{{ section.settings.text_icons_title_1 }}</div>
-    <div class="spacer-medium"></div>
-    <div class="icon_list">
-      {% for block in section.blocks %}
-        {% if block.type == 'icon-item' and block.settings.column_selection == '1' %}
-          <div class="icon_item">
-            {% if block.settings.image_icon %}
-              {{ block.settings.image_icon | image_url: width: 100 | image_tag: loading: 'lazy', width: '32', height: '32', class: 'icon_setting' }}
-            {% else %}
-              <img src="https://cdn.prod.website-files.com/693556392bdd45447f7f36e5/6952b0407d5337fb63780458_downhill_skiing.svg" width="32" height="32" class="icon_setting">
-            {% endif %}
-            <div class="icon_description">
-              <div class="text-size-medium text-weight-semibold">{{ block.settings.text_icon_heading }}</div>
-              <div class="text-size-regular">{{ block.settings.text_icon_description }}</div>
-            </div>
-          </div>
-        {% elsif block.type == '@app' %}
-          {% render block %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-  {% comment %} COLUMN 2 {% endcomment %}
-  <div>
-    <div class="heading-style-h5">{{ section.settings.text_icons_title_2 }}</div>
-    <div class="spacer-medium"></div>
-    <div class="icon_list">
-      {% for block in section.blocks %}
-        {% if block.type == 'icon-item' and block.settings.column_selection == '2' %}
-          <div class="icon_item">
-            {% if block.settings.image_icon %}
-              {{ block.settings.image_icon | image_url: width: 100 | image_tag: loading: 'lazy', width: '32', height: '32', class: 'icon_setting' }}
-            {% else %}
-              <img src="https://cdn.prod.website-files.com/693556392bdd45447f7f36e5/6952b0407d5337fb63780458_downhill_skiing.svg" width="32" height="32" class="icon_setting">
-            {% endif %}
-            <div class="icon_description">
-              <div class="text-size-medium text-weight-semibold">{{ block.settings.text_icon_heading }}</div>
-              <div class="text-size-regular">{{ block.settings.text_icon_description }}</div>
-            </div>
-          </div>
-        {% elsif block.type == '@app' %}
-          {% render block %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-  {% comment %} COLUMN 3 {% endcomment %}
-  <div>
-    <div class="heading-style-h5">{{ section.settings.text_icons_title_3 }}</div>
-    <div class="spacer-medium"></div>
-    <div class="icon_list">
-      {% for block in section.blocks %}
-        {% if block.type == 'icon-item' and block.settings.column_selection == '3' %}
-          <div class="icon_item">
-            {% if block.settings.image_icon %}
-              {{ block.settings.image_icon | image_url: width: 100 | image_tag: loading: 'lazy', width: '32', height: '32', class: 'icon_setting' }}
-            {% else %}
-              <img src="https://cdn.prod.website-files.com/693556392bdd45447f7f36e5/6952b0407d5337fb63780458_downhill_skiing.svg" width="32" height="32" class="icon_setting">
-            {% endif %}
-            <div class="icon_description">
-              <div class="text-size-medium text-weight-semibold">{{ block.settings.text_icon_heading }}</div>
-              <div class="text-size-regular">{{ block.settings.text_icon_description }}</div>
-            </div>
-          </div>
-        {% elsif block.type == '@app' %}
-          {% render block %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
+            <div class="grid_3col">
+              <div>
+                <div>
+                  <div class="heading-style-h5">
+{{ section.settings.text_icons_title_1 }}
 </div>
+                </div>
+                <div class="spacer-medium"></div>
+                <div li-content-for-blocks="icons1" class="icon_list">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+                  {% when 'icon-item' %}
+            <div li-block="Icon item" class="icon_item">
+                    {% if block.settings.image_icon %}
+{{ block.settings.image_icon | image_url: width: 1000 | image_tag: loading: 'lazy', width: '32', height: '32', class: 'icon_setting' }}
+{% else %}
+<img src="https://cdn.prod.website-files.com/693556392bdd45447f7f36e5/6952b0407d5337fb63780458_downhill_skiing.svg" loading="lazy" width="32" height="32" alt="" class="icon_setting">
+{% endif %}
+                    
+                    
+                    <div class="icon_description">
+                      <div class="text-size-medium text-weight-semibold">
+{{ block.settings.text_icon_heading }}
+</div>
+                      <div class="text-size-regular">
+{{ block.settings.text_icon_description }}
+</div>
+                      <div class="spacer-small"></div>
+                    </div>
+                    
+                  
+                </div>
+                {% endcase %}
+{% endfor %}
+
+    </div>
+              </div>
+              <div>
+                <div>
+                  <div class="heading-style-h5">
+{{ section.settings.text_icons_title_2 }}
+</div>
+                </div>
+                <div class="spacer-medium"></div>
+                <div li-content-for-blocks="icons2" class="icon_list">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+{% endcase %}
+{% endfor %}
+
+    </div>
+              </div>
+              <div>
+                <div>
+                  <div class="heading-style-h5">
+{{ section.settings.text_icons_title_3 }}
+</div>
+                </div>
+                <div class="spacer-medium"></div>
+                <div li-content-for-blocks="icons3" class="icon_list">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+{% endcase %}
+{% endfor %}
+
+    </div>
+              </div>
+            </div>
           </div>
         </div> {% schema %} {
     "tag": "div",
     "name": "Icons 3",
     "blocks": [
-{
-    "name": "Icon item",
-    "type": "icon-item",
-    "settings": [
         {
-            "id": "column_selection",
-            "type": "select",
-            "label": "Assign to Column",
-            "options": [
-                { "value": "1", "label": "Column 1 (Arrowhead)" },
-                { "value": "2", "label": "Column 2 (Edwards)" },
-                { "value": "3", "label": "Column 3 (Avon)" }
-            ],
-            "default": "1"
+            "name": "Icon item",
+            "type": "icon-item",
+            "settings": [
+                {
+                    "id": "image_icon",
+                    "type": "image_picker",
+                    "label": "Icon"
+                },
+                {
+                    "id": "text_icon_heading",
+                    "type": "text",
+                    "label": "Icon Heading",
+                    "default": "Ski Access"
+                },
+                {
+                    "id": "text_icon_description",
+                    "type": "text",
+                    "label": "Icon Description",
+                    "default": "A serene, uncrowded gateway to Beaver Creek Mountain"
+                }
+            ]
         },
-        {
-            "id": "image_icon",
-            "type": "image_picker",
-            "label": "Icon"
-        },
-        {
-            "id": "text_icon_heading",
-            "type": "text",
-            "label": "Icon Heading",
-            "default": "Ski Access"
-        },
-        {
-            "id": "text_icon_description",
-            "type": "text",
-            "label": "Icon Description",
-            "default": "A serene, uncrowded gateway to Beaver Creek Mountain"
-        }
-    ]
-},
         {
             "type": "@app"
         }

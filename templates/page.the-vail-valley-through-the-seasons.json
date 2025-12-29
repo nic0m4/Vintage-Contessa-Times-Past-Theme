@@ -1,0 +1,38 @@
+{
+    "sections": {
+        "announcement_bar": {
+            "type": "announcement_bar"
+        },
+        "qa_seasons": {
+            "type": "qa_seasons",
+            "blocks": {
+                "faq-item-b": {
+                    "name": "FAQ Item b",
+                    "type": "faq-item-b"
+                }
+            },
+            "block_order": [
+                "faq-item-b"
+            ]
+        },
+        "quick_guide": {
+            "type": "quick_guide",
+            "blocks": {
+                "icon-item": {
+                    "name": "Icon item",
+                    "type": "icon-item"
+                }
+            },
+            "block_order": [
+                "icon-item"
+            ]
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "announcement_bar",
+        "qa_seasons",
+        "quick_guide"
+    ]
+}
