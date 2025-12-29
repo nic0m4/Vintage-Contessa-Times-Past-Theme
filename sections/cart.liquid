@@ -4,123 +4,129 @@
               <h2 id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a629-f594a625" class="heading-style-h2">
 {{ section.settings.text_heading }}
 </h2>
-              <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="text-size-small text-style-link hide-mobile-landscape"><span>
-{{ section.settings.text_continue_shopping }}
-</span></a>
+<p class="text-size-regular" style="margin-top: 10px; max-width: 600px; line-height: 1.5;">
+    Please leave your name and contact details below so our team can reach out to finalize your order, or 
+    <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="text-size-regular text-style-link";">
+      continue browsing our store
+    </a> 
+    if you aren't quite finished yet.
+  </p>
             </div>
-            {% if cart.item_count > 0 %}    <div li-if="cart.item_count > 0" class="cart_form-block w-form">
+{% if cart.item_count > 0 %}
+<div class="cart_form-block w-form">
+  <div class="cart_grid-wrapper" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
     
-              {% form 'cart', cart, class: 'cart_grid-wrapper' %}
-<div class="cart_table outline-solid-1">
-                  <div class="cart_grid is-header w-hidden-tiny">
-                    <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a632-f594a625" class="cart_table-header">
-                      <p class="text-size-regular">
-{{ section.settings.text_product }}
-</p>
-                    </div>
-                    <div class="cart_table-header">
-                      <p class="text-size-regular">
-{{ section.settings.text_quantity }}
-</p>
-                    </div>
-                    <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a638-f594a625" class="cart_table-header">
-                      <p class="text-size-regular">
-{{ section.settings.text_price }}
-</p>
-                    </div>
-                  </div>
-                  {% for item in cart.items %}    <div li-for="item in cart.items" class="cart_grid">
-                                    
-                    
-                            <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a63c-f594a625" class="display-inlineflex">
-                      <a href="{{ item.url }}" li-object:href="item.url" id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a63d-f594a625" class="w-inline-block"><img src="{{ item.image | image_url: width: 200 }}" li-object:src="item.image | image_url: width: 200" alt="" class="cart_image"></a>
-                      <div class="cart_info-order">
-                        <a href="{{ item.url }}" li-object:href="item.url" li-object="item.title" class="text-size-regular">{{ item.title }}</a>
-                        <div class="hide">
-                          <p item="price" class="cart_price">$13</p>
-                          <p item="original-price" class="cart_price away">$18</p>
-                        </div>
-                      </div>
-                    </div>
-                            
-                    
-                            <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a647-f594a625" class="cart_table-item anzahl">
-                      <div class="cart_quantity-wrapper">
-                        <div>Quantity</div><input class="cart_quantity w-input" maxlength="256" name="updates[]" data-name="updates[]" placeholder="1" type="number" id="updates[]" required="" value="{{ item.quantity }}">
-                      </div>
-                      <a href="{{ item.url_to_remove }}" li-object:href="item.url_to_remove" class="text-size-tiny text-style-link text-align-center w-inline-block">
-                        <div>
-{{ section.settings.text_remove }}
-</div>
-                      </a>
-                    </div>
-                            
-                    
-                            <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a64f-f594a625" class="cart_price-info">
-                      <div li-object="item.final_line_price | money" class="text-size-regular">{{ item.final_line_price | money }}</div>
-                      {% if item.original_line_price > item.final_line_price %}    <div li-if="item.original_line_price > item.final_line_price">
-    
-                        <div li-object="item.original_line_price | money" class="text-size-regular text-style-strikethrough">{{ item.original_line_price | money }}</div>
-                          </div>
-{% endif %}
-                    </div>
-                            
-                  
-                        </div>
-{% endfor %}
+    <div style="flex: 2; min-width: 320px;">
+      {% form 'cart', cart %}
+        <div class="cart_table outline-solid-1">
+          <div class="cart_grid is-header w-hidden-tiny" style="display: grid; grid-template-columns: 3fr 1fr 1fr; padding: 10px; border-bottom: 1px solid #bdc6e0;">
+            <div class="cart_table-header"><p class="text-size-regular">{{ section.settings.text_product }}</p></div>
+            <div class="cart_table-header"><p class="text-size-regular">{{ section.settings.text_quantity }}</p></div>
+            <div class="cart_table-header"><p class="text-size-regular">{{ section.settings.text_price }}</p></div>
+          </div>
+
+          {% for item in cart.items %}
+            <div class="cart_grid" style="display: grid; grid-template-columns: 3fr 1fr 1fr; padding: 20px; border-bottom: 1px solid #bdc6e0; align-items: center;">
+              <div style="display: flex; align-items: center; gap: 15px;">
+                <img src="{{ item.image | image_url: width: 100 }}" alt="{{ item.title }}" style="width: 70px; border-radius: 4px;">
+                <div>
+                  <a href="{{ item.url }}" class="text-size-regular" style="text-decoration: none; color: inherit;">{{ item.title }}</a>
+                  <a href="{{ item.url_to_remove }}" class="text-size-tiny text-color-grey text-style-link" style="display: block; margin-top: 5px;">{{ section.settings.text_remove }}</a>
                 </div>
-                <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a655-f594a625" class="cart_wrapper-right">
-                  <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a656-f594a625" class="cart_table outline-solid-1">
-                    <div class="cart_grid is-header w-hidden-tiny">
-                      <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a658-f594a625" class="cart_table-header">
-                        <p class="text-size-regular">
-{{ section.settings.text_summary }}
-</p>
-                      </div>
-                    </div>
-                    <div class="cart_content">
-                      <div class="cart_wrapper">
-                        <div class="cart_details-wrapper">
-                          <div class="text-size-regular">
-{{ section.settings.text_sum_inkl_vat }}
+              </div>
+              <div>
+                <input type="number" name="updates[]" value="{{ item.quantity }}" min="0" style="width: 50px; padding: 5px; border: 1px solid #bdc6e0;">
+              </div>
+              <div class="text-size-regular">{{ item.final_line_price | money }}</div>
+            </div>
+          {% endfor %}
+
+          <div style="padding: 20px; display: flex; justify-content: flex-end; background: #FBFBFF;">
+            <input type="submit" class="button is-outline w-button" value="Update Quantities" style="width: auto; padding: 10px 25px;">
+          </div>
+        </div>
+      {% endform %}
+    </div>
+
+    <div class="cart_table outline-solid-1" style="flex: 1; min-width: 300px; padding: 25px; position: sticky; top: 20px;">
+      <h3 style="margin-top: 0; font-size: 1.2rem; border-bottom: 1px solid #bdc6e0; padding-bottom: 15px;">{{ section.settings.text_summary }}</h3>
+      
+      <div style="margin: 20px 0; font-size: 1.1rem; font-weight: bold;">
+        Total: {{ cart.total_price | money }}
+      </div>
+
+      {% form 'contact' %}
+        {{ form.errors | default_errors }}
+        
+<div class="form_field-wrapper" style="margin-bottom: 15px;">
+  <label class="text-size-small" style="display: block; margin-bottom: 5px;">Full Name</label>
+  <input 
+    type="text" 
+    name="contact[name]" 
+    class="form_input w-input" 
+    style="width: 100%; border: 1px solid #bdc6e0;" 
+    required 
+    minlength="3"
+    maxlength="50"
+    pattern="^[a-zA-Z\s]*$"
+    title="Please use only letters and spaces (e.g., John Doe)"
+    placeholder="Your Name"
+  >
 </div>
-                          <div class="cart_details-price">
-                            {% if cart.total_discounts > 0 %}    <div li-if="cart.total_discounts > 0">
-    
-                              <div li-object="cart.original_total_price | money" class="text-style-strikethrough">{{ cart.original_total_price | money }}</div>
-                                </div>
-{% endif %}
-                            <div li-object="cart.total_price | money" class="text-size-large">{{ cart.total_price | money }}</div>
-                          </div>
-                        </div>
-                        {% if cart.total_discounts > 0 %}    <div li-if="cart.total_discounts > 0" class="cart_details-wrapper">
-    
-                          <div class="text-size-regular">
-{{ section.settings.text_discount }}
+        <input type="hidden" name="return_to" value="/pages/thank-you?submitted=true" />
+        <div class="form_field-wrapper" style="margin-bottom: 15px;">
+          <label class="text-size-small" style="display: block; margin-bottom: 5px;">Email Address</label>
+          <input type="email" name="contact[email]" class="form_input w-input" style="width: 100%; border: 1px solid #bdc6e0;" required placeholder="email@example.com" title="Please enter a valid email address">
+        </div>
+
+<div class="form_field-wrapper" style="margin-bottom: 15px;">
+  <label class="text-size-small" style="display: block; margin-bottom: 5px;">Phone Number (US Only)</label>
+  <div style="display: flex; gap: 8px; align-items: center;">
+    <input 
+      type="tel" 
+      name="contact[phone]" 
+      class="form_input w-input" 
+      style="width: 100%; border: 1px solid #bdc6e0;" 
+      required 
+      placeholder="(555) 555-5555"
+      pattern="^(\(?\d{3}\)?[\s.-]?)?\d{3}[\s.-]?\d{4}$"
+      title="Please enter a 10-digit US phone number (e.g., 555-555-5555)"
+    >
+  </div>
 </div>
-                          <div li-object="cart.total_discount | money">{{ cart.total_discount | money }}</div>
-                            </div>
-{% endif %}
-                      </div>
-                      <div class="cart_action"><input type="submit" data-wait="Please wait..." class="button w-button" value="Checkout" name="checkout"><input type="submit" data-wait="Please wait..." class="button is-outline w-button" value="Update cart"></div>
-                    </div>
-                  </div>
-                  <div class="cart_table outline-solid-1">
-                    <div class="cart_grid is-header w-hidden-tiny">
-                      <div id="w-node-_4ff72092-e0e6-d591-6af1-5b10f594a670-f594a625" class="cart_table-header">
-                        <p class="text-size-regular">
-{{ section.settings.text_comment }}
-</p>
-                      </div>
-                    </div>
-                    <div class="cart_content">
-                      <div class="form_field-wrapper"><textarea class="form_input is-text-area w-input" maxlength="5000" name="note" data-name="field" placeholder="Comment" id="CartNote"></textarea></div>
-                    </div>
-                  </div>
-                </div>
-              {% endform %}
+
+        <div class="form_field-wrapper" style="margin-bottom: 15px;">
+          <label class="text-size-small" style="display: block; margin-bottom: 5px;">Comment</label>
+          <textarea name="contact[note]" class="form_input is-text-area w-input" style="width: 100%; height: 80px; border: 1px solid #bdc6e0;" placeholder="Special instructions..."></textarea>
+        </div>
+
+        <textarea name="contact[body]" style="display:none;">
+          ORDER REQUEST:
+          {% for item in cart.items %}- {{ item.quantity }}x {{ item.title }}{% endfor %}
+          Total Value: {{ cart.total_price | money }}
+        </textarea>
+
+       <input type="submit" class="button w-button" value="Request Callback" style="width: 100%; margin-top: 15px;">
+
+        {% if form.posted_successfully? %}
+          <p style="color: green; margin-top: 15px; font-weight: bold;">Successfully sent! We will call you soon.</p>
+        {% endif %}
+      {% endform %}
+    </div>
+
+  </div>
+</div>
+
+<style>
+  /* Responsive stacking for mobile */
+  @media screen and (max-width: 991px) {
+    .cart_grid-wrapper { flex-direction: column !important; }
+    .cart_table { width: 100% !important; }
+  }
+</style>
+
               <div class="w-form-done">
-                <div>Thank you! Your submission has been received!</div>
+                <div>Thank you! Your order has been received!</div>
               </div>
               <div class="w-form-fail">
                 <div>Oops! Something went wrong while submitting the form.</div>
