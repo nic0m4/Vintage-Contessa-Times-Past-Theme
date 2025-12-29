@@ -42,10 +42,13 @@
         "tab_KxdXPg": {
           "type": "tab",
           "settings": {
-            "text_text": "Tab Text",
+            "text_text": "Modest in size yet rich in spirit, La Cucina invites you to slow down and savor daily life. River views and Brunschwig & Fils wallpaper create a warm flow into the living area and patio. A quiet tribute to Nannee, the family matriarch, it reflects her legacy of hospitality and the simple beauty of sharing meals and moments together.",
+            "image_image": "shopify://shop_images/la-cucina-window-sink.webp",
+            "image_2": "shopify://shop_images/la-cucina-viewout.webp",
+            "image_3": "shopify://shop_images/la-cucina-bar-eldon.webp",
             "url_button_link": "",
-            "text_button_text": "Button Text",
-            "text_tab_label": "This is some text inside of a div block."
+            "text_button_text": "",
+            "text_tab_label": "La Cucina"
           }
         },
         "tab_fJ7nN8": {
