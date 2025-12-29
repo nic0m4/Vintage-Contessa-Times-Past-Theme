@@ -1,25 +1,4 @@
-<div class="padding-global padding-section-large slider-align">
-          <div class="center_div">
-            <div class="max-width-medium">
-              <div class="product_heading-wrapper">
-                <div class="heading_symbol">
-                  <div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="16" fill="none">
-                      <path fill="#BDA66E" d="M24.08.25c-3.08 0-5.214 1.74-6.923 3.93l1.628 2.191c1.304-1.778 2.858-3.113 5.064-3.113 2.779 0 4.955 1.96 4.955 4.742 0 2.554-1.806 4.786-4.955 4.786-2.422 0-4.079-1.791-5.553-3.976l-.063-.093-.124-.188a22.475 22.475 0 0 0-1.266-1.69c-.463-.554-1.302-1.743-1.433-1.943C13.57 2.382 11.28.25 7.873.25 3.056.25 0 3.943 0 8c0 4.149 3.056 7.75 7.873 7.75 3.08 0 5.215-1.71 6.924-3.865l-1.636-2.247c-1.314 1.789-2.89 3.148-5.057 3.148-3.15 0-4.908-2.279-4.908-4.786 0-2.417 1.759-4.741 4.908-4.741 2.466 0 4.092 1.76 5.56 3.94v-.001l1.53 2.12c.166.228.46.635.732 1.013l.004-.006.28.399c.09.125.17.234.229.318 1.85 2.534 4.126 4.708 7.642 4.708C29.036 15.75 32 12.058 32 8 32 3.35 28.34.25 24.08.25Z"></path>
-                    </svg></div>
-                </div>
-                <div class="content_block">
-                  <h3 class="heading-style-h3 align-center">
-{{ section.settings.text_title }}
-</h3>
-                </div>
-              </div>
-              <div class="spacer-small"></div>
-              <p class="text-size-medium text-align-center">
-{{ section.settings.text_subtitle }}
-</p>
-            </div>
-          </div>
-          <div class="spacer-huge"></div>
+ <div class="padding-global padding-section-large slider-align">
           <div class="home-hero_wrapper max-width-xxlarge">
             <div class="swiper_component is-home-hero">
               <div class="swiper is-home-hero">
@@ -44,7 +23,7 @@
 {% endif %}
                           {% if block.settings.text_button_2_text != blank %}    <div li-if="block.settings.text_button_2_text != blank" class="button-block animation-css-fade">
     
-                            <a href="{{ block.settings.url_button_2_link }}" class="button is-secondary is-white w-button"> {{ block.settings.text_button_2_text }} </a>
+                            <a href="{{ block.settings.url_button_2_link }}" class="button is-outline w-button"> {{ block.settings.text_button_2_text }} </a>
                               </div>
 {% endif %}
                             </div>
@@ -68,7 +47,7 @@
                             </div>
 {% endif %}
                       </div>
-                      {% if block.settings.video_mobile != blank or block.settings.image_image_mobile_480px != blank %}    <div li-if="block.settings.video_mobile != blank or block.settings.image_image_mobile_480px != blank" class="image-hero_mobile-bg">
+                      {% if block.settings.video_mobile != blank or block.settings.image_image_mobile != blank %}    <div li-if="block.settings.video_mobile != blank or block.settings.image_image_mobile != blank" class="image-hero_mobile-bg">
     {% if block.settings.image_image_mobile %}
 {{ block.settings.image_image_mobile | image_url: width: 1000 | image_tag: loading: 'eager', class: 'image-hero_bg-image' }}
 {% else %}
