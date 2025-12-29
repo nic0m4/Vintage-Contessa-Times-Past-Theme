@@ -1,0 +1,141 @@
+<div class="padding-global padding-section-medium">
+          <div class="container-large">
+            <div class="grid_3col">
+              <div>
+                <div>
+                  <div class="heading-style-h5">
+{{ section.settings.text_icons_title_1 }}
+</div>
+                </div>
+                <div class="spacer-medium"></div>
+                <div li-content-for-blocks="" class="icon_list">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+                  {% when 'icon-item' %}
+            <div li-block="Icon item" class="icon_item">
+                    {% if block.settings.image_icon %}
+{{ block.settings.image_icon | image_url: width: 1000 | image_tag: loading: 'lazy', width: '32', height: '32', class: 'icon_setting' }}
+{% else %}
+<img src="https://cdn.prod.website-files.com/693556392bdd45447f7f36e5/6952b0407d5337fb63780458_downhill_skiing.svg" loading="lazy" width="32" height="32" alt="" class="icon_setting">
+{% endif %}
+                    
+                    
+                    <div class="icon_description">
+                      <div class="text-size-medium text-weight-semibold">
+{{ block.settings.text_icon_heading }}
+</div>
+                      <div class="text-size-regular">
+{{ block.settings.text_icon_description }}
+</div>
+                      <div class="spacer-small"></div>
+                    </div>
+                    
+                  
+                </div>
+                {% endcase %}
+{% endfor %}
+
+    </div>
+              </div>
+              <div>
+                <div>
+                  <div class="heading-style-h5">
+{{ section.settings.text_icons_title_2 }}
+</div>
+                </div>
+                <div class="spacer-medium"></div>
+                <div li-content-for-blocks="" class="icon_list">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+{% endcase %}
+{% endfor %}
+
+    </div>
+              </div>
+              <div>
+                <div>
+                  <div class="heading-style-h5">
+{{ section.settings.text_icons_title_3 }}
+</div>
+                </div>
+                <div class="spacer-medium"></div>
+                <div li-content-for-blocks="" class="icon_list">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+{% endcase %}
+{% endfor %}
+
+    </div>
+              </div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "Icons 3",
+    "blocks": [
+        {
+            "name": "Icon item",
+            "type": "icon-item",
+            "settings": [
+                {
+                    "id": "image_icon",
+                    "type": "image_picker",
+                    "label": "Icon"
+                },
+                {
+                    "id": "text_icon_heading",
+                    "type": "text",
+                    "label": "Icon Heading",
+                    "default": "Ski Access"
+                },
+                {
+                    "id": "text_icon_description",
+                    "type": "text",
+                    "label": "Icon Description",
+                    "default": "A serene, uncrowded gateway to Beaver Creek Mountain"
+                }
+            ]
+        },
+        {
+            "type": "@app"
+        }
+    ],
+    "settings": [
+        {
+            "id": "text_icons_title_1",
+            "type": "text",
+            "label": "Icons Title 1",
+            "default": "Arrowhead"
+        },
+        {
+            "id": "text_icons_title_2",
+            "type": "text",
+            "label": "Icons Title 2",
+            "default": "Edwards"
+        },
+        {
+            "id": "text_icons_title_3",
+            "type": "text",
+            "label": "Icons Title 3",
+            "default": "Avon"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Icons 3",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "icon-item"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
