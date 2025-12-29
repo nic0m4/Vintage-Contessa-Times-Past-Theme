@@ -1,37 +1,118 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "announcement_bar": {
-            "type": "announcement_bar"
-        },
-        "small_hero": {
-            "type": "small_hero"
-        },
-        "two_images": {
-            "type": "two_images"
-        },
-        "3_columns": {
-            "type": "3_columns"
-        },
-        "icons_3": {
-            "type": "icons_3",
-            "blocks": {
-                "icon-item": {
-                    "name": "Icon item",
-                    "type": "icon-item"
-                }
-            },
-            "block_order": [
-                "icon-item"
-            ]
-        }
+  "sections": {
+    "small_hero": {
+      "type": "small_hero",
+      "settings": {
+        "text_headline": "Neighboring Treasures",
+        "richtext_text": "<p>Your Guide to Local Luxury & Leisure</p>"
+      }
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "announcement_bar",
-        "small_hero",
-        "two_images",
-        "3_columns",
-        "icons_3"
-    ]
+    "tabs_yjHkrV": {
+      "type": "tabs",
+      "blocks": {
+        "tab_NJRPxi": {
+          "type": "tab",
+          "settings": {
+            "text_tab_label": "Tab Label",
+            "text_text": "Tab Text"
+          }
+        }
+      },
+      "block_order": [
+        "tab_NJRPxi"
+      ],
+      "name": "Tabs",
+      "settings": {}
+    },
+    "two_images": {
+      "type": "two_images",
+      "settings": {
+        "text_headline": "Beaver Creek",
+        "text_image_title_1": "Skiing",
+        "text_image_description_1": "Impeccably groomed runs and a refined, uncrowded mountain experience.",
+        "text_image_title_2": "Après Ski",
+        "text_image_description_2": "Fire pits, music, and cozy alpine lounges."
+      }
+    },
+    "3_columns": {
+      "type": "3_columns",
+      "settings": {
+        "text_image_title_1": "Ice Skating",
+        "text_image_description_1": "A picturesque plaza rink framed by alpine architecture.",
+        "text_image_title_2": "Performing Arts Center",
+        "text_image_description_2": "Concerts, ballet, comedy, and cultural performances year-round."
+      }
+    },
+    "icons_3": {
+      "type": "icons_3",
+      "blocks": {
+        "icon_item_9itDf3": {
+          "type": "icon-item",
+          "settings": {
+            "text_icon_heading": "Ski Access",
+            "text_icon_description": "A serene, uncrowded gateway to Beaver Creek Mountain"
+          }
+        },
+        "icon_item_jtfetr": {
+          "type": "icon-item",
+          "settings": {
+            "text_icon_heading": "Ski Access",
+            "text_icon_description": "A serene, uncrowded gateway to Beaver Creek Mountain"
+          }
+        },
+        "icon_item_nibder": {
+          "type": "icon-item",
+          "settings": {
+            "text_icon_heading": "Ski Access",
+            "text_icon_description": "A serene, uncrowded gateway to Beaver Creek Mountain"
+          }
+        },
+        "icon_item_rCDayN": {
+          "type": "icon-item",
+          "settings": {
+            "text_icon_heading": "Ski Access",
+            "text_icon_description": "A serene, uncrowded gateway to Beaver Creek Mountain"
+          }
+        },
+        "icon-item": {
+          "type": "icon-item",
+          "name": "Icon item",
+          "settings": {
+            "text_icon_heading": "Ski Access",
+            "text_icon_description": "A serene, uncrowded gateway to Beaver Creek Mountain"
+          }
+        }
+      },
+      "block_order": [
+        "icon_item_9itDf3",
+        "icon_item_jtfetr",
+        "icon_item_nibder",
+        "icon_item_rCDayN",
+        "icon-item"
+      ],
+      "settings": {
+        "text_icons_title_1": "Arrowhead",
+        "text_icons_title_2": "Edwards",
+        "text_icons_title_3": "Avon"
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "small_hero",
+    "tabs_yjHkrV",
+    "two_images",
+    "3_columns",
+    "icons_3"
+  ]
 }
