@@ -74,23 +74,7 @@
     width: 100% !important;
     height: auto !important;
     object-fit: cover !important;
-    /* Optional: Aspect ratio to keep images uniform */
-    aspect-ratio: 3/2; 
   }
-
-  /* Mobile Adjustments */
-  @media screen and (max-width: 767px) {
-    .tabs_wrapper_flex {
-      flex-direction: column !important;
-      gap: 40px !important;
-    }
-    .tabs_menu {
-      position: relative !important;
-      top: 0 !important;
-      width: 100% !important;
-    }
-  }
-
 
 </style>
         <div class="padding-global padding-section-large">
@@ -124,6 +108,10 @@
 
   {% if block.settings.image_3 %}
     {{ block.settings.image_3 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'tab-img' }}
+  {% endif %}
+
+    {% if block.settings.image_4 %}
+    {{ block.settings.image_4 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'tab-img' }}
   {% endif %}
 </div>
                                     
@@ -169,6 +157,11 @@
                     "id": "image_3",
                     "type": "image_picker",
                     "label": "Image 3"
+                },
+                                {
+                    "id": "image_4",
+                    "type": "image_picker",
+                    "label": "Image 4"
                 },
                 {
                     "id": "url_button_link",
