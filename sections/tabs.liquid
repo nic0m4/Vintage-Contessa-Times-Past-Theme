@@ -16,16 +16,22 @@
                     <div id="panel-{{section.index}}-{{forloop.index}}" x-show="tab === {{forloop.index}}" aria-labelledby="tab-{{section.index}}-{{forloop.index}}" role="tabpanel" x-bind:aria-hidden="tab === {{forloop.index}} ? 'false' : 'true'" x-cloak="" li-block="Tab" class="tabs_panel">
                                     
                     
-                                    <div class="tabs_panel-content">
-                      <div li-object="block.settings.text_tab_label" class="heading-style-h4">{{ block.settings.text_tab_label }}</div>
-                      <div class="text-size-medium">
-{{ block.settings.text_text }}
-</div>{% if block.settings.image_image %}
-{{ block.settings.image_image | image_url: width: 1000 | image_tag: loading: 'lazy' }}
-{% else %}
-<img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="">
-{% endif %}
-                    </div>
+                    <div class="tabs_panel-content">
+  <div class="heading-style-h4">{{ block.settings.text_tab_label }}</div>
+  <div class="text-size-medium">{{ block.settings.text_text }}</div>
+
+  {% if block.settings.image_image %}
+    {{ block.settings.image_image | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'tab-img' }}
+  {% endif %}
+
+  {% if block.settings.image_2 %}
+    {{ block.settings.image_2 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'tab-img' }}
+  {% endif %}
+
+  {% if block.settings.image_3 %}
+    {{ block.settings.image_3 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'tab-img' }}
+  {% endif %}
+</div>
                                     
 
                                     <div class="hide">
