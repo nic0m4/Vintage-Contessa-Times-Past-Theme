@@ -1,4 +1,89 @@
-<style>.button.is-tab-button {&nbsp;&nbsp;opacity: 60%;}.button.is-tab-button.is-active {&nbsp;&nbsp;opacity: 100%;}</style>
+<style>
+    
+  .button.is-tab-button {&nbsp;&nbsp;opacity: 60%;}.button.is-tab-button.is-active {&nbsp;&nbsp;opacity: 100%;}
+
+  /* 1. The Main Container */
+  .tabs_wrapper_flex {
+    display: flex !important;
+    /* align-items: flex-start is REQUIRED for sticky to work. 
+       If it is 'stretch', the sidebar height will match the content and have nowhere to slide. */
+    align-items: flex-start !important; 
+    gap: 80px !important; /* Large gap between sidebar and content */
+    width: 100%;
+  }
+
+  /* 2. The Sticky Sidebar */
+  .tabs_menu {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 100px !important; /* Adjust this value to clear your site header */
+    width: 250px !important; /* Fixed width for the menu */
+    flex-shrink: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* 3. The Sidebar Tab Links */
+  .details_item {
+    padding: 1.25rem 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+    text-align: left !important;
+    background: transparent !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease;
+    opacity: 0.5; /* Dim inactive tabs like your reference */
+  }
+
+  .details_item.is-active {
+    opacity: 1 !important;
+    border-bottom: 1px solid #000 !important;
+  }
+
+  /* 4. The Content Area (Right Side) */
+  .tabs_body {
+    flex-grow: 1 !important;
+  }
+
+  .tabs_panel-content {
+    display: flex !important;
+    flex-direction: column !important;
+    /* This creates the vertical "Gaps" between heading, paragraph, and images */
+    gap: 2.5rem !important; 
+    max-width: 800px; /* Limits line length for better readability */
+  }
+
+  /* 5. The Image Layout */
+  /* This grid handles 1, 2, or 3 images automatically */
+  .tab-images-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    gap: 1.5rem !important;
+    margin-top: 1rem !important;
+  }
+
+  .tab-img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    /* Optional: Aspect ratio to keep images uniform */
+    aspect-ratio: 3/2; 
+  }
+
+  /* Mobile Adjustments */
+  @media screen and (max-width: 767px) {
+    .tabs_wrapper_flex {
+      flex-direction: column !important;
+      gap: 40px !important;
+    }
+    .tabs_menu {
+      position: relative !important;
+      top: 0 !important;
+      width: 100% !important;
+    }
+  }
+
+
+</style>
         <div class="padding-global padding-section-large">
           <div class="container-large">
             <div class="tabs_wrapper_flex">
