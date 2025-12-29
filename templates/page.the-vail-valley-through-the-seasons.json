@@ -9,23 +9,25 @@
  */
 {
   "sections": {
-    "announcement_bar": {
-      "type": "announcement_bar",
-      "settings": {}
-    },
     "qa_seasons": {
       "type": "qa_seasons",
       "blocks": {
         "faq-item-b": {
           "type": "faq-item-b",
           "name": "FAQ Item b",
-          "settings": {}
+          "settings": {
+            "text_heading": "Heading",
+            "richtext_richtext": "<p>\n                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                    </p>"
+          }
         }
       },
       "block_order": [
         "faq-item-b"
       ],
-      "settings": {}
+      "settings": {
+        "text_headline": "The Vail Valley Through the Seasons",
+        "richtext_text": "<p>Every season offers its own kind of magic at Chalet Contessa.</p>"
+      }
     },
     "quick_guide": {
       "type": "quick_guide",
@@ -33,19 +35,23 @@
         "icon-item": {
           "type": "icon-item",
           "name": "Icon item",
-          "settings": {}
+          "settings": {
+            "text_icon_heading": "Ski Access",
+            "text_icon_description": "A serene, uncrowded gateway to Beaver Creek Mountain"
+          }
         }
       },
       "block_order": [
         "icon-item"
       ],
-      "settings": {}
+      "settings": {
+        "text_headline": "Quick Guide: What Each Month Feels Like"
+      }
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "announcement_bar",
     "qa_seasons",
     "quick_guide"
   ]
