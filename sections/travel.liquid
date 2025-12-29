@@ -1,0 +1,93 @@
+<div class="padding-global padding-section-medium">
+          <div class="container-large">
+            <div class="grid_3col less-gap travel">
+              <div class="column">
+                <div>
+                  <div class="heading-style-h5">
+{{ section.settings.text_travel_option_1 }}
+</div>
+                </div>
+                <div class="spacer-small"></div>
+                <div class="badge"><img src="https://cdn.prod.website-files.com/693556392bdd45447f7f36e5/6952c0c0ff52d113ce93f49f_distance.svg" loading="lazy" width="20" height="20" alt="" class="distance">
+                  <div class="text-size-regular text-color-white">The Preferred Arrival</div>
+                </div>
+                <div class="spacer-small"></div>
+                <div class="description_wrap">
+                  <div class="text-size-regular">
+                    <div class="w-richtext"> {{ section.settings.richtext_travel_details_1 }} </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div>
+                  <div class="heading-style-h5">
+{{ section.settings.text_travel_option_2 }}
+</div>
+                </div>
+                <div class="spacer-small"></div>
+                <div class="badge"><img src="https://cdn.prod.website-files.com/693556392bdd45447f7f36e5/6952c16b800a0b17372aaea5_bid_landscape.svg" loading="lazy" width="20" height="20" alt="" class="bid_landscape">
+                  <div class="text-6">Scenic & Flexible</div>
+                </div>
+                <div class="spacer-small"></div>
+                <div class="text-size-regular"> {{ section.settings.richtext_travel_details_2 }} </div>
+              </div>
+              <div>
+                <div>
+                  <div class="heading-style-h5">
+{{ section.settings.text_travel_option_3 }}
+</div>
+                </div>
+                <div class="spacer-small"></div>
+                <div class="text-size-regular"> {{ section.settings.richtext_travel_details_2 }} </div>
+              </div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "travel",
+    "settings": [
+        {
+            "id": "text_travel_option_1",
+            "type": "text",
+            "label": "Travel Option 1",
+            "default": "Fly Into Eagle County Regional Airport (EGE)"
+        },
+        {
+            "id": "richtext_travel_details_1",
+            "type": "richtext",
+            "label": "Travel Details 1",
+            "default": "<p>\n                      <strong>Distance:<\/strong> ~30 minutes from Chalet Contessa\n                      \u200d\n                      For the quickest and most comfortable mountain arrival, Eagle (EGE) is the ideal airport.\n                      \u200d\n                      \n                        <strong>Winter direct flights<\/strong> are commonly available from <strong>Houston (United), Dallas (American), New York, Miami, Chicago, Atlanta,<\/strong> and more.\u2028\n                 <\/p>"
+        },
+        {
+            "id": "text_travel_option_2",
+            "type": "text",
+            "label": "Travel Option 2",
+            "default": "Fly Into Denver International Airport (DEN)"
+        },
+        {
+            "id": "richtext_travel_details_2",
+            "type": "richtext",
+            "label": "Travel Details 2",
+            "default": "<p>\n                  \n                    <strong>Distance:<\/strong> ~2 to 2.5 hours (weather dependent)a\n                    \u200d\n                    Many guests choose Denver for its numerous flight options and then enjoy:\n                    \u200d\n                    \n                      <strong>a relaxing Epic Mountain Shuttle <\/strong>ride directly to Avon, Vail, or Beaver Creek<strong> \u2014 with discounts for Epic Pass holders, <\/strong>or\n                      a relaxing <<\/p>"
+        },
+        {
+            "id": "text_travel_option_3",
+            "type": "text",
+            "label": "Travel Option 3",
+            "default": "Ground Transportation"
+        },
+        {
+            "id": "richtext_travel_details_3",
+            "type": "richtext",
+            "label": "Travel Details 3",
+            "default": "<p>\n                    <strong>Epic Mountain Shuttle<\/strong>\n                    Professional, door-to-door service from both Denver and Eagle, accustomed to winter mountain conditions.\n                    \u200d\n                    <strong>Uber \/ Ride Services<\/strong>\n                    Easily accessible from Eagle Airport for a smooth, no-planning-required arrival.\n                    \u200d\n                    <strong>Rental Cars<\/strong>\n                    Readily available a<\/p>"
+        }
+    ],
+    "presets": [
+        {
+            "name": "travel",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}

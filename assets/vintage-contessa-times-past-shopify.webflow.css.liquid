@@ -4123,6 +4123,11 @@ figcaption {
   place-items: stretch center;
 }
 
+.content_wrapper.less-gap {
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.5rem;
+}
+
 .content_image-wrapper {
   object-fit: contain;
 }
@@ -5299,6 +5304,67 @@ figcaption {
   text-decoration: none;
 }
 
+.icons_grid {
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.5rem;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.badge {
+  grid-column-gap: 10px;
+  background-color: #36393f;
+  border-radius: 2px;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: flex;
+  overflow: hidden;
+}
+
+.distance {
+  object-fit: cover;
+}
+
+.text-6 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Public Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  text-decoration: none;
+}
+
+.column {
+  flex-flow: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.badge-2 {
+  grid-column-gap: 10px;
+  background-color: #36393f;
+  border-radius: 2px;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: flex;
+  overflow: hidden;
+}
+
+.bid_landscape {
+  object-fit: cover;
+}
+
 @media screen and (max-width: 991px) {
   .padding-medium {
     padding: 1.5rem;
@@ -5975,6 +6041,10 @@ figcaption {
     align-items: center;
   }
 
+  .grid_3col.less-gap.travel {
+    grid-template-columns: 1fr;
+  }
+
   .nav_dropdown-toggle-fix {
     align-items: center;
     width: 100%;
@@ -6083,6 +6153,11 @@ figcaption {
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     flex-flow: column;
+  }
+
+  .icons_grid {
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -6769,6 +6844,11 @@ figcaption {
 
   .icon_item {
     flex-flow: row;
+  }
+
+  .icons_grid {
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr;
   }
 }
 
