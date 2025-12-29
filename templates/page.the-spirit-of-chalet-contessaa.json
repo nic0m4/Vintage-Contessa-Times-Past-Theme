@@ -19,6 +19,26 @@
     "tabs_RPNEeB": {
       "type": "tabs",
       "blocks": {
+        "tab_ertgiB": {
+          "type": "tab",
+          "settings": {
+            "text_text": "A Southern hello meets European soul in the entry of Chalet Contessa. With equestrian wallpaper, soft glow, and textured layers, this space invites guests to slow down and savor the moment. It’s a warm, elegant welcome—a prelude to the stories and style woven throughout the home.",
+            "image_image": "shopify://shop_images/ciao-yall-entry.webp",
+            "url_button_link": "",
+            "text_button_text": "Button Text",
+            "text_tab_label": "Ciao Y’all"
+          }
+        },
+        "tab_LDyjwb": {
+          "type": "tab",
+          "settings": {
+            "text_text": "Where stories are poured & spirits lifted. Warm textures and subtle luxury create a cozy gathering place for meaningful moments. Watched over by Eldon—the family’s beloved elk—it invites connection, joy, and a lingering sense of celebration.",
+            "image_image": "shopify://shop_images/eldon.webp",
+            "url_button_link": "",
+            "text_button_text": "",
+            "text_tab_label": "Eldon’s Après Nook"
+          }
+        },
         "tab_KxdXPg": {
           "type": "tab",
           "settings": {
@@ -63,26 +83,16 @@
             "text_button_text": "Button Text",
             "text_tab_label": "This is some text inside of a div block."
           }
-        },
-        "tab_ertgiB": {
-          "type": "tab",
-          "settings": {
-            "text_text": "A Southern hello meets European soul in the entry of Chalet Contessa. With equestrian wallpaper, soft glow, and textured layers, this space invites guests to slow down and savor the moment. It’s a warm, elegant welcome—a prelude to the stories and style woven throughout the home.",
-            "image_image": "shopify://shop_images/pricay-with-proximity.webp",
-            "image_2": "shopify://shop_images/Illuminated-Blue-Spruce.webp",
-            "url_button_link": "",
-            "text_button_text": "Button Text",
-            "text_tab_label": "Ciao Y’all"
-          }
         }
       },
       "block_order": [
+        "tab_ertgiB",
+        "tab_LDyjwb",
         "tab_KxdXPg",
         "tab_fJ7nN8",
         "tab_cLaCqB",
         "tab_WVXMye",
-        "tab_AikP7E",
-        "tab_ertgiB"
+        "tab_AikP7E"
       ],
       "name": "Tabs",
       "settings": {}
