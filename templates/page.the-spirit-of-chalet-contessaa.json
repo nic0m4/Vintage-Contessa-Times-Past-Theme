@@ -19,6 +19,15 @@
     "tabs_RPNEeB": {
       "type": "tabs",
       "blocks": {
+        "tab_AikP7E": {
+          "type": "tab",
+          "settings": {
+            "text_text": "Tab Text",
+            "url_button_link": "",
+            "text_button_text": "Button Text",
+            "text_tab_label": "This is some text inside of a div block."
+          }
+        },
         "tab_ertgiB": {
           "type": "tab",
           "settings": {
@@ -32,6 +41,7 @@
         }
       },
       "block_order": [
+        "tab_AikP7E",
         "tab_ertgiB"
       ],
       "name": "Tabs",
