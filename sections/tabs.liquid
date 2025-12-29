@@ -2,7 +2,7 @@
     
   .button.is-tab-button {&nbsp;&nbsp;opacity: 60%;}.button.is-tab-button.is-active {&nbsp;&nbsp;opacity: 100%;}
 
-  /* 1. The Main Container */
+  /* The Main Container */
   .tabs_wrapper_flex {
     display: flex !important;
     /* align-items: flex-start is REQUIRED for sticky to work. 
@@ -12,20 +12,26 @@
     width: 100%;
   }
 
+/* 1. THE LAYOUT PARENT */
   .tabs_element {
     display: flex !important;
-    
+    flex-direction: row !important; /* Keep them side-by-side */
+    align-items: flex-start !important; /* PREVENTS the sidebar from being as tall as the content */
+    gap: 80px !important;
+    width: 100% !important;
+    position: relative !important;
   }
 
-  /* 2. The Sticky Sidebar */
+  /* 2. THE STICKY MENU */
   .tabs_menu {
     position: -webkit-sticky !important;
     position: sticky !important;
-    top: 100px !important; /* Adjust this value to clear your site header */
-    width: 250px !important; /* Fixed width for the menu */
+    top: 100px !important; /* Must be less than the viewport height */
+    width: 300px !important; 
     flex-shrink: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
+    z-index: 10 !important;
+    /* Ensure the menu itself doesn't have a height of 100% */
+    height: auto !important; 
   }
 
   /* 3. The Sidebar Tab Links */
