@@ -1,38 +1,52 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "announcement_bar": {
-            "type": "announcement_bar"
-        },
-        "qa_seasons": {
-            "type": "qa_seasons",
-            "blocks": {
-                "faq-item-b": {
-                    "name": "FAQ Item b",
-                    "type": "faq-item-b"
-                }
-            },
-            "block_order": [
-                "faq-item-b"
-            ]
-        },
-        "quick_guide": {
-            "type": "quick_guide",
-            "blocks": {
-                "icon-item": {
-                    "name": "Icon item",
-                    "type": "icon-item"
-                }
-            },
-            "block_order": [
-                "icon-item"
-            ]
-        }
+  "sections": {
+    "announcement_bar": {
+      "type": "announcement_bar",
+      "settings": {}
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "announcement_bar",
-        "qa_seasons",
-        "quick_guide"
-    ]
+    "qa_seasons": {
+      "type": "qa_seasons",
+      "blocks": {
+        "faq-item-b": {
+          "type": "faq-item-b",
+          "name": "FAQ Item b",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "faq-item-b"
+      ],
+      "settings": {}
+    },
+    "quick_guide": {
+      "type": "quick_guide",
+      "blocks": {
+        "icon-item": {
+          "type": "icon-item",
+          "name": "Icon item",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "icon-item"
+      ],
+      "settings": {}
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "announcement_bar",
+    "qa_seasons",
+    "quick_guide"
+  ]
 }
