@@ -95,26 +95,6 @@
         "text_button_text": "Sell or Trade"
       }
     },
-    "founder_Qq8jKP": {
-      "type": "founder",
-      "blocks": {
-        "disclaimer_read_more_WyejMf": {
-          "type": "disclaimer-read-more",
-          "settings": {
-            "richtext_bio_text": "<p>Donae Cangelosi Chramosta—affectionately known as The Contessa—is the style, lifestyle, and experience authority behind Vintage Contessa & Times Past.</p><p><br/>A Houston-based philanthropist and award-winning businesswoman, Donae spent 22 years leading her family’s marble, granite, and tile business before founding The Vintage Contessa in 2011. Her passion for timeless style and authentic luxury later merged with her husband Rob’s business to create Vintage Contessa & Times Past, now recognized globally for its integrity, expertise, and distinctive point of view.</p><p><br/>For Donae, luxury is not about excess—it is about living beautifully, intentionally, and well.</p><p>Her expertise lies in understanding how luxury fits into real life:</p><ul><li>What to buy and wear now—and why it endures</li><li>How to build a wardrobe that travels, layers, and lasts</li><li>How to shop with confidence, discernment, and value</li><li>How to live luxuriously without pretense</li></ul><p>The Vintage Contessa showroom is a direct reflection of Donae’s style—warm, inviting, layered, and personal. It is designed to feel less like a store and more like a gathering place, where clients are welcomed by appointment to explore exceptional pieces, have meaningful conversations, and connect over shared appreciation for beauty and craftsmanship. Beyond the showroom, Chalet Contessa serves as an extension of this philosophy—an immersive opportunity to experience life, luxury, and legacy in a setting designed for connection. Through intimate gatherings, celebrations, and curated moments, Chalet Contessa brings the brand’s values to life, offering a place where luxury is not just admired, but lived. Donae is widely recognized for her influence and leadership, with honors including:</p><ul><li>Houston Business Journal’s Women Who Mean Business</li><li>Woman of Distinction</li><li>Woman of Substance</li><li>Houston’s Most Creative & Most Stylish</li><li>Aggie 100 & Aggie Leader</li></ul><p>She is also a published writer, podcaster, public speaker, children’s book author, and dedicated philanthropist, known for her gift of “friend-raising”—bringing people together around meaningful causes, shared values, and beautiful experiences. At her core, Donae is a devoted wife to Rob and proud mother to their daughter Bella. Everything she creates—whether in business, philanthropy, or life—is grounded in authenticity, generosity, and the belief that luxury is meant to be enjoyed and shared.</p>",
-            "container_height": 15
-          }
-        }
-      },
-      "block_order": [
-        "disclaimer_read_more_WyejMf"
-      ],
-      "name": "founder",
-      "settings": {
-        "image_image": "shopify://shop_images/contessa.webp",
-        "text_headline": "The Contessa — Style, Experience & Living Luxuriously"
-      }
-    },
     "founder_Lg6jHq": {
       "type": "founder",
       "blocks": {
@@ -134,6 +114,26 @@
         "image_image": "shopify://shop_images/rob.webp",
         "text_headline": "The Man Behind Wearable Wealth"
       }
+    },
+    "founder_Qq8jKP": {
+      "type": "founder",
+      "blocks": {
+        "disclaimer_read_more_WyejMf": {
+          "type": "disclaimer-read-more",
+          "settings": {
+            "richtext_bio_text": "<p>Donae Cangelosi Chramosta—affectionately known as The Contessa—is the style, lifestyle, and experience authority behind Vintage Contessa & Times Past.</p><p><br/>A Houston-based philanthropist and award-winning businesswoman, Donae spent 22 years leading her family’s marble, granite, and tile business before founding The Vintage Contessa in 2011. Her passion for timeless style and authentic luxury later merged with her husband Rob’s business to create Vintage Contessa & Times Past, now recognized globally for its integrity, expertise, and distinctive point of view.</p><p><br/>For Donae, luxury is not about excess—it is about living beautifully, intentionally, and well.</p><p>Her expertise lies in understanding how luxury fits into real life:</p><ul><li>What to buy and wear now—and why it endures</li><li>How to build a wardrobe that travels, layers, and lasts</li><li>How to shop with confidence, discernment, and value</li><li>How to live luxuriously without pretense</li></ul><p>The Vintage Contessa showroom is a direct reflection of Donae’s style—warm, inviting, layered, and personal. It is designed to feel less like a store and more like a gathering place, where clients are welcomed by appointment to explore exceptional pieces, have meaningful conversations, and connect over shared appreciation for beauty and craftsmanship. Beyond the showroom, Chalet Contessa serves as an extension of this philosophy—an immersive opportunity to experience life, luxury, and legacy in a setting designed for connection. Through intimate gatherings, celebrations, and curated moments, Chalet Contessa brings the brand’s values to life, offering a place where luxury is not just admired, but lived. Donae is widely recognized for her influence and leadership, with honors including:</p><ul><li>Houston Business Journal’s Women Who Mean Business</li><li>Woman of Distinction</li><li>Woman of Substance</li><li>Houston’s Most Creative & Most Stylish</li><li>Aggie 100 & Aggie Leader</li></ul><p>She is also a published writer, podcaster, public speaker, children’s book author, and dedicated philanthropist, known for her gift of “friend-raising”—bringing people together around meaningful causes, shared values, and beautiful experiences. At her core, Donae is a devoted wife to Rob and proud mother to their daughter Bella. Everything she creates—whether in business, philanthropy, or life—is grounded in authenticity, generosity, and the belief that luxury is meant to be enjoyed and shared.</p>",
+            "container_height": 15
+          }
+        }
+      },
+      "block_order": [
+        "disclaimer_read_more_WyejMf"
+      ],
+      "name": "founder",
+      "settings": {
+        "image_image": "shopify://shop_images/contessa.webp",
+        "text_headline": "The Contessa — Style, Experience & Living Luxuriously"
+      }
     }
   },
   "layout": "theme",
@@ -143,7 +143,7 @@
     "content_1",
     "quick_guide_HWXDGw",
     "image_fill_2_TbHjkT",
-    "founder_Qq8jKP",
-    "founder_Lg6jHq"
+    "founder_Lg6jHq",
+    "founder_Qq8jKP"
   ]
 }
