@@ -12,8 +12,8 @@
     "small_hero": {
       "type": "small_hero",
       "settings": {
-        "text_headline": "The spirit of Chalet Contessa is where timeless alpine glamour meets modern mountain living.",
-        "richtext_text": "<p>Inspired by the iconic photography and art, the design blends classic European luxury with the adventurous spirit of the Rockies—delivering a curated, comfortable elegance that feels both storied and striking now.</p>"
+        "text_headline": "We Buy, Sell & Trade Gold, Silver, Platinum & Coins",
+        "richtext_text": ""
       }
     },
     "content_rich_text": {
@@ -35,7 +35,7 @@
     "text_layout_2": {
       "type": "text_layout_2",
       "settings": {
-        "text_headline": "By Appointment. With Intention.",
+        "text_headline": "An Enduring Partnership",
         "richtext_richtext_1": "<p>Whether you are selling a single piece or an entire collection, clients value that we offer:</p><ul><li>Honest, market-aligned pricing</li><li>Clear guidance without pressure</li><li>Protection from underselling or emotional decision-making</li><li>A trusted partner who treats your assets with respect</li></ul><p>We don’t rush transactions. We guide them—with experience, integrity, and patience. In a market filled with noise, we focus on fundamentals.</p>"
       }
     }
