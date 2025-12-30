@@ -58,10 +58,10 @@
     "video_externally": {
       "type": "video_externally",
       "settings": {
-        "text_heading": "Our Story",
-        "richtext_paragraph": "<p>Based in Houston and recognized internationally, The Vintage Contessa & Times Past is a destination for those who value rarity and refinement. As a family-run showroom with deep expertise, we connect discerning collectors with pieces that transcend trends and continue their legacy.</p>",
+        "text_heading": "Trusted Buyers. Global Reach. Wearable Wealth.",
+        "richtext_paragraph": "<p>Vintage Contessa & Times Past is an internationally respected retailer and wholesaler of vintage and estate luxury goods, known first and foremost for experience, consistency, and integrity. Our position in the global luxury market has been earned over decades—not through hype or trend chasing, but through honorable buying practices, disciplined valuation, and doing exactly what we say we will do. Because of this reputation, wholesalers, collectors, estates, and private individuals around the world routinely reach out to sell directly to us. We are buyers first.</p>",
         "url_button_url": "shopify://pages/about-us-1",
-        "text_button_text": "Meet The Founders",
+        "text_button_text": "Who We Are",
         "video_url": "https://www.youtube.com/watch?v=WbFYvUJqDWg",
         "video_title": "About Vintage Contessa & Times Past"
       }
