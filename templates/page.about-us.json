@@ -85,6 +85,16 @@
         "text_headline": "When clients sell to us, they value:"
       }
     },
+    "image_fill_2_TbHjkT": {
+      "type": "image_fill_2",
+      "name": "Image Fill 2",
+      "settings": {
+        "text_headline": "A Legacy of Trust",
+        "richtext_text": "<p>Luxury, to us, is not transactional. It is a relationship—built over time, protected by integrity, and strengthened through experience. Our clients don’t just sell to us once. They come back—because trust compounds.</p>",
+        "url_button_link": "",
+        "text_button_text": "Button"
+      }
+    },
     "founder_Qq8jKP": {
       "type": "founder",
       "blocks": {
@@ -132,6 +142,7 @@
     "image_with_text",
     "content_1",
     "quick_guide_HWXDGw",
+    "image_fill_2_TbHjkT",
     "founder_Qq8jKP",
     "founder_Lg6jHq"
   ]
