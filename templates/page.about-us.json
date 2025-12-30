@@ -35,6 +35,53 @@
         "image_position": "left"
       }
     },
+    "quick_guide_HWXDGw": {
+      "type": "quick_guide",
+      "blocks": {
+        "icon_item_9qVHhE": {
+          "type": "icon-item",
+          "settings": {
+            "image_icon": "shopify://shop_images/verified_32dp_BDA66E_FILL0_wght400_GRAD0_opsz40.svg",
+            "text_icon_heading": "Trust",
+            "text_icon_description": "We are consistent, trusted buyers"
+          }
+        },
+        "icon_item_HcEfGB": {
+          "type": "icon-item",
+          "settings": {
+            "image_icon": "shopify://shop_images/diamond.svg",
+            "text_icon_heading": "Expertise",
+            "text_icon_description": "We evaluate across categories, not in isolation"
+          }
+        },
+        "icon_item_pb9CmV": {
+          "type": "icon-item",
+          "settings": {
+            "image_icon": "shopify://shop_images/partner.svg",
+            "text_icon_heading": "Transparency",
+            "text_icon_description": "We offer straightforward transactions and immediate payment"
+          }
+        },
+        "icon_item_LWzrUa": {
+          "type": "icon-item",
+          "settings": {
+            "image_icon": "shopify://shop_images/checkbook_32dp_BDA66E_FILL0_wght400_GRAD0_opsz40.svg",
+            "text_icon_heading": "Efficiency",
+            "text_icon_description": "We write the check"
+          }
+        }
+      },
+      "block_order": [
+        "icon_item_9qVHhE",
+        "icon_item_HcEfGB",
+        "icon_item_pb9CmV",
+        "icon_item_LWzrUa"
+      ],
+      "name": "Quick Guide",
+      "settings": {
+        "text_headline": "When clients sell to us, they value:"
+      }
+    },
     "founders": {
       "type": "founders",
       "settings": {
@@ -51,6 +98,7 @@
   "order": [
     "image_with_text",
     "content_1",
+    "quick_guide_HWXDGw",
     "founders"
   ]
 }
