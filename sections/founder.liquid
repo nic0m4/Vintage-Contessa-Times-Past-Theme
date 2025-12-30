@@ -1,10 +1,11 @@
 <div class="padding-global padding-section-medium">
           <div class="container-medium">
-            <div class="grid_2col">{% if section.settings.image_image %}
-{{ section.settings.image_image | image_url: width: 1000 | image_tag: loading: 'lazy' }}
+            <div class="grid_2col">
+              <div class="content_image-wrapper">{% if section.settings.image_image %}
+{{ section.settings.image_image | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'content_image content_component' }}
 {% else %}
-<img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="">
-{% endif %}
+<img loading="lazy" alt="" src="{{ 'image.svg' | asset_url }}" class="content_image content_component">
+{% endif %}</div>
               <div>
                 <div class="product_heading-wrapper is-left">
                   <div class="heading_symbol">
@@ -31,7 +32,7 @@
                     
                     <div x-init="checkHeight()" x-data="{isExpanded: false, showMoreNeeded: false, checkHeight() { if (this.$refs.content.scrollHeight > {{ block.settings.container_height }}) { this.showMoreNeeded = true; }}}" class="load-more_wrapper">
                       <div x-bind:style="isExpanded ? '' : 'max-height: {{ block.settings.container_height }}rem; overflow: hidden;'" x-ref="content" class="load-more_wrapper">
-                        <div class="text-size-regular"> {{ block.settings.richtext_bio_text }} </div>
+                        <div class="text-size-small"> {{ block.settings.richtext_bio_text }} </div>
                         <div x-on:click="isExpanded = true" x-show="showMoreNeeded && !isExpanded" class="card_opener-gradient">
                           <div class="load_more_btn">
                             <div class="text-style-link">Read More</div>
