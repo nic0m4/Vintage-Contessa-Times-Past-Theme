@@ -1,14 +1,31 @@
+{%- comment %}<locksmith:e0fd>{% endcomment -%}
+  {%- include 'locksmith' -%}
+{%- comment %}</locksmith:e0fd>{% endcomment -%}
+
 <!doctype html>
 <html data-wf-page="6935563a2bdd45447f7f3755" data-wf-site="693556392bdd45447f7f36e5" lang="{{ request.locale.iso_code }}">
 <head>
+  {{ locksmith_initializations }}
   <meta charset="utf-8">
   <title>{{ page_title }}</title>
-  <meta content="{{ page_description }}" name="description">
-  <meta content="{{ page_title }}" property="og:title">
-  <meta content="{{ page_description }}" property="og:description">
+  {%- comment %}<locksmith:6373>{% endcomment -%}
+    {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta content="{{ page_description }}" name="description">{% endif -%}
+    {%- comment %}original: <meta content="{{ page_description }}" name="description">{%- endcomment %}
+  {%- comment %}</locksmith:6373>{% endcomment -%}
+  {%- comment %}<locksmith:3a50>{% endcomment -%}
+    {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta content="{{ page_title }}" property="og:title">{% endif -%}
+    {%- comment %}original: <meta content="{{ page_title }}" property="og:title">{%- endcomment %}
+  {%- comment %}</locksmith:3a50>{% endcomment -%}
+  {%- comment %}<locksmith:2589>{% endcomment -%}
+    {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta content="{{ page_description }}" property="og:description">{% endif -%}
+    {%- comment %}original: <meta content="{{ page_description }}" property="og:description">{%- endcomment %}
+  {%- comment %}</locksmith:2589>{% endcomment -%}
   <meta content="{{ page_title }}" property="twitter:title">
   <meta content="{{ page_description }}" property="twitter:description">
-  <meta property="og:type" content="website">
+  {%- comment %}<locksmith:756b>{% endcomment -%}
+    {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta property="og:type" content="website">{% endif -%}
+    {%- comment %}original: <meta property="og:type" content="website">{%- endcomment %}
+  {%- comment %}</locksmith:756b>{% endcomment -%}
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
@@ -43,8 +60,14 @@
   <script defer="" auto="" min="" src="https://cdn.jsdelivr.net/gh/liquify-pro/core@latest/script.js"></script>
   <link href="{{ canonical_url }}" rel="canonical">
   {% if page_image %}
-  <meta property="og:image" content="http:{{ page_image | image_url }}">
-  <meta property="og:image:secure_url" content="https:{{ page_image | image_url }}">
+  {%- comment %}<locksmith:90d6>{% endcomment -%}
+    {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta property="og:image" content="http:{{ page_image | image_url }}">{% endif -%}
+    {%- comment %}original: <meta property="og:image" content="http:{{ page_image | image_url }}">{%- endcomment %}
+  {%- comment %}</locksmith:90d6>{% endcomment -%}
+  {%- comment %}<locksmith:916f>{% endcomment -%}
+    {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta property="og:image:secure_url" content="https:{{ page_image | image_url }}">{% endif -%}
+    {%- comment %}original: <meta property="og:image:secure_url" content="https:{{ page_image | image_url }}">{%- endcomment %}
+  {%- comment %}</locksmith:916f>{% endcomment -%}
   <meta property="og:image:width" content="{{ page_image.width }}">
   <meta property="og:image:height" content="{{ page_image.height }}">
 {% endif %}
