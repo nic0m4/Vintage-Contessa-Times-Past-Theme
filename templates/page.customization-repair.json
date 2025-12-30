@@ -9,18 +9,6 @@
  */
 {
   "sections": {
-    "image_with_text": {
-      "type": "image_with_text",
-      "settings": {
-        "image_image": "shopify://shop_images/customize-sell-trade-luxury-watches.webp",
-        "text_heading": "Customization & Repair Services",
-        "richtext_paragraph": "",
-        "url_button_link": "",
-        "text_button_text": "",
-        "url_button_link_2": "",
-        "text_button_text_2": ""
-      }
-    },
     "qa_richtext_DyczPC": {
       "type": "qa_richtext",
       "blocks": {
@@ -78,7 +66,6 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "image_with_text",
     "qa_richtext_DyczPC",
     "image_fill_Qnny49"
   ]
