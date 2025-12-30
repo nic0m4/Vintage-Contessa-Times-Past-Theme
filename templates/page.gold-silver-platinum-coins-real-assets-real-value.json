@@ -1,28 +1,51 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "announcement_bar": {
-            "type": "announcement_bar"
-        },
-        "small_hero": {
-            "type": "small_hero"
-        },
-        "content_rich_text": {
-            "type": "content_rich_text"
-        },
-        "3_columns_white": {
-            "type": "3_columns_white"
-        },
-        "text_layout_2": {
-            "type": "text_layout_2"
-        }
+  "sections": {
+    "small_hero": {
+      "type": "small_hero",
+      "settings": {
+        "text_headline": "The spirit of Chalet Contessa is where timeless alpine glamour meets modern mountain living.",
+        "richtext_text": "<p>Inspired by the iconic photography and art, the design blends classic European luxury with the adventurous spirit of the Rockies—delivering a curated, comfortable elegance that feels both storied and striking now.</p>"
+      }
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "announcement_bar",
-        "small_hero",
-        "content_rich_text",
-        "3_columns_white",
-        "text_layout_2"
-    ]
+    "content_rich_text": {
+      "type": "content_rich_text",
+      "settings": {
+        "text_headline": "Real Assets. Real Value.",
+        "richtext_text": "<p>Gold, silver, platinum, and rare coins are foundational pillars of both wearable and tangible wealth—and they are where our story began. Long before luxury became fashionable, Rob Chramosta was learning to value assets the old-fashioned way: through fundamentals, discipline, and experience.</p><p>‍</p><ul><li>Rob began buying coins at six years old</li><li>Took his first job with a coin dealer at thirteen</li><li>Bought and sold his first Rolex while still in high school</li><li>While attending the University of Colorado Boulder, he was grading coins in Colorado Springs and actively trading watches and precious metals</li></ul><p>‍</p><p>That early foundation continues to shape how we operate today.</p>",
+        "url_button_link": "shopify://pages/about-us-1",
+        "text_button_text": "Read More"
+      }
+    },
+    "3_columns_white": {
+      "type": "3_columns_white",
+      "settings": {
+        "text_image_title_1": "We Buy, Sell &amp; Trade",
+        "text_image_title_2": "Our Approach"
+      }
+    },
+    "text_layout_2": {
+      "type": "text_layout_2",
+      "settings": {
+        "text_headline": "By Appointment. With Intention.",
+        "richtext_richtext_1": "<p>Whether you are selling a single piece or an entire collection, clients value that we offer:</p><ul><li>Honest, market-aligned pricing</li><li>Clear guidance without pressure</li><li>Protection from underselling or emotional decision-making</li><li>A trusted partner who treats your assets with respect</li></ul><p>We don’t rush transactions. We guide them—with experience, integrity, and patience. In a market filled with noise, we focus on fundamentals.</p>"
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "small_hero",
+    "content_rich_text",
+    "3_columns_white",
+    "text_layout_2"
+  ]
 }

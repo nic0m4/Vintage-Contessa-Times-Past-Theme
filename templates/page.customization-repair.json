@@ -21,61 +21,65 @@
         "text_button_text_2": ""
       }
     },
-    "qa": {
-      "type": "qa",
+    "qa_richtext_DyczPC": {
+      "type": "qa_richtext",
       "blocks": {
-        "faq_item_a_8r9DYA": {
-          "type": "faq-item-a",
-          "settings": {
-            "text_heading": "Repair, Service and Customization",
-            "richtext_richtext": "<p><br/>                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                    </p>"
-          }
-        },
-        "faq-item-a": {
-          "type": "faq-item-a",
-          "name": "FAQ Item a",
-          "settings": {
-            "text_heading": "Band Adjustment and Additions",
-            "richtext_richtext": "<p><br/>                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                    </p>"
-          }
-        },
-        "faq_item_a_FPri89": {
-          "type": "faq-item-a",
-          "settings": {
-            "text_heading": "Battery Replacement",
-            "richtext_richtext": "<p><br/>                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                    </p>"
-          }
-        },
-        "faq_item_a_L9BhrA": {
-          "type": "faq-item-a",
-          "settings": {
-            "text_heading": "Restring pearls and beads",
-            "richtext_richtext": "<p><br/>                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                    </p>"
-          }
-        },
-        "faq-item-b": {
+        "faq_item_b_CU98rg": {
           "type": "faq-item-b",
-          "name": "FAQ Item b",
           "settings": {
-            "text_heading": "Heading",
-            "richtext_richtext": "<p><br/>                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                    </p>"
+            "text_heading": "Repair & Restoration",
+            "richtext_richtext": "<p>We coordinate professional repair and restoration services for:</p><ul><li>Fine watches</li><li>Designer and signed jewelry</li></ul><p>Each piece is evaluated individually and, when appropriate, placed with <strong>vetted specialists</strong> who meet our standards for craftsmanship, authenticity, and care.All services are offered <strong>by appointment only</strong>, ensuring proper assessment and clear guidance before any work begins.</p>"
+          }
+        },
+        "faq_item_b_PERbKA": {
+          "type": "faq-item-b",
+          "settings": {
+            "text_heading": "Custom & Special Requests",
+            "richtext_richtext": "<p>For select clients, we assist with:</p><ul><li>Jewelry modifications and bespoke adjustments</li><li>Strap changes and refinements for fine watches</li><li>Thoughtful updates that preserve the integrity and long-term value of your piece</li></ul><p>Every recommendation is made with <strong>wearability, longevity, and market awareness</strong> in mind.</p>"
+          }
+        },
+        "faq_item_b_BedEHy": {
+          "type": "faq-item-b",
+          "settings": {
+            "text_heading": "Appraisals & Documentation",
+            "richtext_richtext": "<p>We provide appraisal coordination and advisory services <strong>for pieces purchased through us</strong>, including:</p><ul><li>Insurance</li><li>Estate planning</li><li>Collection management</li></ul><p>Our guidance reflects <strong>current market conditions, category expertise, and real-world valuation</strong>—never inflated numbers or assumptions.</p><p><strong>Authentication Policy<br/></strong>We do <strong>not</strong> offer authentication services.</p><p>Authentication is conducted <strong>solely for our internal purposes</strong> in connection with pieces we are evaluating, purchasing, or have sold. This process supports our own buying, selling, and valuation decisions and is not available as a standalone or third-party service.</p>"
+          }
+        },
+        "faq_item_b_ckxwHk": {
+          "type": "faq-item-b",
+          "settings": {
+            "text_heading": "Ongoing Client Support",
+            "richtext_richtext": "<p>As a client, you may also access:</p><ul><li>Market guidance on when to service, sell, or hold</li><li>Condition assessments prior to sale or trade</li><li>Discreet consultation for inherited or multi-category collections</li></ul><p>Our role does not end at the transaction. We remain a resource—helping you protect, maintain, and make informed decisions about your luxury assets over time.</p>"
           }
         }
       },
       "block_order": [
-        "faq_item_a_8r9DYA",
-        "faq-item-a",
-        "faq_item_a_FPri89",
-        "faq_item_a_L9BhrA",
-        "faq-item-b"
+        "faq_item_b_CU98rg",
+        "faq_item_b_PERbKA",
+        "faq_item_b_BedEHy",
+        "faq_item_b_ckxwHk"
       ],
-      "settings": {}
+      "name": "Q&A Richtext",
+      "settings": {
+        "text_headline": "A Client-Only Offering"
+      }
+    },
+    "image_fill_Qnny49": {
+      "type": "image_fill",
+      "name": "Image Fill",
+      "settings": {
+        "text_headline": "All services are offered by appointment and subject to evaluation.",
+        "richtext_text": "<p>Because care—like luxury—should never be rushed.</p>",
+        "url_button_link": "shopify://pages/about-us",
+        "text_button_text": "Make an Appointment"
+      }
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "image_with_text",
-    "qa"
+    "qa_richtext_DyczPC",
+    "image_fill_Qnny49"
   ]
 }
