@@ -1,24 +1,26 @@
 <div class="padding-global padding-section-large">
-          <div class="grid_3col less-gap">
-            <div class="steps">
-              <div class="heading-style-h5">
+          <div class="container-large">
+            <div class="grid_3col less-gap">
+              <div class="steps">
+                <div class="heading-style-h5">
 {{ section.settings.text_image_title_1 }}
 </div>
-              <div class="text-size-medium">
+                <div class="text-size-medium">
 {{ section.settings.text_image_description_1 }}
 </div>
-            </div>{% if section.settings.image_image %}
+              </div>{% if section.settings.image_image %}
 {{ section.settings.image_image | image_url: width: 1000 | image_tag: sizes: '(max-width: 660px) 100vw, 660px', id: 'w-node-_635db131-8da2-9d78-4909-4bb5381b01ce-079244dd', loading: 'lazy' }}
 {% else %}
-<img src="{{ 'beaver-creek-snow-globe.webp' | asset_url }}" alt="" sizes="(max-width: 660px) 100vw, 660px" id="w-node-_635db131-8da2-9d78-4909-4bb5381b01ce-079244dd" loading="lazy" srcset="{{ 'beaver-creek-snow-globe.webp' | asset_url }} 500w, {{ 'beaver-creek-snow-globe.webp' | asset_url }} 660w">
+<img src="{{ 'beaver-creek-snow-globe.webp' | asset_url }}" alt="" sizes="(max-width: 660px) 100vw, 660px" id="w-node-_635db131-8da2-9d78-4909-4bb5381b01ce-079244dd" loading="lazy" srcset="{{ 'beaver-creek-snow-globe-p-500.webp' | asset_url }} 500w, {{ 'beaver-creek-snow-globe.webp' | asset_url }} 660w">
 {% endif %}
-            <div class="steps">
-              <div class="heading-style-h5">
+              <div class="steps">
+                <div class="heading-style-h5">
 {{ section.settings.text_image_title_2 }}
 </div>
-              <div class="text-size-medium">
+                <div class="text-size-medium">
 {{ section.settings.text_image_description_2 }}
 </div>
+              </div>
             </div>
           </div>
         </div> {% schema %} {
