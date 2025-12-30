@@ -1,0 +1,71 @@
+<div class="padding-global padding-section-large">
+          <div class="container-large">
+            <div class="grid_3col less-gap">
+              <div class="steps">
+                <div class="heading-style-h5">
+{{ section.settings.text_image_title_1 }}
+</div>
+                <div class="text-size-small w-richtext">
+                  <p>We work with both private individuals and estates to buy, sell, and trade:</p>
+                  <p>‍</p>
+                  <ul role="list">
+                    <li>Gold bullion and gold jewelry</li>
+                    <li>Silver bullion and estate silver</li>
+                    <li>Platinum pieces</li>
+                    <li>Rare and collectible coins</li>
+                    <li>Estate collections and inherited holdings</li>
+                  </ul>
+                </div>
+              </div>{% if section.settings.image_image %}
+{{ section.settings.image_image | image_url: width: 1000 | image_tag: sizes: '(max-width: 640px) 100vw, 640px', id: 'w-node-_635db131-8da2-9d78-4909-4bb5381b01ce-56c075ac', loading: 'lazy' }}
+{% else %}
+<img src="{{ 'buy-sell-trade-gold-silver.webp' | asset_url }}" alt="" sizes="(max-width: 640px) 100vw, 640px" id="w-node-_635db131-8da2-9d78-4909-4bb5381b01ce-56c075ac" loading="lazy" srcset="{{ 'buy-sell-trade-gold-silver.webp' | asset_url }} 500w, {{ 'buy-sell-trade-gold-silver.webp' | asset_url }} 640w">
+{% endif %}
+              <div class="steps">
+                <div class="heading-style-h5">
+{{ section.settings.text_image_title_2 }}
+</div>
+                <div class="text-size-small w-richtext">
+                  <p>Our process is never hype-driven. Each asset is evaluated with care and clarity, based on:</p>
+                  <p>‍</p>
+                  <ul role="list">
+                    <li>Spot pricing and market spreads</li>
+                    <li>Scarcity and historical relevance</li>
+                    <li>Condition, provenance, and liquidity</li>
+                    <li>Timing and global demand</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "3 Columns White",
+    "class": "section_content background-color-alternate",
+    "settings": [
+        {
+            "id": "text_image_title_1",
+            "type": "text",
+            "label": "Image Title 1",
+            "default": "We Buy, Sell &amp; Trade"
+        },
+        {
+            "id": "image_image",
+            "type": "image_picker",
+            "label": "Image"
+        },
+        {
+            "id": "text_image_title_2",
+            "type": "text",
+            "label": "Image Title 2",
+            "default": "Our Approach"
+        }
+    ],
+    "presets": [
+        {
+            "name": "3 Columns White",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}

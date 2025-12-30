@@ -1,0 +1,99 @@
+<div class="padding-global padding-section-medium">
+          <div class="container-large">
+            <div class="content_grid align-top">
+              <div class="content_wrapper less-gap">
+                <div class="product_heading-wrapper is-left">
+                  <div class="heading_symbol">
+                    <div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="16" fill="none">
+                        <path fill="#BDA66E" d="M24.08.25c-3.08 0-5.214 1.74-6.923 3.93l1.628 2.191c1.304-1.778 2.858-3.113 5.064-3.113 2.779 0 4.955 1.96 4.955 4.742 0 2.554-1.806 4.786-4.955 4.786-2.422 0-4.079-1.791-5.553-3.976l-.063-.093-.124-.188a22.475 22.475 0 0 0-1.266-1.69c-.463-.554-1.302-1.743-1.433-1.943C13.57 2.382 11.28.25 7.873.25 3.056.25 0 3.943 0 8c0 4.149 3.056 7.75 7.873 7.75 3.08 0 5.215-1.71 6.924-3.865l-1.636-2.247c-1.314 1.789-2.89 3.148-5.057 3.148-3.15 0-4.908-2.279-4.908-4.786 0-2.417 1.759-4.741 4.908-4.741 2.466 0 4.092 1.76 5.56 3.94v-.001l1.53 2.12c.166.228.46.635.732 1.013l.004-.006.28.399c.09.125.17.234.229.318 1.85 2.534 4.126 4.708 7.642 4.708C29.036 15.75 32 12.058 32 8 32 3.35 28.34.25 24.08.25Z"></path>
+                      </svg></div>
+                  </div>
+                  <div class="content_block">
+                    <h3 class="heading-style-h3">
+{{ section.settings.text_headline }}
+</h3>
+                  </div>
+                </div>
+                <div class="content_block">
+                  <div class="w-richtext">
+                    <p>Our service, repair, and advisory offerings are <strong>reserved exclusively for our clients</strong>. We do not accept repair, appraisal, or authentication requests from the general public.</p>
+                    <p>‍</p>
+                    <p>This allows us to maintain the level of <strong>discretion, care, and attention</strong> that exceptional pieces—and trusted relationships—require.</p>
+                    <p>‍</p>
+                    <p>As our client, you have access to a carefully curated suite of <strong>repair, restoration, and advisory services</strong>, handled with the same expertise and integrity that define everything we do. We believe exceptional pieces deserve thoughtful care—and trusted hands.</p>
+                    <p>‍</p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq_wrapper at_qa">
+                <ul x-data="{open: 1}" role="list" class="faq_list">
+                  {% for block in section.blocks %}
+    {% if block.type == "faq-item-b" %}
+                    <li li-block="FAQ Item b" role="button" tabindex="0" aria-controls="faq-body-b-{{forloop.index}}" x-on:click="open = (open === {{forloop.index}} ? 0 : {{forloop.index}}); $el.setAttribute('aria-expanded', open === {{forloop.index}} ? 'true' : 'false')" class="faq_item">
+                                    
+                    
+                                    <div class="faq_item-heading">
+                      <h3 id="faq-heading-b-{{forloop.index}}" class="text-size-large text-weight-medium">
+{{ block.settings.text_heading }}
+</h3>
+                      <div x-bind:style="open === {{ forloop.index }} ? 'transform: rotate(180deg)' : 'transform: rotate(0deg)'" class="faq_icon w-embed"><svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M21.107 10.4622L13.3631 18.4523C13.2552 18.5641 13.127 18.6527 12.9858 18.7132C12.8446 18.7737 12.6932 18.8048 12.5403 18.8048C12.3874 18.8048 12.2361 18.7737 12.0949 18.7132C11.9537 18.6527 11.8254 18.5641 11.7175 18.4523L3.97362 10.4622C3.75541 10.237 3.63281 9.93164 3.63281 9.61322C3.63281 9.2948 3.75541 8.98942 3.97362 8.76427C4.19184 8.53911 4.48781 8.41262 4.79641 8.41262C5.10502 8.41262 5.40098 8.53911 5.6192 8.76427L12.5413 15.9065L19.4634 8.76327C19.6816 8.53811 19.9775 8.41162 20.2861 8.41162C20.5948 8.41162 20.8907 8.53811 21.1089 8.76327C21.3272 8.98843 21.4497 9.2938 21.4497 9.61222C21.4497 9.93064 21.3272 10.236 21.1089 10.4612L21.107 10.4622Z" fill="currentColor"></path>
+                        </svg></div>
+                    </div>
+                                    
+                    
+                                    <div id="faq-body-b-{{forloop.index}}" x-show="open === {{ forloop.index }}" x-collapse="" x-cloak="" aria-labelledby="faq-heading-b-{{forloop.index}}" class="faq_item-body">
+                      <div class="text-rich-text margin-top margin-small w-richtext"> {{ block.settings.richtext_richtext }} </div>
+                    </div>
+                                    
+                  
+                            </li>
+            {% endif %}
+{% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "Q&A Richtext",
+    "blocks": [
+        {
+            "name": "FAQ Item b",
+            "type": "faq-item-b",
+            "settings": [
+                {
+                    "id": "text_heading",
+                    "type": "text",
+                    "label": "Heading",
+                    "default": "Heading"
+                },
+                {
+                    "id": "richtext_richtext",
+                    "type": "richtext",
+                    "label": "Richtext",
+                    "default": "<p>\n                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                      <\/p>"
+                }
+            ]
+        }
+    ],
+    "settings": [
+        {
+            "id": "text_headline",
+            "type": "text",
+            "label": "Headline",
+            "default": "A Client-Only Offering"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Q&A Richtext",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "faq-item-b"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
