@@ -1,88 +1,96 @@
-<div class="padding-global padding-section-large align-center">
-          <div class="container-large"></div>
-          <section li-section="Hero Slider 1" class="section_home-hero max-width-xxlarge">
-            <div class="home-hero_wrapper">
-              <div class="swiper_component is-home-hero">
-                <div class="swiper is-home-hero">
-                  <div role="list" class="swiper-wrapper is-home-hero">
-                    {% for block in section.blocks %}
+
+          <div class="home-hero_wrapper max-width-xxlarge">
+            <div class="swiper_component is-home-hero">
+              <div class="swiper is-home-hero">
+                <div role="list" class="swiper-wrapper is-home-hero">
+                  {% for block in section.blocks %}
     {% if block.type == "slide" %}
                     <div li-block="Slide" class="swiper-slide is-home-hero">
                                     
-                      
-                                    <div class="container-large">
-                        <div class="swiper_content">
-                          <h2 class="heading-style-h2 text-color-white"> {{ block.settings.textarea_heading }} </h2>
-                          <div class="text-size-medium text-weight-semibold text-color-white">
+                    
+                                    <div class="container-large in-slider">
+                      <div class="swiper_content">
+                        <h3 class="heading-style-h3 text-color-white"> {{ block.settings.textarea_heading }} </h3>
+                        <div class="text-size-regular text-color-white text-weight-medium">
 {{ block.settings.text_text }}
 </div>
-                        </div>
+                        {% if block.settings.text_button_1_text != blank or block.settings.text_button_2_text != blank %}    <div li-if="block.settings.text_button_1_text != blank or block.settings.text_button_2_text != blank" class="button-group z-index-2">
+    
+                          {% if block.settings.text_button_1_text != blank %}    <div li-if="block.settings.text_button_1_text != blank" class="button-block animation-css-fade">
+    
+                            <a href="{{ block.settings.url_button_1_link }}" class="button is-large w-button"> {{ block.settings.text_button_1_text }} </a>
+                              </div>
+{% endif %}
+                          {% if block.settings.text_button_2_text != blank %}    <div li-if="block.settings.text_button_2_text != blank" class="button-block animation-css-fade">
+    
+                            <a href="{{ block.settings.url_button_2_link }}" class="button is-outline w-button"> {{ block.settings.text_button_2_text }} </a>
+                              </div>
+{% endif %}
+                            </div>
+{% endif %}
                       </div>
+                    </div>
                                     
-                      
+                    
+                                    <div class="gradient_fade"></div>
+                                    
+                    
                                     <div class="image-hero_bg">
-                        <div class="image-hero_desktop-bg">
-                          <div class="gradient_fade"></div>{% if block.settings.image_image_desktop %}
+                      <div class="image-hero_desktop-bg">{% if block.settings.image_image_desktop %}
 {{ block.settings.image_image_desktop | image_url: width: 1000 | image_tag: loading: 'eager', class: 'image-hero_bg-image' }}
 {% else %}
 <img loading="eager" alt="" src="{{ 'platzhalter.svg' | asset_url }}" class="image-hero_bg-image">
 {% endif %}
-                          {% if block.settings.video_desktop != blank %}    <div li-if="block.settings.video_desktop != blank" class="image-hero_video-wrapper">
+                        {% if block.settings.video_desktop != blank %}    <div li-if="block.settings.video_desktop != blank" class="image-hero_video-wrapper">
     
-                            <video style="height: 100%; width: 100%; object-fit: cover" volume="0" slot="media" playsinline="" loop="" autoplay="" muted="" alt="{{block.settings.video_desktop.alt}}">{% for video_source in block.settings.video_desktop.sources %}<source src="{{video_source.url}}" type="{{video_source.mime_type}}">{% endfor %}</video>
-                              </div>
+                          <video style="height: 100%; width: 100%; object-fit: cover" volume="0" slot="media" playsinline="" loop="" autoplay="" muted="" alt="{{block.settings.video_desktop.alt}}">{% for video_source in block.settings.video_desktop.sources %}<source src="{{video_source.url}}" type="{{video_source.mime_type}}">{% endfor %}</video>
+                            </div>
 {% endif %}
-                        </div>
-                        {% if block.settings.video_mobile != blank or block.settings.image_image_mobile_480px != blank %}    <div li-if="block.settings.video_mobile != blank or block.settings.image_image_mobile_480px != blank" class="image-hero_mobile-bg">
-    
-                          <div class="gradient_fade"></div>{% if block.settings.image_image_mobile %}
+                      </div>
+                      {% if block.settings.video_mobile != blank or block.settings.image_image_mobile != blank %}    <div li-if="block.settings.video_mobile != blank or block.settings.image_image_mobile != blank" class="image-hero_mobile-bg">
+    {% if block.settings.image_image_mobile %}
 {{ block.settings.image_image_mobile | image_url: width: 1000 | image_tag: loading: 'eager', class: 'image-hero_bg-image' }}
 {% else %}
 <img loading="eager" alt="" src="{{ 'platzhalter.svg' | asset_url }}" class="image-hero_bg-image">
 {% endif %}
-                          {% if block.settings.video_mobile != blank %}    <div li-if="block.settings.video_mobile != blank" class="image-hero_video-wrapper">
+                        {% if block.settings.video_mobile != blank %}    <div li-if="block.settings.video_mobile != blank" class="image-hero_video-wrapper">
     
-                            <video style="height: 100%; width: 100%; object-fit: cover" volume="0" slot="media" playsinline="" loop="" autoplay="" muted="" alt="{{block.settings.video_mobile.alt}}">{% for video_source in block.settings.video_mobile.sources %}<source src="{{video_source.url}}" type="{{video_source.mime_type}}">{% endfor %}</video>
-                              </div>
-{% endif %}
+                          <video style="height: 100%; width: 100%; object-fit: cover" volume="0" slot="media" playsinline="" loop="" autoplay="" muted="" alt="{{block.settings.video_mobile.alt}}">{% for video_source in block.settings.video_mobile.sources %}<source src="{{video_source.url}}" type="{{video_source.mime_type}}">{% endfor %}</video>
                             </div>
 {% endif %}
-                      </div>
-                                    
-                      
-                                    
+                          </div>
+{% endif %}
+                    </div>
                                     
                     
+                                    
+                                    
+                  
                             </div>
             {% endif %}
 {% endfor %}
-                  </div>
                 </div>
-                <div class="home-hero_controls">
-                  <div class="home-hero_navigation"><button aria-label="Previous slide" type="button" class="swiper_button-2 swiper-prev">
-                      <div class="swiper_button-icon-2 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 29.541 22.323" style="transform: rotate(180deg)">
-                          <g id="Group_44" data-name="Group 44" transform="translate(0 1.014)">
-                            <path id="Path_1" data-name="Path 1" d="M115.445,20.633l9.311-10.148L115.445.338" transform="translate(-97.25 -0.338)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"></path>
-                            <line id="Line_1" data-name="Line 1" x1="27.506" transform="translate(0 10.148)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"></line>
-                          </g>
-                        </svg></div>
-                    </button><button aria-label="Next slide" type="button" class="swiper_button-2 swiper-next">
-                      <div class="swiper_button-icon-2 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 29.541 22.323">
-                          <g id="Group_44" data-name="Group 44" transform="translate(0 1.014)">
-                            <path id="Path_1" data-name="Path 1" d="M115.445,20.633l9.311-10.148L115.445.338" transform="translate(-97.25 -0.338)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"></path>
-                            <line id="Line_1" data-name="Line 1" x1="27.506" transform="translate(0 10.148)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"></line>
-                          </g>
-                        </svg></div>
-                    </button></div>
-                  <div class="swiper_pagination is-mixed">
-                    <div class="swiper_bullet"></div>
-                    <div class="swiper_bullet is-active"></div>
-                  </div>
+              </div>
+              <div class="home-hero_controls">
+                <div class="home-hero_navigation"><button aria-label="Previous slide" type="button" class="swiper_button swiper-prev">
+                    <div class="swiper_button-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                        <path fill="#fff" d="m9.517 17.135 4.677 4.677c.22.227.327.493.319.8-.009.306-.126.57-.353.791a1.076 1.076 0 0 1-.795.336 1.088 1.088 0 0 1-.788-.336l-6.608-6.6a1.099 1.099 0 0 1-.34-.803c0-.31.113-.577.34-.804l6.641-6.633c.221-.222.484-.333.788-.336.304-.003.569.107.796.328a1.1 1.1 0 0 1 .335.816 1.114 1.114 0 0 1-.335.808l-4.677 4.685H25.73A1.102 1.102 0 0 1 26.867 16a1.102 1.102 0 0 1-1.136 1.135H9.517Z"></path>
+                      </svg></div>
+                  </button><button aria-label="Next slide" type="button" class="swiper_button swiper-next">
+                    <div class="swiper_button-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                        <path fill="#fff" d="M22.523 17.069H6.27a1.102 1.102 0 0 1-1.136-1.136 1.102 1.102 0 0 1 1.136-1.135h16.253l-4.71-4.718a1.013 1.013 0 0 1-.323-.792c.01-.306.13-.573.356-.8.222-.22.484-.33.788-.327.304.002.57.114.796.335l6.641 6.634c.122.121.21.249.265.381.055.132.083.273.083.422 0 .15-.028.29-.083.423-.055.132-.143.26-.265.381l-6.608 6.6a1.116 1.116 0 0 1-.796.336 1.05 1.05 0 0 1-.787-.336 1.087 1.087 0 0 1-.34-.808c0-.318.113-.59.34-.817l4.643-4.643Z"></path>
+                      </svg></div>
+                  </button></div>
+                <div class="swiper_pagination is-mixed">
+                  <div class="swiper_bullet"></div>
+                  <div class="swiper_bullet is-active"></div>
                 </div>
               </div>
             </div>
+          </div>
+          
             <div class="hide w-embed w-script">
-              <script>
+<script>
 document.addEventListener('DOMContentLoaded', () => {
   $(".swiper_component.is-home-hero").each(function(index) {    
     const swiper = new Swiper($(this).find(".swiper")[0], {
