@@ -1,0 +1,28 @@
+{
+    "sections": {
+        "announcement_bar": {
+            "type": "announcement_bar"
+        },
+        "small_hero": {
+            "type": "small_hero"
+        },
+        "content_rich_text": {
+            "type": "content_rich_text"
+        },
+        "3_columns_white": {
+            "type": "3_columns_white"
+        },
+        "text_layout_2": {
+            "type": "text_layout_2"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "announcement_bar",
+        "small_hero",
+        "content_rich_text",
+        "3_columns_white",
+        "text_layout_2"
+    ]
+}
