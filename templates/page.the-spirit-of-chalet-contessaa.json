@@ -22,140 +22,114 @@
         "tab_ertgiB": {
           "type": "tab",
           "settings": {
+            "text_tab_label": "Ciao Y’all",
             "text_text": "A Southern hello meets European soul in the entry of Chalet Contessa. With equestrian wallpaper, soft glow, and textured layers, this space invites guests to slow down and savor the moment. It’s a warm, elegant welcome—a prelude to the stories and style woven throughout the home.",
-            "image_image": "shopify://shop_images/ciao-yall-entry.webp",
-            "url_button_link": "",
-            "text_button_text": "Button Text",
-            "text_tab_label": "Ciao Y’all"
+            "image_image": "shopify://shop_images/ciao-yall-entry.webp"
           }
         },
         "tab_LDyjwb": {
           "type": "tab",
           "settings": {
+            "text_tab_label": "Eldon’s Après Nook",
             "text_text": "Where stories are poured & spirits lifted. Warm textures and subtle luxury create a cozy gathering place for meaningful moments. Watched over by Eldon—the family’s beloved elk—it invites connection, joy, and a lingering sense of celebration.",
-            "image_image": "shopify://shop_images/eldon.webp",
-            "url_button_link": "",
-            "text_button_text": "",
-            "text_tab_label": "Eldon’s Après Nook"
+            "image_image": "shopify://shop_images/eldon.webp"
           }
         },
         "tab_KxdXPg": {
           "type": "tab",
           "settings": {
+            "text_tab_label": "La Cucina",
             "text_text": "Modest in size yet rich in spirit, La Cucina invites you to slow down and savor daily life. River views and Brunschwig & Fils wallpaper create a warm flow into the living area and patio. A quiet tribute to Nannee, the family matriarch, it reflects her legacy of hospitality and the simple beauty of sharing meals and moments together.",
             "image_image": "shopify://shop_images/la-cucina-window-sink.webp",
             "image_2": "shopify://shop_images/la-cucina-viewout.webp",
-            "image_3": "shopify://shop_images/la-cucina-bar-eldon.webp",
-            "url_button_link": "",
-            "text_button_text": "",
-            "text_tab_label": "La Cucina"
+            "image_3": "shopify://shop_images/la-cucina-bar-eldon.webp"
           }
         },
         "tab_fJ7nN8": {
           "type": "tab",
           "settings": {
+            "text_tab_label": "Hearth",
             "text_text": "With sweeping river views and a table set for connection, The Hearth is the Soul of Chalet Contessa where food, family, and stories come together. High ceilings meet an intimate mood, creating a space designed for conversation, celebration, and slowing down. Elegant textures, candlelight, and an indoor–outdoor rhythm invite guests to linger and savor the beautiful life unfolding here.",
             "image_image": "shopify://shop_images/hearth-golf-course.webp",
             "image_2": "shopify://shop_images/hearth-river-view.webp",
             "image_3": "shopify://shop_images/hearth-tree-view.webp",
-            "image_4": "shopify://shop_images/hearth-table.webp",
-            "url_button_link": "",
-            "text_button_text": "",
-            "text_tab_label": "Hearth"
+            "image_4": "shopify://shop_images/hearth-table.webp"
           }
         },
         "tab_cLaCqB": {
           "type": "tab",
           "settings": {
+            "text_tab_label": "La Perla Powder & Full Bath",
             "text_text": "The La Perla Bath is a serene, couture-inspired escape wrapped in deep blue faux-lacquer wallpaper. Heated white marble floors with soft blue veining add comfort and calm elegance, while a burl wood vanity with a marble countertop brings warmth and sophistication. Chic, polished, and quietly indulgent, this bath offers a refined retreat within the chalet.",
-            "image_image": "shopify://shop_images/la-perla-bath.webp",
-            "url_button_link": "",
-            "text_button_text": "",
-            "text_tab_label": "La Perla Powder & Full Bath"
+            "image_image": "shopify://shop_images/la-perla-bath.webp"
           }
         },
         "tab_WVXMye": {
           "type": "tab",
           "settings": {
+            "text_tab_label": "Terra",
             "text_text": "Soft, warm, and quietly dramatic, The Terra Room balances earthy tones with elegant detail. Named for its grounding palette and personal ties, it carries a whisper of the American South, a nod to Gone with the Wind, and a sense of legacy passed through generations. Orange drapes cast a glow over the serene taupe bed, while a framed Hermès scarf and layered textures bring worldly warmth and calm.",
             "image_image": "shopify://shop_images/terra-close.webp",
-            "image_2": "shopify://shop_images/terra-dor.webp",
-            "url_button_link": "",
-            "text_button_text": "",
-            "text_tab_label": "Terra"
+            "image_2": "shopify://shop_images/terra-dor.webp"
           }
         },
         "tab_AikP7E": {
           "type": "tab",
           "settings": {
+            "text_tab_label": "Bella Vie",
             "text_text": "French and Italian for “the beautiful life,” The Bella Vie Room is a serene retreat in soft blues, warm whites, and hints of blush. A framed Hermès scarf featuring girls on horseback brings quiet strength, while Schumacher wallpaper, a plush settee, and Hermès accents add movement and gentle charm. Marble details and mirrored doors reflect the light, creating a space that feels timeless, hopeful, and softly uplifting.",
             "image_image": "shopify://shop_images/bella-vie-full.webp",
-            "image_2": "shopify://shop_images/bella-vie-corner-view.webp",
-            "url_button_link": "",
-            "text_button_text": "",
-            "text_tab_label": "Bella Vie"
+            "image_2": "shopify://shop_images/bella-vie-corner-view.webp"
           }
         },
         "tab_7xnqKz": {
           "type": "tab",
           "settings": {
+            "text_tab_label": "Missoni",
             "text_text": "A playful retreat wrapped in Missoni’s iconic zigzag wallpaper, this room blends the turquoise hues of the Italian isle of Capri with the fresh greens of alpine forests. A whimsical daybed—convertible into a queen—creates a versatile space for rest or relaxation. Youthful touches shine through a shadow box of vintage skis, while views toward the Louis Vuitton trunks",
             "image_image": "shopify://shop_images/missoni-in.webp",
-            "image_2": "shopify://shop_images/missoni-out.webp",
-            "url_button_link": "",
-            "text_button_text": "",
-            "text_tab_label": "Missoni"
+            "image_2": "shopify://shop_images/missoni-out.webp"
           }
         },
         "tab_47whxc": {
           "type": "tab",
           "settings": {
+            "text_tab_label": "Dolce & Gabbana Power & Full Bath",
             "text_text": "Inspired by the owners’ travels to Capri, the Dolce & Gabbana Bath brings la dolce vita to the mountains. Bold Italian tile pairs beautifully with the Contessa family’s legacy in marble, granite, and tile, creating a jewel-box space that feels both couture and deeply personal. A playful burst of color and craftsmanship, it’s an unexpected touch of Capri in the heart of the Rockies.",
             "image_image": "shopify://shop_images/dolce-gabbana-shower.webp",
-            "image_2": "shopify://shop_images/dolce-gabbana-vanity.webp",
-            "url_button_link": "",
-            "text_button_text": "Button Text",
-            "text_tab_label": "Dolce & Gabbana Power & Full Bath"
+            "image_2": "shopify://shop_images/dolce-gabbana-vanity.webp"
           }
         },
         "tab_HXciQn": {
           "type": "tab",
           "settings": {
+            "text_tab_label": "Legacy",
             "text_text": "Built with Vision. Lived with Intention. The Legacy Room is the cornerstone of Chalet Contessa—a tribute to the family who preserved this iconic home and to Vito, the beloved patriarch whose vision made it possible. Layered with textures inspired by the Wild West, African lands, and European elegance, it tells a story of achievement, heritage, and timeless style. With panoramic river views and quiet, curated luxury, it’s a place to reflect, reset, and savor la dolce vita—the sweet life, lived fully and with heart.",
             "image_image": "shopify://shop_images/legacy-viewout.webp",
             "image_2": "shopify://shop_images/legacy-couch.webp",
-            "image_3": "shopify://shop_images/legacy-bed.webp",
-            "url_button_link": "",
-            "text_button_text": "",
-            "text_tab_label": "Legacy"
+            "image_3": "shopify://shop_images/legacy-bed.webp"
           }
         },
         "tab_3jBPbC": {
           "type": "tab",
           "settings": {
-            "text_text": "The Legacy Bath carries the Ralph Lauren–inspired elegance of the master suite into a spa-like sanctuary. Houndstooth wallpaper sets a refined tone, while a jacuzzi tub, walk-in shower, and separate toilet room offer luxurious comfort. A well-lit double vanity and a spacious walk-in closet with built-in drawers and ample hanging space make this retreat as functional as it is beautiful.",
-            "url_button_link": "",
-            "text_button_text": "Button Text",
-            "text_tab_label": "Legacy Bath"
+            "text_tab_label": "Legacy Bath",
+            "text_text": "The Legacy Bath carries the Ralph Lauren–inspired elegance of the master suite into a spa-like sanctuary. Houndstooth wallpaper sets a refined tone, while a jacuzzi tub, walk-in shower, and separate toilet room offer luxurious comfort. A well-lit double vanity and a spacious walk-in closet with built-in drawers and ample hanging space make this retreat as functional as it is beautiful."
           }
         },
         "tab_PHrUbD": {
           "type": "tab",
           "settings": {
-            "text_text": "Function meets finesse in this thoughtfully designed space, where clean lines and coordinated wicker baskets add structure and quiet elegance. Light-filled and airy, it transforms everyday tasks into moments of calm. Positioned just off the mud room, it continues the home’s cohesive design story—simple, sophisticated, and grounded in understated luxury.",
-            "url_button_link": "",
-            "text_button_text": "Button Text",
-            "text_tab_label": "The Laundry"
+            "text_tab_label": "The Laundry",
+            "text_text": "Function meets finesse in this thoughtfully designed space, where clean lines and coordinated wicker baskets add structure and quiet elegance. Light-filled and airy, it transforms everyday tasks into moments of calm. Positioned just off the mud room, it continues the home’s cohesive design story—simple, sophisticated, and grounded in understated luxury."
           }
         },
         "tab_CgHFBT": {
           "type": "tab",
           "settings": {
+            "text_tab_label": "Trailhead",
             "text_text": "Clever, elegant, and quietly inviting, The Trailhead Room nods to all the gear, gossip, and glamour that pass through, without ever being on-the-nose. A tribute to the trails, tales, and transitions of mountain life, it sets a tone of calm intention with organized cubbies, layered textures, and soft natural light.",
-            "image_image": "shopify://shop_images/trailhead.webp",
-            "url_button_link": "",
-            "text_button_text": "",
-            "text_tab_label": "Trailhead"
+            "image_image": "shopify://shop_images/trailhead.webp"
           }
         }
       },
