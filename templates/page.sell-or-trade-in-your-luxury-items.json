@@ -32,6 +32,24 @@
         "text_button_text": "Get Valuation"
       }
     },
+    "text_layout_2_H8kmAK": {
+      "type": "text_layout_2",
+      "name": "Text Layout 2",
+      "settings": {
+        "text_headline": "By Appointment. With Intention.",
+        "richtext_richtext_1": "<p>Because our work is relationship-driven and our inventory is globally sourced, we operate primarily by appointment—both in person and virtually.</p><p>This approach allows us to:</p><ul><li>Give sellers the time and discretion their assets deserve</li><li>Provide buyers thoughtful guidance rather than rushed decisions</li><li>Maintain the level of care, privacy, and expertise our clients expect</li></ul><p>Whether you are selling a single piece, an inherited collection, or sourcing something exceptional, our process is designed to be personal, efficient, and respectful of value—yours and ours.</p><p>Luxury is personal.<br/>So is trust.</p>"
+      }
+    },
+    "two_column_rich_text_DGe8bY": {
+      "type": "two_column_rich_text",
+      "name": "Two Column Rich Text",
+      "settings": {
+        "text_heading": "A Trusted Buyer in Every Market",
+        "text_subtitle": "What sets us apart is not just expertise in one category—but earned credibility across many.",
+        "richtext_column_1": "<p>Clients around the world choose Vintage Contessa & Times Past because we are known for honorable buying, consistent presence, and decisive execution.</p><p>We are frequently contacted by:</p><ul><li>Private collectors</li><li>Estates and families</li><li>Wholesalers and trade partners</li><li>Individuals seeking clarity, not pressure</li></ul>",
+        "richtext_column_2": "<p>Our long-standing activity in watches, handbags, jewelry, gold, silver, and coins allows sellers to work with one trusted buyer, even when holdings span multiple asset types. Sellers value that we:</p><ul><li>Evaluate assets holistically, not in silos</li><li>Offer straightforward, market-aligned pricing</li><li>Act decisively when value is present</li><li>Provide immediate payment—we write the check</li></ul><p>For many, this means fewer conversations, clearer guidance, and a transaction rooted in trust rather than uncertainty.</p>"
+      }
+    },
     "faq_1": {
       "type": "faq_1",
       "blocks": {
@@ -58,6 +76,8 @@
   "order": [
     "image_with_text",
     "steps_with_image",
+    "text_layout_2_H8kmAK",
+    "two_column_rich_text_DGe8bY",
     "faq_1"
   ]
 }
