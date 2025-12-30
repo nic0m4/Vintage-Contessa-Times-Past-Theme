@@ -1,0 +1,114 @@
+<div class="padding-global padding-section-medium">
+          <div class="container-medium">
+            <div class="grid_2col">{% if section.settings.image_image %}
+{{ section.settings.image_image | image_url: width: 1000 | image_tag: loading: 'lazy' }}
+{% else %}
+<img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="">
+{% endif %}
+              <div>
+                <div class="product_heading-wrapper is-left">
+                  <div class="heading_symbol">
+                    <div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="16" fill="none">
+                        <path fill="#BDA66E" d="M24.08.25c-3.08 0-5.214 1.74-6.923 3.93l1.628 2.191c1.304-1.778 2.858-3.113 5.064-3.113 2.779 0 4.955 1.96 4.955 4.742 0 2.554-1.806 4.786-4.955 4.786-2.422 0-4.079-1.791-5.553-3.976l-.063-.093-.124-.188a22.475 22.475 0 0 0-1.266-1.69c-.463-.554-1.302-1.743-1.433-1.943C13.57 2.382 11.28.25 7.873.25 3.056.25 0 3.943 0 8c0 4.149 3.056 7.75 7.873 7.75 3.08 0 5.215-1.71 6.924-3.865l-1.636-2.247c-1.314 1.789-2.89 3.148-5.057 3.148-3.15 0-4.908-2.279-4.908-4.786 0-2.417 1.759-4.741 4.908-4.741 2.466 0 4.092 1.76 5.56 3.94v-.001l1.53 2.12c.166.228.46.635.732 1.013l.004-.006.28.399c.09.125.17.234.229.318 1.85 2.534 4.126 4.708 7.642 4.708C29.036 15.75 32 12.058 32 8 32 3.35 28.34.25 24.08.25Z"></path>
+                      </svg></div>
+                  </div>
+                  <div class="content_block">
+                    <h3 class="heading-style-h3">
+{{ section.settings.text_headline }}
+</h3>
+                  </div>
+                </div>
+                <div class="spacer-medium"></div>
+                <div li-content-for-blocks="">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+                  {% when 'disclaimer-read-more' %}
+            <div li-block="Disclaimer Read More">
+                    
+                    
+                    <div x-init="checkHeight()" x-data="{isExpanded: false, showMoreNeeded: false, checkHeight() { if (this.$refs.content.scrollHeight > {{ block.settings.container_height }}) { this.showMoreNeeded = true; }}}" class="load-more_wrapper">
+                      <div x-bind:style="isExpanded ? '' : 'max-height: {{ block.settings.container_height }}rem; overflow: hidden;'" x-ref="content" class="load-more_wrapper">
+                        <div class="text-size-regular"> {{ block.settings.richtext_bio_text }} </div>
+                        <div x-on:click="isExpanded = true" x-show="showMoreNeeded && !isExpanded" class="card_opener-gradient">
+                          <div class="load_more_btn">
+                            <div class="text-style-link">Read More</div>
+                            <div class="read_more-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#BDA66E" viewbox="0 -960 960 960">
+                                <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"></path>
+                              </svg></div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    
+                  
+                </div>
+                {% endcase %}
+{% endfor %}
+
+    </div>
+              </div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "founder",
+    "blocks": [
+        {
+            "name": "Disclaimer Read More",
+            "type": "disclaimer-read-more",
+            "settings": [
+                {
+                    "id": "richtext_bio_text",
+                    "type": "richtext",
+                    "label": "Bio Text",
+                    "default": "<p>Rob Chramosta is the market authority behind Vintage Contessa &amp; Times Past\u2014the strategist, evaluator, and advisor redefining luxury as an asset. Known as an Expert in Wearable Wealth &amp; Legacy Pieces, Rob evaluates luxury through the lens of: <\/p>"
+                },
+                {
+                    "type": "header",
+                    "content": "content-height"
+                },
+                {
+                    "type": "range",
+                    "id": "container_height",
+                    "min": 4,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "rem",
+                    "label": "Content H\u00f6he",
+                    "default": 100
+                }
+            ]
+        },
+        {
+            "type": "@app"
+        }
+    ],
+    "settings": [
+        {
+            "id": "image_image",
+            "type": "image_picker",
+            "label": "Image"
+        },
+        {
+            "id": "text_headline",
+            "type": "text",
+            "label": "Headline",
+            "default": "The Man Behind Wearable Wealth"
+        }
+    ],
+    "presets": [
+        {
+            "name": "founder",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "disclaimer-read-more"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
