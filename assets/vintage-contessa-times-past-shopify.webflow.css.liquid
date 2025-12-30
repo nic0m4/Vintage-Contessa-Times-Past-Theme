@@ -652,7 +652,7 @@ figcaption {
   font-family: Playfair Display, sans-serif;
   font-size: var(--_responsive-headings---heading-4);
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.1;
 }
 
 .heading-style-h4.text-weight-normal {
@@ -4130,6 +4130,7 @@ figcaption {
 
 .content_image-wrapper {
   object-fit: contain;
+  height: auto;
 }
 
 .content_image {
@@ -4175,9 +4176,9 @@ figcaption {
   height: 100%;
 }
 
-.section_authenticity_fill {
+.section_authenticity_fill_2 {
   background-color: var(--base-color-neutral--black);
-  background-image: url({{ 'trust_dark.webp' | asset_url }});
+  background-image: url({{ 'authentication-process-faded.webp' | asset_url }});
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6021,7 +6022,7 @@ figcaption {
     max-width: none;
   }
 
-  .section_authenticity_fill {
+  .section_authenticity_fill_2 {
     background-image: url({{ 'authentication-process-faded.webp' | asset_url }});
     background-position: 0 0;
     background-size: auto;
