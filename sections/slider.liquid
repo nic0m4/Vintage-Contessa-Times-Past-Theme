@@ -48,19 +48,23 @@
                             </div>
 {% endif %}
                       </div>
-                      <div class="image-hero_mobile-bg">
+<div class="image-hero_mobile-bg">
     {% if block.settings.image_image_mobile %}
-{{ block.settings.image_image_mobile | image_url: width: 1000 | image_tag: loading: 'eager', class: 'image-hero_bg-image' }}
-{% else %}
-<img loading="eager" alt="" src="{{ 'platzhalter.svg' | asset_url }}" class="image-hero_bg-image">
-{% endif %}
-                        {% if block.settings.video_mobile != blank %}    <div li-if="block.settings.video_mobile != blank" class="image-hero_video-wrapper">
+        {{ block.settings.image_image_mobile | image_url: width: 1000 | image_tag: loading: 'eager', class: 'image-hero_bg-image' }}
+    {% else %}
+        <img loading="eager" alt="" src="{{ 'platzhalter.svg' | asset_url }}" class="image-hero_bg-image">
+    {% endif %}
     
-                          <video style="height: 100%; width: 100%; object-fit: cover" volume="0" slot="media" playsinline="" loop="" autoplay="" muted="" alt="{{block.settings.video_mobile.alt}}">{% for video_source in block.settings.video_mobile.sources %}<source src="{{video_source.url}}" type="{{video_source.mime_type}}">{% endfor %}</video>
-                            </div>
-{% endif %}
-                          </div>
-
+    {% if block.settings.video_mobile != blank %}
+        <div class="image-hero_video-wrapper">
+            <video style="height: 100%; width: 100%; object-fit: cover" volume="0" slot="media" playsinline="" loop="" autoplay="" muted="" alt="{{block.settings.video_mobile.alt}}">
+                {% for video_source in block.settings.video_mobile.sources %}
+                    <source src="{{video_source.url}}" type="{{video_source.mime_type}}">
+                {% endfor %}
+            </video>
+        </div>
+    {% endif %}
+</div>
                     </div>
                                     
                     
