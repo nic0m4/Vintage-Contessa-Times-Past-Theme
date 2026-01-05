@@ -1,1 +1,29 @@
-{"type":"footer","name":"Footer Group","sections":{"footer":{"type":"footer","settings":{}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "text_checkbox": "By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.",
+        "text_email_info_at_thevintagecontessacom": "Email: info@thevintagecontessa.com",
+        "text_phone_713_977_7296": "Phone: (713) 977-7296",
+        "text_delivery": "© 2026 Vintage Contessa & Times Past. All rights reserved.",
+        "placeholder_text": "Email address",
+        "footer_menu": "main-menu-copy"
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
