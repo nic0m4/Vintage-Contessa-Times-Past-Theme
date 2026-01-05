@@ -1,3 +1,22 @@
+<style>
+  .image-hero_desktop-bg {
+    display: block;
+  }
+
+  .image-hero_mobile-bg {
+    display: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    .image-hero_desktop-bg {
+      display: none;
+    }
+    
+    .image-hero_mobile-bg {
+      display: block;
+    }
+  }
+</style>
 <div class="padding-global padding-section-large slider-align">
           <div class="home-hero_wrapper max-width-xxlarge">
             <div class="swiper_component is-home-hero">
@@ -133,25 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
-<style>
-  .image-hero_desktop-bg {
-    display: block;
-  }
 
-  .image-hero_mobile-bg {
-    display: none;
-  }
-
-  @media screen and (max-width: 767px) {
-    .image-hero_desktop-bg {
-      display: none;
-    }
-    
-    .image-hero_mobile-bg {
-      display: block;
-    }
-  }
-</style>
             </div>
 
 {% schema %} {
