@@ -706,8 +706,7 @@
                               <div li-js-object="cartApiResponse?.result?.message" class="text-size-regular text-weight-bold" x-text="cartApiResponse?.result?.message">14,99 $</div>
                             </div>
                           </div>
-                          <a x-bind:href="'/checkout'" href="#" class="button w-button">Checkout</a>
-                          <a li-object:href="routes.cart_url" href="{{ routes.cart_url }}" class="button is-secondary w-button">Cart</a>
+                          <a li-object:href="routes.cart_url" href="{{ routes.cart_url }}" class="button w-button" style="width: 100%;">Request Callback to Buy</a>
                         </div>
                       </div>
                       <div li-cloak="hide" li-element="mini-cart-empty" class="mini-cart_empty" :style="total.items && { display: 'none' }">
